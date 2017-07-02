@@ -1,0 +1,2325 @@
+[
+    {
+        "outputFile": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 94,
+                    "endOffset": 195
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 94,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 200,
+                    "endColumn": 106,
+                    "endOffset": 302
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 150,
+                        "endColumn": 106,
+                        "endOffset": 252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 307,
+                    "endColumn": 122,
+                    "endOffset": 425
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 257,
+                        "endColumn": 122,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 430,
+                    "endColumn": 92,
+                    "endOffset": 518
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 380,
+                        "endColumn": 92,
+                        "endOffset": 468
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 523,
+                    "endColumn": 99,
+                    "endOffset": 618
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 473,
+                        "endColumn": 99,
+                        "endOffset": 568
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 623,
+                    "endColumn": 81,
+                    "endOffset": 700
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 573,
+                        "endColumn": 81,
+                        "endOffset": 650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 705,
+                    "endColumn": 96,
+                    "endOffset": 797
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 655,
+                        "endColumn": 96,
+                        "endOffset": 747
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 802,
+                    "endColumn": 107,
+                    "endOffset": 905
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 752,
+                        "endColumn": 107,
+                        "endOffset": 855
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 910,
+                    "endColumn": 75,
+                    "endOffset": 981
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 860,
+                        "endColumn": 75,
+                        "endOffset": 931
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 986,
+                    "endColumn": 75,
+                    "endOffset": 1057
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 936,
+                        "endColumn": 75,
+                        "endOffset": 1007
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1062,
+                    "endColumn": 77,
+                    "endOffset": 1135
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 77,
+                        "endOffset": 1085
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1140,
+                    "endColumn": 95,
+                    "endOffset": 1231
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1090,
+                        "endColumn": 95,
+                        "endOffset": 1181
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1236,
+                    "endColumn": 95,
+                    "endOffset": 1327
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1186,
+                        "endColumn": 95,
+                        "endOffset": 1277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1332,
+                    "endColumn": 94,
+                    "endOffset": 1422
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1282,
+                        "endColumn": 94,
+                        "endOffset": 1372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1427,
+                    "endColumn": 96,
+                    "endOffset": 1519
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1377,
+                        "endColumn": 96,
+                        "endOffset": 1469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1524,
+                    "endColumn": 94,
+                    "endOffset": 1614
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1474,
+                        "endColumn": 94,
+                        "endOffset": 1564
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1619,
+                    "endColumn": 97,
+                    "endOffset": 1712
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1569,
+                        "endColumn": 97,
+                        "endOffset": 1662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1717,
+                    "endColumn": 112,
+                    "endOffset": 1825
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1667,
+                        "endColumn": 112,
+                        "endOffset": 1775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1830,
+                    "endColumn": 93,
+                    "endOffset": 1919
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1780,
+                        "endColumn": 93,
+                        "endOffset": 1869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1924,
+                    "endColumn": 74,
+                    "endOffset": 1994
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 302,
+                        "endColumn": 70,
+                        "endOffset": 372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1999,
+                    "endColumn": 90,
+                    "endOffset": 2085
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 373,
+                        "endColumn": 86,
+                        "endOffset": 459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2090,
+                    "endColumn": 84,
+                    "endOffset": 2170
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 460,
+                        "endColumn": 80,
+                        "endOffset": 540
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2175,
+                    "endColumn": 100,
+                    "endOffset": 2271
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 541,
+                        "endColumn": 96,
+                        "endOffset": 637
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2276,
+                    "endColumn": 78,
+                    "endOffset": 2350
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 638,
+                        "endColumn": 74,
+                        "endOffset": 712
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2355,
+                    "endColumn": 119,
+                    "endOffset": 2470
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 713,
+                        "endColumn": 115,
+                        "endOffset": 828
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2475,
+                    "endColumn": 105,
+                    "endOffset": 2576
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 829,
+                        "endColumn": 101,
+                        "endOffset": 930
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2581,
+                    "endColumn": 104,
+                    "endOffset": 2681
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 931,
+                        "endColumn": 100,
+                        "endOffset": 1031
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2686,
+                    "endColumn": 109,
+                    "endOffset": 2791
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1032,
+                        "endColumn": 105,
+                        "endOffset": 1137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2796,
+                    "endColumn": 96,
+                    "endOffset": 2888
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1138,
+                        "endColumn": 92,
+                        "endOffset": 1230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2893,
+                    "endColumn": 99,
+                    "endOffset": 2988
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1231,
+                        "endColumn": 95,
+                        "endOffset": 1326
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2993,
+                    "endColumn": 73,
+                    "endOffset": 3062
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1327,
+                        "endColumn": 69,
+                        "endOffset": 1396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3067,
+                    "endColumn": 81,
+                    "endOffset": 3144
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 1397,
+                        "endColumn": 77,
+                        "endOffset": 1474
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3149,
+                    "endColumn": 81,
+                    "endOffset": 3226
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1475,
+                        "endColumn": 77,
+                        "endOffset": 1552
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3231,
+                    "endColumn": 107,
+                    "endOffset": 3334
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 1553,
+                        "endColumn": 103,
+                        "endOffset": 1656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3339,
+                    "endColumn": 70,
+                    "endOffset": 3405
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 1657,
+                        "endColumn": 66,
+                        "endOffset": 1723
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3410,
+                    "endColumn": 129,
+                    "endOffset": 3535
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 292,
+                        "endColumn": 129,
+                        "endOffset": 421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3540,
+                    "endColumn": 131,
+                    "endOffset": 3667
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 422,
+                        "endColumn": 131,
+                        "endOffset": 553
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3672,
+                    "endColumn": 91,
+                    "endOffset": 3759
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 554,
+                        "endColumn": 87,
+                        "endOffset": 641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3764,
+                    "endColumn": 71,
+                    "endOffset": 3831
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 1724,
+                        "endColumn": 67,
+                        "endOffset": 1791
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3836,
+                    "endColumn": 70,
+                    "endOffset": 3902
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 0,
+                        "startOffset": 1792,
+                        "endColumn": 66,
+                        "endOffset": 1858
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3907,
+                    "endColumn": 72,
+                    "endOffset": 3975
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 0,
+                        "startOffset": 1859,
+                        "endColumn": 68,
+                        "endOffset": 1927
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 3980,
+                    "endColumn": 80,
+                    "endOffset": 4056
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 0,
+                        "startOffset": 1928,
+                        "endColumn": 76,
+                        "endOffset": 2004
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4061,
+                    "endColumn": 80,
+                    "endOffset": 4137
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 0,
+                        "startOffset": 2005,
+                        "endColumn": 76,
+                        "endOffset": 2081
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4142,
+                    "endColumn": 78,
+                    "endOffset": 4216
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 0,
+                        "startOffset": 2082,
+                        "endColumn": 74,
+                        "endOffset": 2156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4221,
+                    "endColumn": 80,
+                    "endOffset": 4297
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 0,
+                        "startOffset": 2157,
+                        "endColumn": 76,
+                        "endOffset": 2233
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4302,
+                    "endColumn": 80,
+                    "endOffset": 4378
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 0,
+                        "startOffset": 2234,
+                        "endColumn": 76,
+                        "endOffset": 2310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4383,
+                    "endColumn": 70,
+                    "endOffset": 4449
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 0,
+                        "startOffset": 2311,
+                        "endColumn": 66,
+                        "endOffset": 2377
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 4454,
+                    "endColumn": 86,
+                    "endOffset": 4536
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 0,
+                        "startOffset": 2378,
+                        "endColumn": 82,
+                        "endOffset": 2460
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4541,
+                    "endColumn": 93,
+                    "endOffset": 4630
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 0,
+                        "startOffset": 2461,
+                        "endColumn": 89,
+                        "endOffset": 2550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 4635,
+                    "endColumn": 94,
+                    "endOffset": 4725
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 0,
+                        "startOffset": 2551,
+                        "endColumn": 90,
+                        "endOffset": 2641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4730,
+                    "endColumn": 106,
+                    "endOffset": 4832
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 0,
+                        "startOffset": 2642,
+                        "endColumn": 102,
+                        "endOffset": 2744
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 4837,
+                    "endColumn": 140,
+                    "endOffset": 4973
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 0,
+                        "startOffset": 2745,
+                        "endColumn": 140,
+                        "endOffset": 2885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 4978,
+                    "endColumn": 92,
+                    "endOffset": 5066
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 0,
+                        "startOffset": 2886,
+                        "endColumn": 88,
+                        "endOffset": 2974
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 5071,
+                    "endColumn": 90,
+                    "endOffset": 5157
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 2975,
+                        "endColumn": 86,
+                        "endOffset": 3061
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 5162,
+                    "endColumn": 97,
+                    "endOffset": 5255
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 0,
+                        "startOffset": 3062,
+                        "endColumn": 93,
+                        "endOffset": 3155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 5260,
+                    "endColumn": 74,
+                    "endOffset": 5330
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 0,
+                        "startOffset": 3156,
+                        "endColumn": 70,
+                        "endOffset": 3226
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 5335,
+                    "endColumn": 87,
+                    "endOffset": 5418
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 87,
+                        "endOffset": 257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 5423,
+                    "endColumn": 84,
+                    "endOffset": 5503
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 262,
+                        "endColumn": 84,
+                        "endOffset": 342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 5508,
+                    "endColumn": 99,
+                    "endOffset": 5603
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 347,
+                        "endColumn": 99,
+                        "endOffset": 442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5608,
+                    "endColumn": 91,
+                    "endOffset": 5695
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 447,
+                        "endColumn": 91,
+                        "endOffset": 534
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 5700,
+                    "endColumn": 62,
+                    "endOffset": 5758
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 539,
+                        "endColumn": 62,
+                        "endOffset": 597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5763,
+                    "endColumn": 65,
+                    "endOffset": 5824
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 602,
+                        "endColumn": 65,
+                        "endOffset": 663
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5829,
+                    "endColumn": 53,
+                    "endOffset": 5878
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 668,
+                        "endColumn": 53,
+                        "endOffset": 717
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 5883,
+                    "endColumn": 67,
+                    "endOffset": 5946
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 722,
+                        "endColumn": 67,
+                        "endOffset": 785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 5951,
+                    "endColumn": 67,
+                    "endOffset": 6014
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 790,
+                        "endColumn": 67,
+                        "endOffset": 853
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 6019,
+                    "endColumn": 84,
+                    "endOffset": 6099
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 858,
+                        "endColumn": 84,
+                        "endOffset": 938
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 6104,
+                    "endColumn": 68,
+                    "endOffset": 6168
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 943,
+                        "endColumn": 68,
+                        "endOffset": 1007
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 6173,
+                    "endColumn": 68,
+                    "endOffset": 6237
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 68,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 6242,
+                    "endColumn": 76,
+                    "endOffset": 6314
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1081,
+                        "endColumn": 76,
+                        "endOffset": 1153
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 6319,
+                    "endColumn": 90,
+                    "endOffset": 6405
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1158,
+                        "endColumn": 90,
+                        "endOffset": 1244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 6410,
+                    "endColumn": 60,
+                    "endOffset": 6466
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1249,
+                        "endColumn": 60,
+                        "endOffset": 1305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 6471,
+                    "endColumn": 61,
+                    "endOffset": 6528
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1310,
+                        "endColumn": 61,
+                        "endOffset": 1367
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 6533,
+                    "endColumn": 85,
+                    "endOffset": 6614
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1372,
+                        "endColumn": 85,
+                        "endOffset": 1453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 6619,
+                    "endColumn": 102,
+                    "endOffset": 6717
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 287,
+                        "endColumn": 98,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 6722,
+                    "endColumn": 159,
+                    "endOffset": 6877
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 386,
+                        "endColumn": 159,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 6882,
+                    "endColumn": 116,
+                    "endOffset": 6994
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 546,
+                        "endColumn": 112,
+                        "endOffset": 658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 6999,
+                    "endColumn": 103,
+                    "endOffset": 7098
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 659,
+                        "endColumn": 99,
+                        "endOffset": 758
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 7103,
+                    "endColumn": 165,
+                    "endOffset": 7264
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 759,
+                        "endColumn": 165,
+                        "endOffset": 924
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 7269,
+                    "endColumn": 117,
+                    "endOffset": 7382
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 925,
+                        "endColumn": 113,
+                        "endOffset": 1038
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 7387,
+                    "endColumn": 121,
+                    "endOffset": 7504
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 1039,
+                        "endColumn": 117,
+                        "endOffset": 1156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 7509,
+                    "endColumn": 166,
+                    "endOffset": 7671
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e352d86fea7dd3442cf1de37fcb7a857a076df50\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 289,
+                        "endColumn": 166,
+                        "endOffset": 455
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 7676,
+                    "endColumn": 168,
+                    "endOffset": 7840
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1157,
+                        "endColumn": 168,
+                        "endOffset": 1325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 7845,
+                    "endColumn": 102,
+                    "endOffset": 7943
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1326,
+                        "endColumn": 98,
+                        "endOffset": 1424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 7948,
+                    "endColumn": 159,
+                    "endOffset": 8103
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1425,
+                        "endColumn": 159,
+                        "endOffset": 1584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 8108,
+                    "endColumn": 116,
+                    "endOffset": 8220
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1585,
+                        "endColumn": 112,
+                        "endOffset": 1697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 8225,
+                    "endColumn": 165,
+                    "endOffset": 8386
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1698,
+                        "endColumn": 165,
+                        "endOffset": 1863
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 8391,
+                    "endColumn": 137,
+                    "endOffset": 8524
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 1864,
+                        "endColumn": 133,
+                        "endOffset": 1997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 8529,
+                    "endColumn": 84,
+                    "endOffset": 8609
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1998,
+                        "endColumn": 80,
+                        "endOffset": 2078
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 8614,
+                    "endColumn": 86,
+                    "endOffset": 8696
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2079,
+                        "endColumn": 82,
+                        "endOffset": 2161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 8701,
+                    "endColumn": 100,
+                    "endOffset": 8797
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2162,
+                        "endColumn": 96,
+                        "endOffset": 2258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 8802,
+                    "endColumn": 57,
+                    "endOffset": 8855
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1594,
+                        "endColumn": 57,
+                        "endOffset": 1647
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 8860,
+                    "endColumn": 92,
+                    "endOffset": 8948
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 92,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 8953,
+                    "endColumn": 91,
+                    "endOffset": 9040
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 91,
+                        "endOffset": 235
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 9045,
+                    "endColumn": 93,
+                    "endOffset": 9134
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 93,
+                        "endOffset": 329
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 9139,
+                    "endColumn": 95,
+                    "endOffset": 9230
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 334,
+                        "endColumn": 95,
+                        "endOffset": 425
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 9235,
+                    "endColumn": 85,
+                    "endOffset": 9316
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 430,
+                        "endColumn": 85,
+                        "endOffset": 511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 9321,
+                    "endColumn": 77,
+                    "endOffset": 9394
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 516,
+                        "endColumn": 77,
+                        "endOffset": 589
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 9399,
+                    "endColumn": 86,
+                    "endOffset": 9481
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 594,
+                        "endColumn": 86,
+                        "endOffset": 676
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 9486,
+                    "endColumn": 93,
+                    "endOffset": 9575
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 681,
+                        "endColumn": 93,
+                        "endOffset": 770
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 9580,
+                    "endColumn": 92,
+                    "endOffset": 9668
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 775,
+                        "endColumn": 92,
+                        "endOffset": 863
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 9673,
+                    "endColumn": 89,
+                    "endOffset": 9758
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 868,
+                        "endColumn": 89,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 9763,
+                    "endColumn": 87,
+                    "endOffset": 9846
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 87,
+                        "endOffset": 1041
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 9851,
+                    "endColumn": 87,
+                    "endOffset": 9934
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1046,
+                        "endColumn": 87,
+                        "endOffset": 1129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 9939,
+                    "endColumn": 96,
+                    "endOffset": 10031
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1134,
+                        "endColumn": 96,
+                        "endOffset": 1226
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 10036,
+                    "endColumn": 96,
+                    "endOffset": 10128
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1231,
+                        "endColumn": 96,
+                        "endOffset": 1323
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 10133,
+                    "endColumn": 80,
+                    "endOffset": 10209
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1328,
+                        "endColumn": 80,
+                        "endOffset": 1404
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 10214,
+                    "endColumn": 78,
+                    "endOffset": 10288
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1409,
+                        "endColumn": 78,
+                        "endOffset": 1483
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 10293,
+                    "endColumn": 81,
+                    "endOffset": 10370
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1488,
+                        "endColumn": 81,
+                        "endOffset": 1565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 10375,
+                    "endColumn": 90,
+                    "endOffset": 10461
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1570,
+                        "endColumn": 90,
+                        "endOffset": 1656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 10466,
+                    "endColumn": 81,
+                    "endOffset": 10543
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1661,
+                        "endColumn": 81,
+                        "endOffset": 1738
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 10548,
+                    "endColumn": 88,
+                    "endOffset": 10632
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1743,
+                        "endColumn": 88,
+                        "endOffset": 1827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 10637,
+                    "endColumn": 94,
+                    "endOffset": 10727
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\10bbd464a0024be64dd1512af104b9e563a022ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 237,
+                        "endColumn": 90,
+                        "endOffset": 327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 10732,
+                    "endColumn": 91,
+                    "endOffset": 10819
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\10bbd464a0024be64dd1512af104b9e563a022ac\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 328,
+                        "endColumn": 87,
+                        "endOffset": 415
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 10824,
+                    "endColumn": 64,
+                    "endOffset": 10884
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 241,
+                        "endColumn": 60,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 10889,
+                    "endColumn": 76,
+                    "endOffset": 10961
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 302,
+                        "endColumn": 72,
+                        "endOffset": 374
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 10966,
+                    "endColumn": 63,
+                    "endOffset": 11025
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 375,
+                        "endColumn": 59,
+                        "endOffset": 434
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 11030,
+                    "endColumn": 63,
+                    "endOffset": 11089
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 435,
+                        "endColumn": 59,
+                        "endOffset": 494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 11094,
+                    "endColumn": 67,
+                    "endOffset": 11157
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 495,
+                        "endColumn": 63,
+                        "endOffset": 558
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 11162,
+                    "endColumn": 73,
+                    "endOffset": 11231
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 559,
+                        "endColumn": 69,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 11236,
+                    "endColumn": 77,
+                    "endOffset": 11309
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1874,
+                        "endColumn": 77,
+                        "endOffset": 1947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 11314,
+                    "endColumn": 101,
+                    "endOffset": 11411
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1952,
+                        "endColumn": 101,
+                        "endOffset": 2049
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 11416,
+                    "endColumn": 100,
+                    "endOffset": 11512
+                },
+                "from": {
+                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\values-zh-rHK\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 244,
+                        "endColumn": 96,
+                        "endOffset": 340
+                    }
+                }
+            }
+        ]
+    }
+]

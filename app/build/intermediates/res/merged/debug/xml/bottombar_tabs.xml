@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_favorites"
+        icon="@drawable/social"
+        title="Favorites" />
+    <tab
+        id="@+id/tab_nearby"
+        icon="@drawable/social1"
+        title="Nearby" />
+    <tab
+        id="@+id/tab_friends"
+        icon="@drawable/social2"
+        title="Friends" />
+</tabs>

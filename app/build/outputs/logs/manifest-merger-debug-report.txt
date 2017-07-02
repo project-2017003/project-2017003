@@ -1,0 +1,586 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-77:12
+	package
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:11.0.1] C:\Users\HemanthKandula\.android\build-cache\9b0e17569cd863a0109e48c374b6bbd124c19eaa\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.0.1] C:\Users\HemanthKandula\.android\build-cache\50dc53b9594d48535f114287f067a84f751c73c8\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e84af38b172a15b0b1ff59bd506793797ec61540\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:22-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:5-68
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] C:\Users\HemanthKandula\.android\build-cache\69aba58150a4ee98baf8021963ab69e4ecc55a91\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:22-76
+application
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:15:5-75:19
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:26:5-31:19
+MERGED from [com.github.apl-devs:appintro:v4.2.0] C:\Users\HemanthKandula\.android\build-cache\4c59dc3758bbd0df637f9c23a75325d48cdb3f58\output\AndroidManifest.xml:11:5-47
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HemanthKandula\.android\build-cache\74191ace9cef83938aa476c3b4110e0bfb6a3c56\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\HemanthKandula\.android\build-cache\cbb4625bfbe752af896d04895a1157161bd9f9ea\output\AndroidManifest.xml:9:5-20
+MERGED from [com.jakewharton.timber:timber:4.1.2] C:\Users\HemanthKandula\.android\build-cache\df8dc5ccf6f210321948c689dc5b2b0836f97dc1\output\AndroidManifest.xml:8:5-20
+MERGED from [com.google.android.gms:play-services:11.0.1] C:\Users\HemanthKandula\.android\build-cache\ba8b9366853b0723e3eb619c03173d6fb04a5d74\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] C:\Users\HemanthKandula\.android\build-cache\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\HemanthKandula\.android\build-cache\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\HemanthKandula\.android\build-cache\589423831e0f601031ccf082b058f3ea3fff3646\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] C:\Users\HemanthKandula\.android\build-cache\690c11d425784f0ef18ad8ee36dee696269aee4b\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:11.0.1] C:\Users\HemanthKandula\.android\build-cache\62b0d93769d77f46658d8b52a1802f546e552025\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] C:\Users\HemanthKandula\.android\build-cache\255b632db4e0ec8fa87217a9d2a9eb5a3d760cb4\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:11.0.1] C:\Users\HemanthKandula\.android\build-cache\9b0e17569cd863a0109e48c374b6bbd124c19eaa\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] C:\Users\HemanthKandula\.android\build-cache\a0ba5f0358ae5b6a55de5b76c0bcc8d6960d3ab1\output\AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] C:\Users\HemanthKandula\.android\build-cache\1a5eea0fcdf42f0d72607072546c613972367829\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.0.1] C:\Users\HemanthKandula\.android\build-cache\aa2ca3f936a067a05e08ff0367b87284b16af3fc\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] C:\Users\HemanthKandula\.android\build-cache\04fc244846daf6ddbb624075d7548614859711ea\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3785a7d6501b36b9f22dcc855b7fc4a772164489\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.0.1] C:\Users\HemanthKandula\.android\build-cache\50dc53b9594d48535f114287f067a84f751c73c8\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] C:\Users\HemanthKandula\.android\build-cache\5c4018804ad81bce087a34b9be57f58039a153f9\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e84af38b172a15b0b1ff59bd506793797ec61540\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.1] C:\Users\HemanthKandula\.android\build-cache\63f0468be7b061ed61857dee9905efc01c097ceb\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] C:\Users\HemanthKandula\.android\build-cache\69aba58150a4ee98baf8021963ab69e4ecc55a91\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] C:\Users\HemanthKandula\.android\build-cache\ddc2ef11f70a9a53083ad5620a714807a5b80748\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.0.1] C:\Users\HemanthKandula\.android\build-cache\10bbd464a0024be64dd1512af104b9e563a022ac\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] C:\Users\HemanthKandula\.android\build-cache\cbb881073978d8fff27eaf4ddfdda1b141009c30\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] C:\Users\HemanthKandula\.android\build-cache\943281f89a6031509dd47eb01e694cc657009211\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\68375e44a6d5cd25305e857c0037f77a15cc1f68\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] C:\Users\HemanthKandula\.android\build-cache\d0757f8b44a5dae3fac1183c6eb63721c9b378d5\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\03d17344c2e00e6a9f9cad85e53759024c05a381\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] C:\Users\HemanthKandula\.android\build-cache\db89f7bc459c4dbcad4bf81f07865e341b1406cd\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] C:\Users\HemanthKandula\.android\build-cache\29a6734482d57cfd6aa05c828231979979627846\output\AndroidManifest.xml:18:5-19
+MERGED from [com.facebook.android:facebook-android-sdk:4.9.0] C:\Users\HemanthKandula\.android\build-cache\7ca6edc85daf4626a3156be8f0992231c142175a\output\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\56d1f7aa38c371dbeb8dc0dbb78e9f8729cc1bcb\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\HemanthKandula\.android\build-cache\8a41d2e3e6a0c6c8403d2afe43715473f1a16afd\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\HemanthKandula\.android\build-cache\34d46ecf17b5586deafc22e20049fb1ce4420530\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e352d86fea7dd3442cf1de37fcb7a857a076df50\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\HemanthKandula\.android\build-cache\3096c79c46f9ba954884177b66ac405401017a38\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\HemanthKandula\.android\build-cache\7b3f9df893c2c5f219e7a93079f4c8768cfaa6dc\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\aba34ff68d8fcd05442e60c9ccd4b7e1bddd755c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\HemanthKandula\.android\build-cache\09e3231e70b426eaf99833ed1a8ca3b5478a8069\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\HemanthKandula\.android\build-cache\63db1d59e7f4d52963d8dc68b6fcba3b2114fdbc\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\2bfaaa0d1f78af52b80413efa3dd526b63f13a71\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:19:9-41
+	android:supportsRtl
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:20:9-35
+	android:allowBackup
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:17:9-35
+	android:icon
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:18:9-42
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:16:9-38
+activity#com.optimustechproject2017.MainActivity
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:22:9-25:59
+	android:label
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:24:13-45
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:23:13-41
+activity#com.optimustechproject2017.SplashActivity
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:26:9-40:20
+	android:screenOrientation
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:28:13-49
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:27:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.VIEW
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:27-73
+activity#com.optimustechproject2017.auth.LoginActivity
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:41:9-43:72
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:42:13-47
+activity#com.optimustechproject2017.App_Intro
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:44:9-46:72
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:46:13-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:45:13-38
+activity#com.optimustechproject2017.auth.MainActivity
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:47:9-49:72
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:49:13-69
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:48:13-46
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:51:9-53:55
+	android:value
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:53:13-52
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:52:13-58
+activity#com.facebook.FacebookActivity
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:55:9-59:75
+	android:label
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:58:13-45
+	android:configChanges
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:57:13-96
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:59:13-72
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:56:13-57
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:61:9-63:71
+	android:value
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:63:13-68
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:62:13-58
+activity#com.optimustechproject2017.location.address
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:65:9-67:74
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:67:13-71
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:66:13-45
+activity#com.optimustechproject2017.location.place
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:68:9-70:68
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:70:13-56
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:69:13-43
+activity#com.optimustechproject2017.location.DeliveryAddress
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:71:9-74:56
+	android:label
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:73:13-68
+	android:theme
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:74:13-44
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:72:13-53
+uses-sdk
+INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.mikepenz:materialdrawer:5.9.1] C:\Users\HemanthKandula\.android\build-cache\6dffcb10b97dfbcf993d13e6982cb56e7b3c566e\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:materialize:1.0.1] C:\Users\HemanthKandula\.android\build-cache\42ea9d737123bbee75e963e3e5a7eb6b040f9e26\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:iconics-core:2.8.4] C:\Users\HemanthKandula\.android\build-cache\d0e1429a532648a83073cf2df2f1f7facd48a671\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz:fastadapter:2.5.2] C:\Users\HemanthKandula\.android\build-cache\4180daa42c394753697b7b3e1d78f99d7de0a2eb\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.apl-devs:appintro:v4.2.0] C:\Users\HemanthKandula\.android\build-cache\4c59dc3758bbd0df637f9c23a75325d48cdb3f58\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HemanthKandula\.android\build-cache\74191ace9cef83938aa476c3b4110e0bfb6a3c56\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\HemanthKandula\.android\build-cache\cbb4625bfbe752af896d04895a1157161bd9f9ea\output\AndroidManifest.xml:7:5-43
+MERGED from [com.jakewharton.timber:timber:4.1.2] C:\Users\HemanthKandula\.android\build-cache\df8dc5ccf6f210321948c689dc5b2b0836f97dc1\output\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services:11.0.1] C:\Users\HemanthKandula\.android\build-cache\ba8b9366853b0723e3eb619c03173d6fb04a5d74\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:11.0.1] C:\Users\HemanthKandula\.android\build-cache\0185cfc03e4fdf8193c79e017baf101b55c8a6cc\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.1] C:\Users\HemanthKandula\.android\build-cache\a721f6ddd7e5889a5790caeb3aa31887de531727\output\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\a3086e80f45cc19468915c8d3a6042cb544dc204\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] C:\Users\HemanthKandula\.android\build-cache\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\HemanthKandula\.android\build-cache\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\HemanthKandula\.android\build-cache\589423831e0f601031ccf082b058f3ea3fff3646\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] C:\Users\HemanthKandula\.android\build-cache\690c11d425784f0ef18ad8ee36dee696269aee4b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.0.1] C:\Users\HemanthKandula\.android\build-cache\62b0d93769d77f46658d8b52a1802f546e552025\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] C:\Users\HemanthKandula\.android\build-cache\255b632db4e0ec8fa87217a9d2a9eb5a3d760cb4\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:11.0.1] C:\Users\HemanthKandula\.android\build-cache\9b0e17569cd863a0109e48c374b6bbd124c19eaa\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c4577b56b03a967d7e09c19e1fceb98106ffc94b\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.1] C:\Users\HemanthKandula\.android\build-cache\061b685c922baa55f5c9ddd5f901e453235f8a52\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] C:\Users\HemanthKandula\.android\build-cache\a0ba5f0358ae5b6a55de5b76c0bcc8d6960d3ab1\output\AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f506d22db9789fe1d115d4078665303a1b31854f\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\fe25b907aa624c391df05c336ccc0a876d6326e0\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] C:\Users\HemanthKandula\.android\build-cache\1a5eea0fcdf42f0d72607072546c613972367829\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.0.1] C:\Users\HemanthKandula\.android\build-cache\aa2ca3f936a067a05e08ff0367b87284b16af3fc\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] C:\Users\HemanthKandula\.android\build-cache\04fc244846daf6ddbb624075d7548614859711ea\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3785a7d6501b36b9f22dcc855b7fc4a772164489\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.0.1] C:\Users\HemanthKandula\.android\build-cache\50dc53b9594d48535f114287f067a84f751c73c8\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] C:\Users\HemanthKandula\.android\build-cache\5c4018804ad81bce087a34b9be57f58039a153f9\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e84af38b172a15b0b1ff59bd506793797ec61540\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6929185521249e761764ed91d9a2a70e4930a855\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.1] C:\Users\HemanthKandula\.android\build-cache\63f0468be7b061ed61857dee9905efc01c097ceb\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] C:\Users\HemanthKandula\.android\build-cache\69aba58150a4ee98baf8021963ab69e4ecc55a91\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] C:\Users\HemanthKandula\.android\build-cache\ddc2ef11f70a9a53083ad5620a714807a5b80748\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.0.1] C:\Users\HemanthKandula\.android\build-cache\10bbd464a0024be64dd1512af104b9e563a022ac\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] C:\Users\HemanthKandula\.android\build-cache\cbb881073978d8fff27eaf4ddfdda1b141009c30\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] C:\Users\HemanthKandula\.android\build-cache\943281f89a6031509dd47eb01e694cc657009211\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.0.1] C:\Users\HemanthKandula\.android\build-cache\084c5325adddd1b9556178aafa01ffc20c5d03c9\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\68375e44a6d5cd25305e857c0037f77a15cc1f68\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] C:\Users\HemanthKandula\.android\build-cache\d0757f8b44a5dae3fac1183c6eb63721c9b378d5\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\03d17344c2e00e6a9f9cad85e53759024c05a381\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.0.1] C:\Users\HemanthKandula\.android\build-cache\15c407da904da28ec722353898514b0b904330f7\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] C:\Users\HemanthKandula\.android\build-cache\db89f7bc459c4dbcad4bf81f07865e341b1406cd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] C:\Users\HemanthKandula\.android\build-cache\29a6734482d57cfd6aa05c828231979979627846\output\AndroidManifest.xml:17:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.9.0] C:\Users\HemanthKandula\.android\build-cache\7ca6edc85daf4626a3156be8f0992231c142175a\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\HemanthKandula\.android\build-cache\9f3e6b76b400d87ca1192d0fad2df4e0048c4631\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\56d1f7aa38c371dbeb8dc0dbb78e9f8729cc1bcb\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:17:5-43
+MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\HemanthKandula\.android\build-cache\137c34328755920c1dc8fb2537c4b0570ded2ae9\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\1f7d3ffdecb74139f550a02b6437dc5f7e59d6c1\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\HemanthKandula\.android\build-cache\8a41d2e3e6a0c6c8403d2afe43715473f1a16afd\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\HemanthKandula\.android\build-cache\34d46ecf17b5586deafc22e20049fb1ce4420530\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e352d86fea7dd3442cf1de37fcb7a857a076df50\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\HemanthKandula\.android\build-cache\3096c79c46f9ba954884177b66ac405401017a38\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\HemanthKandula\.android\build-cache\7b3f9df893c2c5f219e7a93079f4c8768cfaa6dc\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\aba34ff68d8fcd05442e60c9ccd4b7e1bddd755c\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\HemanthKandula\.android\build-cache\09e3231e70b426eaf99833ed1a8ca3b5478a8069\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\HemanthKandula\.android\build-cache\63db1d59e7f4d52963d8dc68b6fcba3b2114fdbc\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\2bfaaa0d1f78af52b80413efa3dd526b63f13a71\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:27:9-30:56
+	android:launchMode
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:29:13-48
+	android:theme
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:30:13-53
+	android:name
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:28:13-60
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-77:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4cfb83060923c42f3d66bef6a480be3e5360c79f\output\AndroidManifest.xml:22:25-87
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\36e56096ed030544f6d5e102d290bab7af81399d\output\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] C:\Users\HemanthKandula\.android\build-cache\6d767e0e84bdc79afb7bfad4819b6997afb329bb\output\AndroidManifest.xml:7:18-90
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f9f75b04c095a08e234b080f717e4285cf517082\output\AndroidManifest.xml:25:25-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:11.0.1] C:\Users\HemanthKandula\.android\build-cache\50dc53b9594d48535f114287f067a84f751c73c8\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e84af38b172a15b0b1ff59bd506793797ec61540\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:11.0.1] C:\Users\HemanthKandula\.android\build-cache\50dc53b9594d48535f114287f067a84f751c73c8\output\AndroidManifest.xml:20:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:25:9-32:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:25:94-117
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:25:118-142
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:27:23-69
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] C:\Users\HemanthKandula\.android\build-cache\40203298fcd91695114e0af0af5f9f5a55fece53\output\AndroidManifest.xml:30:27-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f4cdd11a8ff558a17fa69ee589e2cf0166c671ed\output\AndroidManifest.xml:21:52-75
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\1f7d3ffdecb74139f550a02b6437dc5f7e59d6c1\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\HemanthKandula\.android\build-cache\3096c79c46f9ba954884177b66ac405401017a38\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\HemanthKandula\.android\build-cache\7b3f9df893c2c5f219e7a93079f4c8768cfaa6dc\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\aba34ff68d8fcd05442e60c9ccd4b7e1bddd755c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\HemanthKandula\.android\build-cache\09e3231e70b426eaf99833ed1a8ca3b5478a8069\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\HemanthKandula\.android\build-cache\63db1d59e7f4d52963d8dc68b6fcba3b2114fdbc\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\2bfaaa0d1f78af52b80413efa3dd526b63f13a71\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:23:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:19:19-85
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:33:16-90
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.1] C:\Users\HemanthKandula\.android\build-cache\12d4f21aa60524e81c5f7eebad0ecb336ad2f487\output\AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e352d86fea7dd3442cf1de37fcb7a857a076df50\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e352d86fea7dd3442cf1de37fcb7a857a076df50\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\HemanthKandula\.android\build-cache\e352d86fea7dd3442cf1de37fcb7a857a076df50\output\AndroidManifest.xml:20:20-65

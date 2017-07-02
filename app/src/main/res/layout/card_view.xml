@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+   card_view:contentPadding="5dp"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardUseCompatPadding="true" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/iconId"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:src="@drawable/a1"
+
+          />
+
+        <TextView
+            android:id="@+id/tvVersionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lollipop"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+
+            android:textSize="12sp"
+            android:textColor="@color/color_texmenutop"/>
+
+
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 87"
+            android:padding="2dp"
+            android:gravity="center"
+            android:background="@drawable/text_round"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

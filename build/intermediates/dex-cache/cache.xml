@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\HemanthKandula\.android\build-cache\137c34328755920c1dc8fb2537c4b0570ded2ae9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9cbdabba632cbf8be001cdbf34110cf42a64015">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_79aef3b192a5b41ce9ee1a745f551273b68ed706\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3bfa0ef81b5554acbc2a68267c15a6d28cbce48">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_216a7af4a126c6a1968701cc8755ae298826c5b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\libs\org.apache.http.legacy.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5320fd78dd7f154e586970d4f02befc9b58432aa">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\2\org.apache.http.legacy_f7f14739d32a34e994663929c1992b762759083c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1dcb60a72e0b213780e31122a2d93d12d34f3113\classes.dex" />
+    </item>
+
+</items>

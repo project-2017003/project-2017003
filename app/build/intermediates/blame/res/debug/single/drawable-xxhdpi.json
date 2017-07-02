@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\com_facebook_button_icon_blue.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\com_facebook_button_icon_blue.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\messenger_bubble_small_blue.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\messenger_bubble_small_blue.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_av_mnone.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_av_mnone.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_search.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\messenger_bubble_large_blue.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\com_facebook_favicon_white.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\com_facebook_favicon_white.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\com_facebook_button_icon_white.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\com_facebook_button_icon_white.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\messenger_bubble_small_white.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\messenger_bubble_small_white.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_filter.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-xxhdpi\\ic_filter.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\messenger_button_send_round_shadow.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\messenger_button_send_round_shadow.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\messenger_bubble_large_white.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\com_facebook_button_send_icon_white.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\com_facebook_button_send_icon_white.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\com_facebook_button_like_icon_selected.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-xxhdpi\\com_facebook_button_like_icon_selected.png"
+    }
+]

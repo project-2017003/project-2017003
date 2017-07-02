@@ -1,0 +1,139 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" >
+
+        <android.support.v4.widget.NestedScrollView
+        android:id="@+id/myScrollingContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.optimustechproject2017.adapters.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        custom:pager_animation_span="1100"
+        android:layout_height="200dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cartbutton_selector"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:visibility="gone">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_search"
+        android:layout_weight="3"/>
+
+
+    <AutoCompleteTextView
+        android:layout_weight="1"
+        android:id="@+id/autoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:hint="Search a iteams..."
+        android:textColorHint="@color/color_texmenutop"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite1"
+        android:textColor="@color/color_texmenutop"
+        android:popupBackground="@color/colorWhite1"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_action_av_mnone"
+        android:layout_weight="3"/>
+</LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_height="20dp"
+        android:background="@drawable/design"></View>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="YOur Fav Restarants"
+        android:textSize="16dp"
+android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:scrollbars="none"
+        android:background="#ffffff"
+        />
+
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"/>
+
+
+
+
+
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_behavior="shy"/>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>

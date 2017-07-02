@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.optimustechproject2017.location.address">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/md_grey_300"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="31dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:src="@drawable/search"/>-->
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_places"
+                android:layout_width="266dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.80"
+                android:hint="    Enter Addres Manually"
+                android:maxLines="1" />
+
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/places_ic_clear" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <custom_font.MyTextView
+
+        android:id="@+id/Gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Use GPS"
+        android:textColor="#CBD1DC"
+        android:textStyle="italic" />
+
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

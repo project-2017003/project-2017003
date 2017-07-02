@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+
+
+
+    <color name="primary">#ddba76</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#F50056</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="bkg_card">#8C9EFF</color>
+
+    <color name="colorWhite1">#F7F7F7</color>
+    <color name="colorblack">#000000</color>
+    <color name="color_texmenutop">#989898</color>
+
+
+
+
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#bd000000</color>
+    <color name="black_transparent_70percent">#B3000000</color>
+    <color name="semi_light_transparent">#5a000000</color>
+    <color name="semi_lighter_transparent">#2d000000</color>
+
+    <color name="whilte">#fff</color>
+</resources>
