@@ -1,28 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:elevation="5dp"
+    android:background="@color/colorPrimaryDark"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:layout_collapseMode="pin">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="?attr/actionBarSize"
-    android:background="@color/md_green_50"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="RESTARENTS DELEVERING TO"
+                android:textColor="@color/whilte"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/addre"
+                    android:paddingTop="3sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+
+                    android:ems="10"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whilte"
+
+ />
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand_more_black_18dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
 
-    <ImageView
-        android:layout_marginRight="5dp"
-        android:id="@+id/arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_action"
-        android:gravity="left"
-
-        />
 
 
-
-
-
+    </FrameLayout>
 </android.support.v7.widget.Toolbar>

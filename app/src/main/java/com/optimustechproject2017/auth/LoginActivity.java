@@ -77,8 +77,8 @@ CallbackManager callbackManager;
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, com.optimustechproject2017.location.address.class));
-            finish();
+//            startActivity(new Intent(LoginActivity.this, com.optimustechproject2017.location.address.class));
+//            finish();
         }
 
         TextView title = (TextView)findViewById(R.id.Title);
@@ -220,7 +220,7 @@ CallbackManager callbackManager;
             public void onClick(View v) {
 
 
-                startActivity(new Intent(LoginActivity.this, com.optimustechproject2017.LoginActivity.class));
+                startActivity(new Intent(LoginActivity.this, com.optimustechproject2017.auth.LoginActivity.class));
             }
         });
 
@@ -291,10 +291,10 @@ CallbackManager callbackManager;
 
     public void gotomainact(){
 
-
-        Intent intent = new Intent(LoginActivity.this, com.optimustechproject2017.location.address.class);
-        startActivity(intent);
-        finish();
+//
+//        Intent intent = new Intent(LoginActivity.this, com.optimustechproject2017.location.address.class);
+//        startActivity(intent);
+//        finish();
 
     }
 

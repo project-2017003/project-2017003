@@ -51,6 +51,12 @@ dependencies {
 
     // compile 'com.mobisys.android:autocompleteview:1.2'
 
+    
+
+
+
+
+
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.karumi:dexter:4.1.0'
     compile 'com.google.code.gson:gson:2.7'
@@ -71,12 +77,13 @@ dependencies {
     compile 'com.google.android.gms:play-services:11.0.1'
     compile 'com.facebook.android:facebook-android-sdk:4.9.0'
     compile 'com.google.firebase:firebase-auth:11.0.1'
-
-
-
+    compile 'com.github.medyo:fancybuttons:1.8.3'
     compile 'com.roughike:bottom-bar:2.3.1'
-
     testCompile 'junit:junit:4.12'
+
+
+//    compile 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+//    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
 }
 
 

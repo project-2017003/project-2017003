@@ -15,6 +15,7 @@
  *******************************************************************************/
 package com.optimustechproject2017;
 
+
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -25,17 +26,29 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.firebase.auth.FirebaseAuth;
 
 
+import mehdi.sakout.fancybuttons.FancyButton;
 import timber.log.Timber;
 
 public class SplashActivity extends AppCompatActivity   {
@@ -44,6 +57,7 @@ public class SplashActivity extends AppCompatActivity   {
     private VideoView mVV;
     private FirebaseAuth auth;
 
+    int PLACE_PICKER_REQUEST = 1;
 
     private Activity activity;
     private ProgressDialog progressDialog;
@@ -56,7 +70,7 @@ private boolean appintro = true;
     /**
      * Button allowing selection of shop during fresh start.
      */
-    private Button continuebutton;
+    private FancyButton continuebutton;
 
     /**
      * Indicates that window has been already detached.
@@ -68,7 +82,8 @@ private boolean appintro = true;
     private View layoutContent;
     private View layoutContentNoConnection;
     private View layoutContentcontinue;
-
+    private View layoutsetAdddress;
+    TextInputLayout addresslayout,houselayout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +143,7 @@ private boolean appintro = true;
             // Show retry button.
             layoutContentNoConnection.setVisibility(View.VISIBLE);
             layoutContentcontinue.setVisibility(View.GONE);
+            layoutsetAdddress.setVisibility(View.GONE);
         } else {
             progressDialog.hide();
 
@@ -149,8 +165,85 @@ startMainActivity(null);
             layoutIntroScreen = findViewById(R.id.splash_intro_screen);
             layoutContentNoConnection = findViewById(R.id.splash_content_no_connection);
             layoutContentcontinue= findViewById(R.id.splash_content_continue);
+            layoutsetAdddress =findViewById(R.id.splash_set_address);
 
-            continuebutton = (Button) findViewById(R.id.splash_continue);
+            final Button Save_proceed =(Button)findViewById(R.id.save_and_proceed) ;
+
+             addresslayout = (TextInputLayout)findViewById(R.id.got_address) ;
+             houselayout = (TextInputLayout)findViewById(R.id.house_flat) ;
+
+            if(houselayout.getEditText() !=null)
+                houselayout.getEditText().addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        if(s.toString().equals("")) {
+                            Save_proceed.setEnabled(false);
+                        } else {
+                            Save_proceed.setEnabled(true);
+                        }
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+
+                    }
+                });
+
+
+
+
+            ImageButton imageButton = (ImageButton)findViewById(R.id.close_button);
+
+
+            Save_proceed.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String addres,hou;
+                    if(addresslayout.getEditText()!=null && houselayout.getEditText()!=null){
+
+                    addres= addresslayout.getEditText().getText().toString();
+                    hou = houselayout.getEditText().getText().toString();
+SettingsMy.setaddress(addres,hou);
+                        startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                       finish();
+
+
+                    }
+
+                }
+            });
+
+
+
+
+
+            imageButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Slow to display ripple effect
+                    (new Handler()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+layoutsetAdddress.setVisibility(View.GONE);
+                            layoutContentcontinue.setVisibility(View.VISIBLE);
+                        }
+                    }, 200);
+                }
+            });
+
+
+
+
+
+
+            continuebutton = (FancyButton) findViewById(R.id.splash_continue);
+
+
             continuebutton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -173,9 +266,24 @@ startMainActivity(null);
                         finish();
 
                     }else {
-                        Intent intent = new Intent(SplashActivity.this, com.optimustechproject2017.location.address.class);
-                        startActivity(intent);
-                        finish();
+//                        Intent intent = new Intent(SplashActivity.this, com.optimustechproject2017.location.address.class);
+//                        startActivity(intent);
+//                        finish();
+
+
+
+
+                        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
+
+                        try {
+                            startActivityForResult(builder.build(SplashActivity.this), PLACE_PICKER_REQUEST);
+
+
+                        } catch (GooglePlayServicesRepairableException e) {
+                            e.printStackTrace();
+                        } catch (GooglePlayServicesNotAvailableException e) {
+                            e.printStackTrace();
+                        }
                     }
 
 
@@ -235,6 +343,46 @@ startMainActivity(null);
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+
+
+
+        if (requestCode == PLACE_PICKER_REQUEST) {
+            if (resultCode == RESULT_OK) {
+                Place place = PlacePicker.getPlace(this,data);
+                //Place place = PlacePicker.getPlace(data, this);
+                String toastMsg = String.format("Place: %s", place.getName());
+                final CharSequence name = place.getName();
+                final CharSequence address = place.getAddress();
+                final CharSequence phone = place.getPhoneNumber();
+                final String placeId = place.getId();
+                String attribution = PlacePicker.getLatLngBounds(data).toString();
+                Toast.makeText(this, toastMsg, Toast.LENGTH_LONG).show();
+                Log.d(TAG,toastMsg+"   "+name+"    "+ address+ "    "+phone+"    "+placeId+ "    "+attribution);
+addresslayout.getEditText().setText(address);
+                layoutContentcontinue.setVisibility(View.GONE);
+
+                layoutsetAdddress.setVisibility(View.VISIBLE);
+
+
+
+            }
+            else if (resultCode == PlacePicker.RESULT_ERROR) {
+                Status status = PlacePicker.getStatus(this, data);
+                // TODO: Handle the error.
+                Log.i("TAG", status.getStatusMessage());
+
+            } else if (resultCode == RESULT_CANCELED) {
+                layoutContentNoConnection.setVisibility(View.VISIBLE);
+                layoutContentcontinue.setVisibility(View.GONE);
+                layoutsetAdddress.setVisibility(View.GONE);
+
+
+            }
+
+    }}
 
     private void startMainActivity(Bundle bundle) {
         if (appintro) {

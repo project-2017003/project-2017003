@@ -18,6 +18,10 @@ public class SettingsMy {
     public static final String PREF_USER_EMAIL = "pref_user_email";
     public static final String APPINTRO="Pref_app_Intro";
 
+    public static final String address="ADDRESS";
+    public static final String houseNo="HOUSE";
+
+
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
     public static final String REGISTRATION_COMPLETE = "registrationComplete";
 
@@ -121,4 +125,21 @@ public class SettingsMy {
         return editor.commit();
     }
 
+    public static void setaddress(String addres, String hou) {
+
+        putParam(houseNo,hou);
+        putParam(address,addres);
+
+
+
+
+    }
+
+    public static String getadd() {
+
+        SharedPreferences prefs = getSettings();
+        return prefs.getString(address,"");
+
+
+    }
 }

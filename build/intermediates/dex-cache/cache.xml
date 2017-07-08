@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\HemanthKandula\.android\build-cache\137c34328755920c1dc8fb2537c4b0570ded2ae9\output\jars\classes.jar"
+        jar="C:\Users\HemanthKandula\.android\build-cache\1e18202785192872c825e1f08d696642de03e685\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a9cbdabba632cbf8be001cdbf34110cf42a64015">
-        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_79aef3b192a5b41ce9ee1a745f551273b68ed706\classes.dex" />
+        sha1="db4790d8366d34973d7dca635e954b2e73de653d">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dbe99be63c36a1741251e099605cd2d944ebd6a7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a3bfa0ef81b5554acbc2a68267c15a6d28cbce48">
+        sha1="96dfd8f699bda040442db9c09c7aef890ca18802">
         <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_216a7af4a126c6a1968701cc8755ae298826c5b6\classes.dex" />
     </item>
     <item
