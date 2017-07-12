@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="materialfavoritebutton-0.1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/66439e763874da6660cee612076e171667ccc760/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/66439e763874da6660cee612076e171667ccc760/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ivbaranov/materialfavoritebutton/0.1.4/a06b8a92b000d87b53178c6b9dc8f5f86eaecb37/materialfavoritebutton-0.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

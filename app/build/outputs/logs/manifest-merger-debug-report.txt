@@ -117,10 +117,10 @@ MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\HemanthKandula\.
 MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.github.medyo:fancybuttons:1.8.3] C:\Users\HemanthKandula\.android\build-cache\1e18202785192872c825e1f08d696642de03e685\output\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\HemanthKandula\.android\build-cache\8a41d2e3e6a0c6c8403d2afe43715473f1a16afd\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:24:5-34:19
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:24:5-28:19
@@ -312,11 +312,13 @@ MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthK
 MERGED from [com.github.medyo:fancybuttons:1.8.3] C:\Users\HemanthKandula\.android\build-cache\1e18202785192872c825e1f08d696642de03e685\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\HemanthKandula\.android\build-cache\137c34328755920c1dc8fb2537c4b0570ded2ae9\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:20:5-44
+MERGED from [com.github.ivbaranov:materialfavoritebutton:0.1.4] C:\Users\HemanthKandula\.android\build-cache\66439e763874da6660cee612076e171667ccc760\output\AndroidManifest.xml:7:5-9:41
+MERGED from [jp.wasabeef:recyclerview-animators:2.2.5] C:\Users\HemanthKandula\.android\build-cache\82e47ab3d740d3cf269b18a9c94e0b6cd2351690\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\1f7d3ffdecb74139f550a02b6437dc5f7e59d6c1\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:11.0.1] C:\Users\HemanthKandula\.android\build-cache\8a41d2e3e6a0c6c8403d2afe43715473f1a16afd\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:17:5-43
@@ -459,11 +461,11 @@ ADDED from [com.google.android.gms:play-services-maps:11.0.1] C:\Users\HemanthKa
 meta-data#android.support.VERSION
 ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\8847d6fe661bc6661a026449d215c608361286e5\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\718d157b7accbeeebed85cdfed430450eae8bf73\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\HemanthKandula\.android\build-cache\10a3c9ebd0511420123bf82c2bde9f597b9cdf8c\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\1f7d3ffdecb74139f550a02b6437dc5f7e59d6c1\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\HemanthKandula\.android\build-cache\3096c79c46f9ba954884177b66ac405401017a38\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\HemanthKandula\.android\build-cache\7b3f9df893c2c5f219e7a93079f4c8768cfaa6dc\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\aba34ff68d8fcd05442e60c9ccd4b7e1bddd755c\output\AndroidManifest.xml:25:5-27:34

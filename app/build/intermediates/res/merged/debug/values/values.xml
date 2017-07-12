@@ -133,6 +133,7 @@
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="bb_bottom_bar_is_portrait_mode">true</bool>
     <bool name="bb_bottom_bar_is_tablet_mode">false</bool>
+    <color name="White">#fff</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -140,6 +141,7 @@
     <color name="accent">#F50056</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="album_title">#4c4c4c</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -172,9 +174,9 @@
     <color name="cast_libraries_material_featurehighlight_outer_highlight_default_color">#2196F3</color>
     <color name="cast_libraries_material_featurehighlight_text_body_color">#FFFFFFFF</color>
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
-    <color name="colorAccent">@color/md_red_600</color>
-    <color name="colorPrimary">@color/md_red_400</color>
-    <color name="colorPrimaryDark">@color/md_red_900</color>
+    <color name="colorAccent">@color/md_grey_50</color>
+    <color name="colorPrimary">@color/md_grey_100</color>
+    <color name="colorPrimaryDark">@color/md_grey_300</color>
     <color name="colorPrimaryLight">#BBDEFB</color>
     <color name="colorWhite1">#F7F7F7</color>
     <color name="color_texmenutop">#989898</color>
@@ -224,6 +226,8 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="lightgrey">#d1d1d1</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -550,6 +554,7 @@
     <color name="place_autocomplete_search_hint">#BDBDBD</color>
     <color name="place_autocomplete_search_text">#212121</color>
     <color name="place_autocomplete_separator">#1F000000</color>
+    <color name="prima">#ff9902</color>
     <color name="primary">#ddba76</color>
     <color name="primary_dark">#303F9F</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -569,13 +574,17 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="semi_light_transparent">#5a000000</color>
     <color name="semi_lighter_transparent">#2d000000</color>
+    <color name="semi_lightest_transparent">#1f000000</color>
     <color name="semi_transparent">#bd000000</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="text_primary">#FFFFFF</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="title">#222222</color>
     <color name="transparent">#00000000</color>
+    <color name="viewBg">#f1f5f8</color>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
     <color name="wallet_bright_foreground_holo_light">#ff000000</color>
@@ -588,6 +597,8 @@
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
     <color name="whilte">#fff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="year">#999999</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -887,6 +898,7 @@
 
 </attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/><attr format="boolean" name="ambientEnabled"/><attr format="float" name="cameraMinZoomPreference"/><attr format="float" name="cameraMaxZoomPreference"/><attr format="float" name="latLngBoundsSouthWestLatitude"/><attr format="float" name="latLngBoundsSouthWestLongitude"/><attr format="float" name="latLngBoundsNorthEastLatitude"/><attr format="float" name="latLngBoundsNorthEastLongitude"/></declare-styleable>
     <declare-styleable name="MaterialDrawer"><attr format="color|reference" name="material_drawer_window_background"/><attr format="color|reference" name="material_drawer_background"/><attr format="color|reference" name="material_drawer_primary_text"/><attr format="color|reference" name="material_drawer_primary_icon"/><attr format="color|reference" name="material_drawer_secondary_text"/><attr format="color|reference" name="material_drawer_hint_text"/><attr format="color|reference" name="material_drawer_hint_icon"/><attr format="color|reference" name="material_drawer_divider"/><attr format="color|reference" name="material_drawer_selected"/><attr format="color|reference" name="material_drawer_selected_text"/><attr format="color|reference" name="material_drawer_header_selection_text"/></declare-styleable>
+    <declare-styleable name="MaterialFavoriteButton"><attr format="integer" name="mfb_size"/><attr format="boolean" name="mfb_animate_favorite"/><attr format="boolean" name="mfb_animate_unfavorite"/><attr format="integer" name="mfb_padding"/><attr format="integer" name="mfb_favorite_image"/><attr format="integer" name="mfb_not_favorite_image"/><attr format="integer" name="mfb_rotation_duration"/><attr format="integer" name="mfb_rotation_angle"/><attr format="integer" name="mfb_bounce_duration"/><attr format="enum" name="mfb_color"><enum name="black" value="0"/><enum name="white" value="1"/></attr><attr format="enum" name="mfb_type"><enum name="star" value="0"/><enum name="heart" value="1"/></attr></declare-styleable>
     <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="buttonTint"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction">
@@ -1179,6 +1191,9 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
     <dimen name="appIntro2BottomBarHeight">80dp</dimen>
     <dimen name="appIntroBottomBarHeight">64dp</dimen>
     <dimen name="appIntroDefaultPaddingBottom">16dp</dimen>
@@ -1197,6 +1212,8 @@
     <dimen name="bb_default_elevation">8dp</dimen>
     <dimen name="bb_fake_shadow_height">4dp</dimen>
     <dimen name="bb_height">56dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -1292,6 +1309,17 @@
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_margin">10dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -1300,6 +1328,9 @@
     <item format="float" name="hint_pressed_alpha_material_dark" type="dimen">0.70</item>
     <item format="float" name="hint_pressed_alpha_material_light" type="dimen">0.54</item>
     <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
@@ -1415,6 +1446,8 @@
     <dimen name="place_autocomplete_progress_horizontal_margin">16dp</dimen>
     <dimen name="place_autocomplete_progress_size">24dp</dimen>
     <dimen name="place_autocomplete_separator_start">72dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
     <dimen name="tool_bar_top_padding">0dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
@@ -1486,6 +1519,7 @@
     <integer name="mr_controller_volume_group_list_fade_in_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
     <integer name="show_password_duration">200</integer>
+    <integer name="slide_animation_duration">300</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="Cancel">Cancel</string>
     <string name="Clear">Clear</string>
@@ -1527,6 +1561,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="action_add_favourite">Add Favourite</string>
     <string name="action_settings">Settings</string>
     <string name="address">Address</string>
     <string name="app_intro_done_button">DONE</string>
@@ -1737,7 +1772,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="permission_rationale_message">This permission is needed for getting your location</string>
     <string name="permission_rationale_title">We need this permission</string>
-    <string name="pick_location_again">Pick Location Again</string>
+    <string name="pick_location_again">Change Location</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="place_details">&lt;b>%1$s&lt;/b>&lt;br/>&lt;i>Place Id: %2$s&lt;/i>&lt;br/>Address: %3$s&lt;br/>Phone: %4$s&lt;br/>Website: %5$s</string>
@@ -1748,7 +1783,7 @@
     <string name="s5">Create calendar event</string>
     <string name="s6">Allow Ad to create a calendar event?</string>
     <string name="save_and_proceed">save and proceed</string>
-    <string name="save_delivery_location">Save delivery Location</string>
+    <string name="save_delivery_location">Save Delivery Location</string>
     <string name="search_menu_title">Search</string>
     <string name="selected_place">Last Selected Place:</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -1845,13 +1880,21 @@
     <style name="AppIntroDefaultText" parent="TextAppearance.AppCompat.Body1">
         <item name="android:textColor">@android:color/white</item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        
+    <style name="AppTheme" parent="AppTheme.Base">
+
+
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -4010,7 +4053,7 @@
         <item name="externalRouteEnabledDrawable">@drawable/mr_button_dark</item>
     </style>
     <style name="buttonPrimaryStyle" parent="@style/Widget.AppCompat.Button.Borderless">
-        
+        <item name="android:background">@drawable/button_primary_action_ripple</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/whilte</item>
         <item name="android:textStyle">bold</item>

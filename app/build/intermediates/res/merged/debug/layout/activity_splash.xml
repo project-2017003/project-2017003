@@ -63,12 +63,15 @@
                 android:lines="2"
                 android:paddingTop="20dp"
                 android:text="@string/No_network_connection"
+                style="@style/buttonPrimaryStyle"
+
                 android:textColor="@color/semi_light_transparent"
                 android:textSize="18sp"
                 android:textStyle="normal"/>
 
             <Button
                 android:id="@+id/splash_re_run_btn"
+
                 style="@style/buttonPrimaryStyle"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -109,23 +112,25 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
 
-                android:visibility="gone">
+                >
 
             <custom_font.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Already registered?"
+                style="@style/buttonPrimaryStyle"
+
                 android:gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="25sp"
                 android:textColor="@color/md_white_1000"/>
 
                 <custom_font.MyTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Login"
-                    android:gravity="center"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    android:textColor="@color/md_red_300"/>
+                    android:textColor="@color/md_white_1000"/>
 
 
         </LinearLayout>
@@ -147,7 +152,7 @@
             tools:visibility="gone">
 
             <LinearLayout
-                android:layout_width="290dp"
+                android:layout_width="290sp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -160,6 +165,8 @@
                     android:paddingBottom="@dimen/base_margin_vertical"
                     android:paddingTop="@dimen/base_margin_vertical"
                     android:text="@string/save_delivery_location"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
                     android:textColor="@color/whilte"
                     android:textSize="18sp"/>
 
@@ -177,6 +184,9 @@
                 android:id="@+id/got_address"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:textColorHint="@color/colorPrimaryLight">
 
@@ -193,13 +203,22 @@
                     android:paddingRight="@dimen/base_margin_horizontal_half"
                     android:paddingStart="@dimen/base_margin_horizontal" />
             </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="290sp"
+                android:layout_height="0.5dp"
+                android:background="#a9b0c3"
+                android:layout_marginTop="10dp"
+                >
+            </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/house_flat"
-                android:layout_width="290dp"
+                android:layout_width="290sp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
                 android:textColorHint="@color/colorPrimaryLight">
 
                 <EditText
@@ -216,27 +235,41 @@
                     android:paddingStart="@dimen/base_margin_horizontal"
                     android:singleLine="true"/>
             </android.support.design.widget.TextInputLayout>
-
+            <LinearLayout
+                android:layout_width="290sp"
+                android:layout_height="0.5dp"
+                android:background="#a9b0c3"
+                android:layout_marginTop="10dp"
+                >
+            </LinearLayout>
             <TextView
                 android:id="@+id/pick_location_again"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-light"
                 android:padding="16dp"
                 android:text="@string/pick_location_again"
+                android:textStyle="italic"
                 android:textColor="@color/whilte"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                style="@style/buttonPrimaryStyle"
+
                 tools:targetApi="jelly_bean" />
+
+
 
             <Button
                 android:id="@+id/save_and_proceed"
                 style="@style/buttonPrimaryStyle"
                 android:layout_width="290dp"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+
                 android:text="@string/save_and_proceed"/>
         </LinearLayout>
 

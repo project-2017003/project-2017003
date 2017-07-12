@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:fancy="http://schemas.android.com/apk/res-auto"
 
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,11 +25,11 @@
 
         <VideoView android:id="@+id/videoView1"
             android:layout_width="fill_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_height="fill_parent"
             android:layout_alignParentBottom="true"
-            android:layout_height="fill_parent">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
         </VideoView>
 
 
@@ -57,18 +56,21 @@
             android:paddingTop="10dp">
 
             <TextView
+                style="@style/buttonPrimaryStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:lines="2"
                 android:paddingTop="20dp"
                 android:text="@string/No_network_connection"
+
                 android:textColor="@color/semi_light_transparent"
                 android:textSize="18sp"
                 android:textStyle="normal"/>
 
             <Button
                 android:id="@+id/splash_re_run_btn"
+
                 style="@style/buttonPrimaryStyle"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
@@ -94,13 +96,13 @@
             <mehdi.sakout.fancybuttons.FancyButton
                 android:id="@+id/splash_continue"
                 style="@style/buttonPrimaryStyle"
-                android:background="@color/md_red_300"
                 android:layout_width="290dp"
-
                 android:layout_height="wrap_content"
-                android:text="SET DELIVERY LOCATION"
 
+                android:background="@color/md_red_300"
                 android:paddingTop="10dp"
+
+                android:text="SET DELIVERY LOCATION"
 
                 tools:visibility="visible"/>
             <LinearLayout
@@ -109,23 +111,25 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
 
-                android:visibility="gone">
+                >
 
             <custom_font.MyTextView
+                style="@style/buttonPrimaryStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Already registered?"
+                android:layout_marginTop="25sp"
+
                 android:gravity="center"
-                android:layout_marginTop="10dp"
+                android:text="Already registered?"
                 android:textColor="@color/md_white_1000"/>
 
                 <custom_font.MyTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Login"
-                    android:gravity="center"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    android:textColor="@color/md_red_300"/>
+                    android:text="Login"
+                    android:textColor="@color/md_white_1000"/>
 
 
         </LinearLayout>
@@ -147,7 +151,7 @@
             tools:visibility="gone">
 
             <LinearLayout
-                android:layout_width="290dp"
+                android:layout_width="290sp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -160,8 +164,10 @@
                     android:paddingBottom="@dimen/base_margin_vertical"
                     android:paddingTop="@dimen/base_margin_vertical"
                     android:text="@string/save_delivery_location"
+                    android:textAllCaps="true"
                     android:textColor="@color/whilte"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <ImageButton
                     android:id="@+id/close_button"
@@ -178,34 +184,45 @@
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
                 android:textColorHint="@color/colorPrimaryLight">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/whilte"
-
                     android:hint="@string/address"
 
                     android:maxLines="1"
+
                     android:paddingEnd="@dimen/base_margin_horizontal_half"
                     android:paddingLeft="@dimen/base_margin_horizontal"
                     android:paddingRight="@dimen/base_margin_horizontal_half"
-                    android:paddingStart="@dimen/base_margin_horizontal" />
+                    android:paddingStart="@dimen/base_margin_horizontal"
+                    android:textColor="@color/whilte" />
             </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="290sp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#a9b0c3"
+                >
+            </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/house_flat"
-                android:layout_width="290dp"
+                android:layout_width="290sp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
                 android:textColorHint="@color/colorPrimaryLight">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/whilte"
                     android:hint="@string/house_flat_no"
                     android:imeActionId="124"
                     android:imeOptions="actionSend"
@@ -214,21 +231,33 @@
                     android:paddingLeft="@dimen/base_margin_horizontal"
                     android:paddingRight="@dimen/base_margin_horizontal_half"
                     android:paddingStart="@dimen/base_margin_horizontal"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:textColor="@color/whilte"/>
             </android.support.design.widget.TextInputLayout>
-
+            <LinearLayout
+                android:layout_width="290sp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#a9b0c3"
+                >
+            </LinearLayout>
             <TextView
                 android:id="@+id/pick_location_again"
+                style="@style/buttonPrimaryStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-light"
                 android:padding="16dp"
                 android:text="@string/pick_location_again"
                 android:textColor="@color/whilte"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                android:textStyle="italic"
+
                 tools:targetApi="jelly_bean" />
+
+
 
             <Button
                 android:id="@+id/save_and_proceed"
@@ -236,7 +265,10 @@
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+
                 android:text="@string/save_and_proceed"/>
         </LinearLayout>
 

@@ -1,18 +1,4 @@
-/*******************************************************************************
- * Copyright (C) 2016 Business Factory, s.r.o.
- * <p>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *******************************************************************************/
+
 package com.optimustechproject2017;
 
 
@@ -47,65 +33,37 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.firebase.auth.FirebaseAuth;
 
-
 import mehdi.sakout.fancybuttons.FancyButton;
 import timber.log.Timber;
 
 public class SplashActivity extends AppCompatActivity   {
     public static final String REFERRER = "referrer";
     private static final String TAG = SplashActivity.class.getSimpleName();
+    int PLACE_PICKER_REQUEST = 1;
+    TextInputLayout addresslayout,houselayout;
     private VideoView mVV;
     private FirebaseAuth auth;
-
-    int PLACE_PICKER_REQUEST = 1;
-
     private Activity activity;
     private ProgressDialog progressDialog;
    /**
      * Indicates if layout has been already created.
      */
     private boolean layoutCreated = false;
-
 private boolean appintro = true;
     /**
      * Button allowing selection of shop during fresh start.
      */
     private FancyButton continuebutton;
-
     /**
      * Indicates that window has been already detached.
      */
     private boolean windowDetached = false;
-
     // Possible layouts
     private View layoutIntroScreen;
     private View layoutContent;
     private View layoutContentNoConnection;
     private View layoutContentcontinue;
     private View layoutsetAdddress;
-    TextInputLayout addresslayout,houselayout;
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Timber.tag(TAG);
-        activity = this;
-        setStatusBarTranslucent(true);
-
-        // init loading dialog
-        progressDialog = generateProgressDialog(this, false);
-        init();
-    }
-
-    protected void setStatusBarTranslucent(boolean makeTranslucent) {
-        if (makeTranslucent) {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        } else {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        }
-    }
-
-
-
 
     /**
      * Generate top layer progress indicator.
@@ -119,6 +77,31 @@ private boolean appintro = true;
         progressDialog.setMessage(context.getString(R.string.Loading));
         progressDialog.setCancelable(cancelable);
         return progressDialog;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Timber.tag(TAG);
+        activity = this;
+        setStatusBarTranslucent(true);
+
+        // init loading dialog
+        progressDialog = generateProgressDialog(this, false);
+        init();
+    }
+
+    protected void setStatusBarTranslucent(boolean makeTranslucent) {
+        if (makeTranslucent) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            }
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            }
+        }
     }
 
     /**
@@ -209,8 +192,11 @@ startMainActivity(null);
                     addres= addresslayout.getEditText().getText().toString();
                     hou = houselayout.getEditText().getText().toString();
 SettingsMy.setaddress(addres,hou);
+
                         startActivity(new Intent(SplashActivity.this,MainActivity.class));
-                       finish();
+                        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+
+                        finish();
 
 
                     }
@@ -500,4 +486,34 @@ addresslayout.getEditText().setText(address);
     }
 
 
-}
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransitionExit();
+    }
+
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransitionExit();
+    }
+
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
+        overridePendingTransitionEnter();
+    }
+
+    protected void overridePendingTransitionEnter() {
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+    }
+
+    protected void overridePendingTransitionExit() {
+    }
+
+
+
+
+
+    }

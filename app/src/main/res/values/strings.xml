@@ -57,9 +57,10 @@
     <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
     <string name="title_activity_delivery_address">DeliveryAddress</string>
     <string name="save_and_proceed">save and proceed</string>
-    <string name="pick_location_again">Pick Location Again</string>
+    <string name="pick_location_again">Change Location</string>
     <string name="house_flat_no">HOUSE/FLAT NO.</string>
     <string name="address">Address</string>
-    <string name="save_delivery_location">Save delivery Location</string>
+    <string name="save_delivery_location">Save Delivery Location</string>
+    <string name="action_add_favourite">Add Favourite</string>
 
 </resources>

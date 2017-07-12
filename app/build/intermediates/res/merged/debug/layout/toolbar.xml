@@ -5,8 +5,8 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    app:elevation="5dp"
-    android:background="@color/colorPrimaryDark"
+    app:elevation="15dp"
+    android:background="@color/whilte"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     app:layout_scrollFlags="scroll|enterAlways"
     app:layout_collapseMode="pin">
@@ -21,12 +21,12 @@
 
 
             <TextView
-                android:id="@+id/editText"
+                android:id="@+id/rest_deliverytexy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="RESTARENTS DELEVERING TO"
-                android:textColor="@color/whilte"
+                android:textColor="@color/semi_light_transparent"
                 android:textSize="12sp"
                 android:textStyle="bold"
 
@@ -34,7 +34,7 @@
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
@@ -45,15 +45,17 @@
                     android:id="@+id/addre"
                     android:paddingTop="3sp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="1"
 
                     android:ems="10"
-                    android:textSize="17sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="@color/whilte"
+                    android:textColor="@color/black_transparent_70percent"
 
  />
+
+
 
 
                 <ImageView
@@ -61,6 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_expand_more_black_18dp" />
+
             </LinearLayout>
 
 
