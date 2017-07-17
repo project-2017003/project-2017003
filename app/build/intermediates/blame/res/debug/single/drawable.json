@@ -452,6 +452,10 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_background.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\drawable\\notification_background.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_light.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable\\mr_button_light.xml"
     },
@@ -558,6 +562,10 @@
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_background.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\drawable\\item_background.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bb_bottom_bar_top_shadow.xml",

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_light.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\10bbd464a0024be64dd1512af104b9e563a022ac\\output\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\bdba08b31b8c77d37f8d6f88d4e9e3ef27008392\\output\\res\\drawable-hdpi-v4\\cast_ic_notification_2.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_standard_off_client.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\cbb881073978d8fff27eaf4ddfdda1b141009c30\\output\\res\\drawable-hdpi-v4\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disconnected_dark.png",

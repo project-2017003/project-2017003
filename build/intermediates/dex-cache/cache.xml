@@ -3,11 +3,20 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\HemanthKandula\.android\build-cache\e08234d36ec7154201e3a8669dfe1998df16b596\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c7bd665ce42701f24486b94a0e199cd693bcaad6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e4eee6f9fbf72c1f56b4500e678714203d49dad8">
+        sha1="ac80ff8f6fe3f43e58182c01f636f08ca48f6211">
         <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_216a7af4a126c6a1968701cc8755ae298826c5b6\classes.dex" />
     </item>
     <item

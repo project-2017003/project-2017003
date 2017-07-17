@@ -8,12 +8,12 @@
         "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\ordertabe_1.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\material_drawer_item_secondary_toggle.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6dffcb10b97dfbcf993d13e6982cb56e7b3c566e\\output\\res\\layout\\material_drawer_item_secondary_toggle.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\layout\\design_navigation_item_subheader.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_intro_content.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\4c59dc3758bbd0df637f9c23a75325d48cdb3f58\\output\\res\\layout\\fragment_intro_content.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
@@ -44,16 +44,16 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
-        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\toolbar.xml"
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_card_small.xml",
         "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\list_item_card_small.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
@@ -94,6 +94,10 @@
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_orders.xml",
         "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\fragment_orders.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom_navigation_small_item.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\layout\\bottom_navigation_small_item.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
@@ -428,6 +432,10 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_fragment.xml",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\layout\\activity_search_fragment.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -490,6 +498,10 @@
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom_navigation_item.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\layout\\bottom_navigation_item.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout\\render_type_text.xml",

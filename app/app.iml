@@ -165,6 +165,7 @@
     <orderEntry type="library" exported="" scope="TEST" name="runner-0.5" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="espresso-idling-resource-2.2.2" level="project" />
     <orderEntry type="library" exported="" name="firebase-dynamic-links-11.0.1" level="project" />
+    <orderEntry type="library" exported="" name="ahbottomnavigation-2.0.6" level="project" />
     <orderEntry type="library" exported="" name="firebase-crash-11.0.1" level="project" />
     <orderEntry type="library" exported="" name="transition-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-appinvite-11.0.1" level="project" />
@@ -194,7 +195,6 @@
     <orderEntry type="library" exported="" name="play-services-auth-api-phone-11.0.1" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.3.2" level="project" />
     <orderEntry type="library" exported="" name="fancybuttons-1.8.3" level="project" />
-    <orderEntry type="library" exported="" name="bottom-bar-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="design-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-tagmanager-api-11.0.1" level="project" />

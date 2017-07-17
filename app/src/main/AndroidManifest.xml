@@ -61,7 +61,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBKZsgd4QkF9Cv5XWTKaXkIsCQimW6CAl8" />
-
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyD9h_wr7rKzhnREbbEWNmHkCaTTT58QsRo" />
@@ -74,12 +73,15 @@
             android:label="@string/title_activity_delivery_address"
             android:theme="@style/AppTheme" />
         <activity android:name=".location.test">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+        <activity android:name=".fragments.Search_fragment"></activity>
     </application>
 
 </manifest>

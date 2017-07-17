@@ -1,8 +1,8 @@
 package com.optimustechproject2017;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +12,15 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.optimustechproject2017.adapter.CardViewAdapter;
 import com.optimustechproject2017.adapter.FeedProperties;
 import com.optimustechproject2017.adapter.NavigationBaseAdapter;
 import com.optimustechproject2017.adapter.SliderLayout;
+import com.optimustechproject2017.fragments.Search_fragment;
 import com.optimustechproject2017.fragments.homefragment;
 import com.optimustechproject2017.fragments.ordersfragment;
-import com.roughike.bottombar.OnTabReselectListener;
 
 import java.util.ArrayList;
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     // private RecyclerView.LayoutManager mLayoutManager;
     private AutoCompleteTextView autoComplete;
     private CardViewAdapter mAdapter;
+    private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
 
     @Override
     public void onBackPressed() {
@@ -70,43 +73,74 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        com.roughike.bottombar.BottomBar bottomBar = (com.roughike.bottombar.BottomBar)
-                findViewById(R.id.bottomBar);
+//        com.roughike.bottombar.BottomBar bottomBar = (com.roughike.bottombar.BottomBar)
+//                findViewById(R.id.bottomBar);
+
+        AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
+
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem("Home", R.drawable.home, R.color.black_transparent_70percent);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.search_menu_title, R.drawable.search, R.color.black_transparent_70percent);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem("Kart", R.drawable.cart, R.color.black_transparent_70percent);
+
+        AHBottomNavigationItem item4 = new AHBottomNavigationItem("Account", R.drawable.account, R.color.black_transparent_70percent);
+        bottomNavigationItems.add(item1);
+        bottomNavigationItems.add(item2);
+        bottomNavigationItems.add(item3);
+        bottomNavigationItems.add(item4);
+
+        bottomNavigation.addItems(bottomNavigationItems);
+
+        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#FEFEFE"));
+
+        bottomNavigation.setAccentColor(Color.parseColor("#F63D2B"));
+        bottomNavigation.setInactiveColor(Color.parseColor("#747474"));
+
+
+        bottomNavigation.setForceTint(true);
+
+        bottomNavigation.setTranslucentNavigationEnabled(true);
+        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.SHOW_WHEN_ACTIVE);
+
+
+        bottomNavigation.setColored(true);
+
+        bottomNavigation.setCurrentItem(1);
 
 
 
-        bottomBar.setOnTabReselectListener(new OnTabReselectListener() {
+
+
+
+
+
+
+       //  Set listeners
+        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
-            public void onTabReSelected(@IdRes int tabId) {
+            public boolean onTabSelected(int position, boolean wasSelected) {
 
                 Fragment selectedFragment = null;
 
+                // Do something cool here...
+switch (position){
+
+    case 0:          {           selectedFragment = homefragment.newInstance();break;}
+
+    case 1:          {           selectedFragment = Search_fragment.newInstance();break;}
+
+    case 2:          {           selectedFragment = ordersfragment.newInstance();break;}
+
+    case 3:          {           selectedFragment = homefragment.newInstance();
+        break;}
 
 
 
-                if (tabId == R.id.tab_home) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                    selectedFragment = homefragment.newInstance();
-
-                }
-                if (tabId == R.id.tab_search) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                    selectedFragment = homefragment.newInstance();
-
-                }   if (tabId == R.id.tab_orders) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                    selectedFragment = ordersfragment.newInstance();
-
-                }   if (tabId == R.id.tab_Account) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                    selectedFragment = homefragment.newInstance();
 
 
-                }
+}
+
+
+
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame_layout, selectedFragment);
@@ -114,25 +148,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+                return true;
             }
+
+
+
         });
 
 
-
-
-        //Manually displaying the first fragment - one time only
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, homefragment.newInstance());
         transaction.commit();
 
-        //Used to select an item programmatically
-        //bottomNavigationView.getMenu().getItem(2).setChecked(true);
 
 
-
-
-
-
+        bottomNavigation.setOnNavigationPositionListener(new AHBottomNavigation.OnNavigationPositionListener() {
+            @Override public void onPositionChange(int y) {
+                // Manage the new y position
+            }
+        });
 
 
 

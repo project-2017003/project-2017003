@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-87:12
 	package
 		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
@@ -69,7 +69,7 @@ ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\mai
 	android:name
 		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:15:5-83:19
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:15:5-85:19
 MERGED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:26:5-31:19
 MERGED from [com.github.apl-devs:appintro:v4.2.0] C:\Users\HemanthKandula\.android\build-cache\4c59dc3758bbd0df637f9c23a75325d48cdb3f58\output\AndroidManifest.xml:11:5-47
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HemanthKandula\.android\build-cache\74191ace9cef83938aa476c3b4110e0bfb6a3c56\output\AndroidManifest.xml:9:5-20
@@ -116,6 +116,7 @@ MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.an
 MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\56d1f7aa38c371dbeb8dc0dbb78e9f8729cc1bcb\output\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.github.medyo:fancybuttons:1.8.3] C:\Users\HemanthKandula\.android\build-cache\1e18202785192872c825e1f08d696642de03e685\output\AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\HemanthKandula\.android\build-cache\e08234d36ec7154201e3a8669dfe1998df16b596\output\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\HemanthKandula\.android\build-cache\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\output\AndroidManifest.xml:29:5-20
@@ -223,29 +224,33 @@ ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\mai
 	android:name
 		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:62:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:65:9-67:71
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:64:9-66:71
 	android:value
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:67:13-68
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:66:13-68
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:66:13-62
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:65:13-62
 activity#com.optimustechproject2017.location.place
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:69:9-71:59
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:68:9-70:59
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:71:13-56
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:70:13-56
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:70:13-43
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:69:13-43
 activity#com.optimustechproject2017.location.DeliveryAddress
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:72:9-75:47
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:71:9-74:47
 	android:label
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:74:13-68
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:73:13-68
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:75:13-44
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:74:13-44
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:73:13-53
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:72:13-53
 activity#com.optimustechproject2017.location.test
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:76:9-82:20
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:75:9-83:20
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:76:19-48
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:75:19-48
+activity#com.optimustechproject2017.fragments.Search_fragment
+ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:84:9-72
+	android:name
+		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:84:19-60
 uses-sdk
 INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mikepenz:materialdrawer:5.9.1] C:\Users\HemanthKandula\.android\build-cache\6dffcb10b97dfbcf993d13e6982cb56e7b3c566e\output\AndroidManifest.xml:8:5-10:41
@@ -310,7 +315,7 @@ MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\HemanthKandula\.an
 MERGED from [com.google.firebase:firebase-auth:11.0.1] C:\Users\HemanthKandula\.android\build-cache\56d1f7aa38c371dbeb8dc0dbb78e9f8729cc1bcb\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\HemanthKandula\.android\build-cache\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\output\AndroidManifest.xml:17:5-43
 MERGED from [com.github.medyo:fancybuttons:1.8.3] C:\Users\HemanthKandula\.android\build-cache\1e18202785192872c825e1f08d696642de03e685\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\HemanthKandula\.android\build-cache\137c34328755920c1dc8fb2537c4b0570ded2ae9\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\HemanthKandula\.android\build-cache\e08234d36ec7154201e3a8669dfe1998df16b596\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:transition:25.3.1] C:\Users\HemanthKandula\.android\build-cache\0afb23fcf9462301d361e7327156bb4bf659e5e7\output\AndroidManifest.xml:20:5-44
 MERGED from [com.github.ivbaranov:materialfavoritebutton:0.1.4] C:\Users\HemanthKandula\.android\build-cache\66439e763874da6660cee612076e171667ccc760\output\AndroidManifest.xml:7:5-9:41
@@ -353,7 +358,7 @@ ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\
 	android:name
 		ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-85:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-87:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:9-232
 	android:configChanges

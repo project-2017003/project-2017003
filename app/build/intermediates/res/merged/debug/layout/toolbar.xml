@@ -5,11 +5,11 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    app:elevation="15dp"
     android:background="@color/whilte"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:elevation="15dp"
+    app:layout_collapseMode="pin"
     app:layout_scrollFlags="scroll|enterAlways"
-    app:layout_collapseMode="pin">
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -43,15 +43,15 @@
 
                 <TextView
                     android:id="@+id/addre"
-                    android:paddingTop="3sp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:ems="10"
                     android:maxLines="1"
 
-                    android:ems="10"
+                    android:paddingTop="3sp"
+                    android:textColor="@color/black_transparent_70percent"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black_transparent_70percent"
 
  />
 

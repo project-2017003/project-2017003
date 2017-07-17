@@ -23,6 +23,7 @@ import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -32,6 +33,7 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.firebase.auth.FirebaseAuth;
+import com.optimustechproject2017.auth.LoginActivity;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 import timber.log.Timber;
@@ -149,6 +151,14 @@ startMainActivity(null);
             layoutContentNoConnection = findViewById(R.id.splash_content_no_connection);
             layoutContentcontinue= findViewById(R.id.splash_content_continue);
             layoutsetAdddress =findViewById(R.id.splash_set_address);
+            LinearLayout alreadylogin = (LinearLayout) findViewById(R.id.already_login);
+            alreadylogin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                    finish();
+                }
+            });
 
             final Button Save_proceed =(Button)findViewById(R.id.save_and_proceed) ;
 
@@ -191,7 +201,7 @@ startMainActivity(null);
 
                     addres= addresslayout.getEditText().getText().toString();
                     hou = houselayout.getEditText().getText().toString();
-SettingsMy.setaddress(addres,hou);
+                    SettingsMy.setaddress(addres,hou);
 
                         startActivity(new Intent(SplashActivity.this,MainActivity.class));
                         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);

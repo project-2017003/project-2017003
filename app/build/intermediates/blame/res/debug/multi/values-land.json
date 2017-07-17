@@ -7,27 +7,8 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 60,
-                    "endOffset": 111
-                },
-                "from": {
-                    "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\137c34328755920c1dc8fb2537c4b0570ded2ae9\\output\\res\\values-land\\values-land.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 60,
-                        "endOffset": 111
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 116,
                     "endColumn": 69,
-                    "endOffset": 181
+                    "endOffset": 120
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-land\\values-land.xml",
@@ -42,11 +23,11 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 186,
+                    "startOffset": 125,
                     "endColumn": 63,
-                    "endOffset": 245
+                    "endOffset": 184
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-land\\values-land.xml",
@@ -61,11 +42,11 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 250,
+                    "startOffset": 189,
                     "endColumn": 70,
-                    "endOffset": 316
+                    "endOffset": 255
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-land\\values-land.xml",
@@ -80,11 +61,11 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 321,
+                    "startOffset": 260,
                     "endColumn": 67,
-                    "endOffset": 384
+                    "endOffset": 323
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\values-land\\values-land.xml",
@@ -99,11 +80,11 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 389,
+                    "startOffset": 328,
                     "endColumn": 84,
-                    "endOffset": 469
+                    "endOffset": 408
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -118,11 +99,11 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 474,
+                    "startOffset": 413,
                     "endColumn": 83,
-                    "endOffset": 553
+                    "endOffset": 492
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -137,11 +118,11 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 558,
+                    "startOffset": 497,
                     "endColumn": 73,
-                    "endOffset": 627
+                    "endOffset": 566
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -156,11 +137,11 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 632,
+                    "startOffset": 571,
                     "endColumn": 72,
-                    "endOffset": 700
+                    "endOffset": 639
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -175,11 +156,11 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 705,
+                    "startOffset": 644,
                     "endColumn": 98,
-                    "endOffset": 799
+                    "endOffset": 738
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -194,11 +175,11 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 804,
+                    "startOffset": 743,
                     "endColumn": 94,
-                    "endOffset": 894
+                    "endOffset": 833
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\values-land\\values.xml",
@@ -213,11 +194,11 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 899,
+                    "startOffset": 838,
                     "endColumn": 74,
-                    "endOffset": 969
+                    "endOffset": 908
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-land\\values-land.xml",
@@ -232,11 +213,11 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 974,
+                    "startOffset": 913,
                     "endColumn": 77,
-                    "endOffset": 1047
+                    "endOffset": 986
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-land\\values-land.xml",
@@ -251,11 +232,11 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1052,
+                    "startOffset": 991,
                     "endColumn": 74,
-                    "endOffset": 1122
+                    "endOffset": 1061
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\values-land\\values-land.xml",
@@ -270,12 +251,12 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1127,
-                    "endLine": 19,
+                    "startOffset": 1066,
+                    "endLine": 18,
                     "endColumn": 12,
-                    "endOffset": 1304
+                    "endOffset": 1243
                 },
                 "from": {
                     "file": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\values-land\\values-land.xml",

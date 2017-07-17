@@ -104,6 +104,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
+        <activity android:name="com.optimustechproject2017.fragments.Search_fragment" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:launchMode="singleInstance"

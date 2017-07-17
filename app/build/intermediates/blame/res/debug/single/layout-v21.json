@@ -4,6 +4,10 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\bottom_navigation_small_item.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\layout-v21\\bottom_navigation_small_item.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
@@ -22,5 +26,9 @@
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\bottom_navigation_item.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\layout-v21\\bottom_navigation_item.xml"
     }
 ]

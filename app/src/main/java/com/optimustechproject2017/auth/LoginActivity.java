@@ -37,27 +37,27 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.optimustechproject2017.*;
+import com.optimustechproject2017.R;
 
 import java.util.Arrays;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText inputEmail, inputPassword;
-    private FirebaseAuth auth;
-    private ProgressBar progressBar;
-    private custom_font.MyTextView btnSignup, btnLogin, btnReset;
-
-    public ImageView fb_login ,googele_login, twittte_login;
     private static final String TAG = "SignInActivity";
     private static final int RC_SIGN_IN = 0 ;
-    private FirebaseAuth.AuthStateListener mAuthListener;
-    private GoogleApiClient mGoogleApiClient;
+    public ImageView fb_login ,googele_login, twittte_login;
     public LoginButton loginButton;
 //    private Button signOutButton;
 //    private TextView nameTextView;
 //    private TextView emailTextView;
 CallbackManager callbackManager;
+    private EditText inputEmail, inputPassword;
+    private FirebaseAuth auth;
+    private ProgressBar progressBar;
+    private custom_font.MyTextView btnSignup, btnLogin, btnReset;
+    private FirebaseAuth.AuthStateListener mAuthListener;
+    private GoogleApiClient mGoogleApiClient;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,6 +171,9 @@ CallbackManager callbackManager;
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
+getdetails();
+
 //                    if(user.getDisplayName() != null)
 //                        nameTextView.setText("HI " + user.getDisplayName().toString());
 //                    emailTextView.setText(user.getEmail().toString());
@@ -272,6 +275,21 @@ CallbackManager callbackManager;
                         });
             }
         });
+
+
+
+
+    }
+
+    private void getdetails() {
+
+
+
+
+
+
+
+
 
 
 

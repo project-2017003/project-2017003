@@ -12,6 +12,10 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\item_background.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\e08234d36ec7154201e3a8669dfe1998df16b596\\output\\res\\drawable-v21\\item_background.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
