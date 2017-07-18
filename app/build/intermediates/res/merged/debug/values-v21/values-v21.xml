@@ -5,6 +5,7 @@
     <dimen name="notification_main_column_padding_top">0dp</dimen>
     <dimen name="notification_media_narrow_margin">12dp</dimen>
     <dimen name="tool_bar_top_padding">25dp</dimen>
+    <item name="msf_interpolator" type="interpolator">@android:interpolator/fast_out_slow_in</item>
     <style name="AppIntroButtonStyleCompat" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>

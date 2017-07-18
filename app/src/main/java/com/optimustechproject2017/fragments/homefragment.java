@@ -12,6 +12,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -36,6 +37,7 @@ import com.optimustechproject2017.Adapters.AlbumsAdapter;
 import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
 import com.optimustechproject2017.R;
+import com.optimustechproject2017.RestarentActivity;
 import com.optimustechproject2017.SettingsMy;
 import com.optimustechproject2017.adapter.CardViewAdapter;
 import com.optimustechproject2017.adapter.FeedProperties;
@@ -180,7 +182,12 @@ public class homefragment extends Fragment implements BaseSliderView.OnSliderCli
         mDemoSlider.addOnPageChangeListener(this);
 
 
-
+mDemoSlider.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(getActivity(), RestarentActivity.class));
+    }
+});
 
 
 
@@ -225,6 +232,7 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
             @Override
             public void onClick(View view, int position) {
 
+                startActivity(new Intent(getActivity(), RestarentActivity.class));
 
                 // TestRecyclerViewAdapter album = mContentItems.get(position);
 
@@ -406,7 +414,26 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
+recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+    @Override
+    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
 
+
+        startActivity(new Intent(getActivity(), RestarentActivity.class));
+
+        return false;
+    }
+
+    @Override
+    public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+    }
+
+    @Override
+    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+    }
+});
 
 
     }

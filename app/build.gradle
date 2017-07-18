@@ -94,6 +94,13 @@ dependencies {
     compile 'jp.wasabeef:recyclerview-animators:2.2.5'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+
+
+
+    compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.1.2'
+    compile 'com.gordonwong:material-sheet-fab:1.2.1'
+
+
 }
 
 

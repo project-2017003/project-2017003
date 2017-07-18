@@ -89,22 +89,23 @@
             android:value="AIzaSyD9h_wr7rKzhnREbbEWNmHkCaTTT58QsRo" />
 
         <activity
-            android:name="com.optimustechproject2017.location.place"
+            android:name="com.optimustechproject2017.RestarentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.optimustechproject2017.location.DeliveryAddress"
-            android:label="@string/title_activity_delivery_address"
-            android:theme="@style/AppTheme" />
-        <activity android:name="com.optimustechproject2017.location.test" >
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <activity -->
+        <!-- android:name=".location.DeliveryAddress" -->
+        <!-- android:label="@string/title_activity_delivery_address" -->
+        <!-- android:theme="@style/AppTheme" /> -->
+        <!-- <activity android:name=".location.test"> -->
 
 
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name="com.optimustechproject2017.fragments.Search_fragment" />
+        <!-- &lt;!&ndash; <intent-filter> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt; -->
+
+
+        <!-- &lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt; -->
+        <!-- &lt;!&ndash; </intent-filter> &ndash;&gt; -->
+        <!-- </activity> -->
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:launchMode="singleInstance"

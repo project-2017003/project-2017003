@@ -140,6 +140,7 @@
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="album_title">#4c4c4c</color>
+    <color name="background_dim_overlay">#44000000</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -587,6 +588,7 @@
     <color name="timestamp">#a0a3a7</color>
     <color name="title">#222222</color>
     <color name="transparent">#00000000</color>
+    <color name="transperent">#00000000</color>
     <color name="viewBg">#f1f5f8</color>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -1336,7 +1338,14 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="drawer_header_height">200dp</dimen>
+    <dimen name="drawer_header_text_spacing">@dimen/keyline_spacing</dimen>
+    <dimen name="drawer_header_textsize">20sp</dimen>
+    <dimen name="fab_elevation">4dp</dimen>
+    <dimen name="fab_list_spacing">88dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_sheet_elevation">0dp</dimen>
+    <dimen name="fab_spacing">0dp</dimen>
     <dimen name="feed_item_border_width">1dp</dimen>
     <dimen name="feed_item_corner_radius">3dp</dimen>
     <dimen name="feed_item_margin">10dp</dimen>
@@ -1362,6 +1371,7 @@
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="keyline_spacing">16dp</dimen>
     <dimen name="margin_huge">64dp</dimen>
     <dimen name="margin_large">32dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
@@ -1449,6 +1459,11 @@
     <dimen name="mr_controller_volume_group_list_padding_top">16dp</dimen>
     <dimen name="mr_dialog_fixed_width_major">320dp</dimen>
     <dimen name="mr_dialog_fixed_width_minor">320dp</dimen>
+    <dimen name="note_content_spacing">16dp</dimen>
+    <dimen name="note_corner_radius">2dp</dimen>
+    <dimen name="note_spacing">4dp</dimen>
+    <dimen name="note_textsize">14sp</dimen>
+    <dimen name="note_title_textsize">24sp</dimen>
     <dimen name="notification_action_icon_size">32dp</dimen>
     <dimen name="notification_action_text_size">13sp</dimen>
     <dimen name="notification_big_circle_margin">12dp</dimen>
@@ -1474,9 +1489,35 @@
     <dimen name="place_autocomplete_progress_horizontal_margin">16dp</dimen>
     <dimen name="place_autocomplete_progress_size">24dp</dimen>
     <dimen name="place_autocomplete_separator_start">72dp</dimen>
+    <dimen name="sheet_item_image_spacing">24dp</dimen>
+    <dimen name="sheet_item_spacing">@dimen/keyline_spacing</dimen>
+    <dimen name="sheet_item_textsize">16sp</dimen>
+    <dimen name="sheet_spacing">10dp</dimen>
+    <dimen name="sheet_width">210dp</dimen>
+    <dimen name="shrine_card_inner_padding">8dp</dimen>
+    <dimen name="shrine_grid_image_height">200dp</dimen>
+    <dimen name="shrine_grid_item_margin">4dp</dimen>
+    <dimen name="shrine_grid_outer_margin">12dp</dimen>
+    <dimen name="shrine_item_image_height">292dp</dimen>
+    <dimen name="shrine_item_product_title_size">30sp</dimen>
+    <dimen name="shrine_large_margin_start">56dp</dimen>
+    <dimen name="shrine_spinner_border_width">2dp</dimen>
+    <dimen name="shrine_spinner_height">48dp</dimen>
+    <dimen name="shrine_spinner_width">212dp</dimen>
+    <dimen name="shrine_tall_toolbar_height">474dp</dimen>
+    <dimen name="shrine_toolbar_collapsed_height">36dp</dimen>
+    <dimen name="shrine_toolbar_image_offset_top">48dp</dimen>
+    <dimen name="shrine_toolbar_offset_start">124dp</dimen>
+    <dimen name="shrine_toolbar_offset_top">124dp</dimen>
+    <dimen name="shrine_toolbar_subtitle_offset_start">124dp</dimen>
+    <dimen name="shrine_toolbar_subtitle_offset_top">232dp</dimen>
+    <dimen name="snackbar_height">48dp</dimen>
+    <dimen name="snackbar_spacing">24dp</dimen>
+    <dimen name="snackbar_textsize">14sp</dimen>
     <dimen name="songs_count">12dp</dimen>
     <dimen name="songs_count_padding_bottom">5dp</dimen>
     <dimen name="tool_bar_top_padding">0dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
@@ -1547,6 +1588,7 @@
     <integer name="show_password_duration">200</integer>
     <integer name="slide_animation_duration">300</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <item name="msf_interpolator" type="interpolator">@android:interpolator/decelerate_cubic</item>
     <string name="Cancel">Cancel</string>
     <string name="Clear">Clear</string>
     <string name="Close">Close</string>
@@ -3708,6 +3750,16 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
+    <style name="TextAppearance.MaterialSheetFab.Sheet.Item" parent="">
+        <item name="android:layout_width">@dimen/sheet_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/sheet_item_spacing</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/sheet_item_textsize</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:drawablePadding">@dimen/sheet_item_image_spacing</item>
+    </style>
     <style name="TextAppearance.MediaRouter.PrimaryText" parent="TextAppearance.AppCompat.Subhead"/>
     <style name="TextAppearance.MediaRouter.SecondaryText" parent="TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.MediaRouter.Title" parent="TextAppearance.AppCompat.Title"/>
@@ -4045,6 +4097,30 @@
         <item name="passwordToggleDrawable">@drawable/design_password_eye</item>
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
+    </style>
+    <style name="Widget.MaterialSheetFab.Fab" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fab_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/fab_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/fab_spacing</item>
+        <item name="android:layout_marginRight">@dimen/fab_spacing</item>
+        <item name="android:elevation" ns2:ignore="NewApi">@dimen/fab_elevation</item>
+        <item name="android:src">@drawable/menu</item>
+        <item name="fabSize">normal</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+    <style name="Widget.MaterialSheetFab.Sheet" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/sheet_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/sheet_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/sheet_spacing</item>
+        <item name="android:layout_marginRight">@dimen/sheet_spacing</item>
+        <item name="cardBackgroundColor">@color/md_black_1000</item>
+        <item name="cardElevation">@dimen/fab_sheet_elevation</item>
+        <item name="cardMaxElevation">@dimen/fab_sheet_elevation</item>
+        <item name="contentPadding">-3dp</item>
     </style>
     <style name="Widget.Materialize.ScrimInsetsRelativeLayout" parent="">
         <item name="sirl_insetForeground">#4000</item>

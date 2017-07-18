@@ -85,13 +85,29 @@ private boolean appintro = true;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+        Log.d("kkk",SettingsMy.getadd());
+        if (SettingsMy.getadd() != null) {
+
+
+            Intent intent = new Intent(this, MainActivity.class);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY); // <= Don't save in back stack
+
+
+            this.startActivity (intent);
+            this.finishActivity (0);
+
+//            startActivity(new Intent(this,MainActivity.class));
+           finish();
+        }else{
+
         Timber.tag(TAG);
         activity = this;
         setStatusBarTranslucent(true);
 
         // init loading dialog
         progressDialog = generateProgressDialog(this, false);
-        init();
+        init();}
     }
 
     protected void setStatusBarTranslucent(boolean makeTranslucent) {

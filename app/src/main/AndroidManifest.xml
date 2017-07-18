@@ -66,22 +66,23 @@
             android:value="AIzaSyD9h_wr7rKzhnREbbEWNmHkCaTTT58QsRo" />
 
         <activity
-            android:name=".location.place"
+            android:name=".RestarentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".location.DeliveryAddress"
-            android:label="@string/title_activity_delivery_address"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".location.test">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".fragments.Search_fragment"></activity>
+        <!--<activity-->
+            <!--android:name=".location.DeliveryAddress"-->
+            <!--android:label="@string/title_activity_delivery_address"-->
+            <!--android:theme="@style/AppTheme" />-->
+        <!--<activity android:name=".location.test">-->
+
+            <!--&lt;!&ndash; <intent-filter> &ndash;&gt;-->
+            <!--&lt;!&ndash; <action android:name="android.intent.action.MAIN" /> &ndash;&gt;-->
+
+
+            <!--&lt;!&ndash; <category android:name="android.intent.category.LAUNCHER" /> &ndash;&gt;-->
+            <!--&lt;!&ndash; </intent-filter> &ndash;&gt;-->
+        <!--</activity>-->
     </application>
 
 </manifest>

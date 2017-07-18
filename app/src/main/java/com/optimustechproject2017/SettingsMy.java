@@ -1,8 +1,6 @@
 package com.optimustechproject2017;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 
 import timber.log.Timber;
@@ -134,6 +132,8 @@ public class SettingsMy {
 
 
     }
+
+
 
     public static String getadd() {
 

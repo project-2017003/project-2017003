@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="sectionedrecyclerviewadapter-1.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/995a1a23ed77d62728a30a2507dd1f6c1bf31f1c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/995a1a23ed77d62728a30a2507dd1f6c1bf31f1c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.luizgrp.sectionedrecyclerviewadapter/sectionedrecyclerviewadapter/1.1.2/cacf77dd845728654cca53b108b7a97e5d497428/sectionedrecyclerviewadapter-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
