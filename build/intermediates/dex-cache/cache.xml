@@ -21,12 +21,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\HemanthKandula\.android\build-cache\3d1c94c7bf29337b0ff7fed2a36a47c7aa2add72\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="31ca54a52de70142eb99291d6bb3ec49cd34593f">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e91b8d639c48264362f450a27e6b7c00aad464fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\HemanthKandula\.android\build-cache\0c87616abf1aace724da83f951fb3edfbf3bdc1b\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="34fc70f7f1d882154d876ea763f05977d9945699">
         <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c71a973da9f5ebe1bc86e33f7ee6fc25479fdcfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HemanthKandula\.android\build-cache\bf5a89ce98331b64cec67dd2e001df69f06d101f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="edda3910833b4f52867c8191bc5c4fff8414cc0e">
+        <dex dex="D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c7b63957a05fbd3a88b7364e1c29c41795b150dd\classes.dex" />
     </item>
     <item
         is-multidex="true"

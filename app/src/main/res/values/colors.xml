@@ -50,5 +50,7 @@
 
     <color name="timestamp">#a0a3a7</color>
     <color name="transperent">#00000000</color>
+    <color name="item_grey">#eeeeee</color>
+    <color name="textIconColorPrimary">#fff</color>
 
 </resources>

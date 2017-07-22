@@ -28,12 +28,12 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_light.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_07_light.png",
@@ -240,32 +240,32 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_dark.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_dark.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_dark.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\6d767e0e84bdc79afb7bfad4819b6997afb329bb\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_dark.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_dark.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_star_black_24dp.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\66439e763874da6660cee612076e171667ccc760\\output\\res\\drawable-xxhdpi-v4\\ic_star_black_24dp.png"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png"
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\9ee8032810b1ca7f6df4781e93c47e2de6c3d3ad\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_white_36.png",

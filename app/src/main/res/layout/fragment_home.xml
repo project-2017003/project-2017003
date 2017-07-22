@@ -93,52 +93,7 @@
                 android:orientation="vertical">
 
 
-                <com.optimustechproject2017.adapter.SliderLayout
-                    android:id="@+id/slider"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginLeft="5dp"
-                    android:background="@color/whilte"
-                    custom:pager_animation_span="1100" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/cartbutton_selector"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_weight="3"
-                        android:src="@drawable/ic_search"/>
-
-
-                    <AutoCompleteTextView
-                        android:id="@+id/autoComplete"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/text1"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@color/colorWhite1"
-                        android:hint="Search a iteams..."
-                        android:popupBackground="@color/colorWhite1"
-                        android:textColor="@color/color_texmenutop"
-                        android:textColorHint="@color/color_texmenutop"
-                        android:textCursorDrawable="@drawable/color_cursor"
-                        />
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_weight="3"
-                        android:src="@drawable/ic_action_av_mnone"/>
-                </LinearLayout>
                 <TextView
                     android:id="@+id/fav_rests_textview"
                     android:layout_width="match_parent"
@@ -150,15 +105,16 @@
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:visibility="gone" />
+                    />
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/my_recycler_view_fav"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
                     android:layout_margin="5dp"
-                    android:background="#ffffff"
-                    android:scrollbars="none"
-                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/whilte"
+                    android:visibility="visible"
                     />
 
                 <TextView
@@ -202,7 +158,6 @@
                     android:id="@+id/category_rest_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scrollbars="vertical"
                     app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 

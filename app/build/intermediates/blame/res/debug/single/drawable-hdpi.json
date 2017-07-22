@@ -60,6 +60,10 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-hdpi\\com_facebook_tooltip_black_topnub.png"
     },
     {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\email.png",
+        "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\drawable-hdpi\\email.png"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\com_facebook_tooltip_blue_xout.png",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\drawable-hdpi\\com_facebook_tooltip_blue_xout.png"
     },

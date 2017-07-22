@@ -16,6 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -32,10 +33,15 @@ import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.nshmura.snappysmoothscroller.LinearLayoutScrollVectorDetector;
+import com.nshmura.snappysmoothscroller.SnapType;
+import com.nshmura.snappysmoothscroller.SnappyLinearLayoutManager;
+import com.nshmura.snappysmoothscroller.SnappySmoothScroller;
 import com.optimustechproject2017.Adapters.Album;
 import com.optimustechproject2017.Adapters.AlbumsAdapter;
 import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
+import com.optimustechproject2017.MainActivity;
 import com.optimustechproject2017.R;
 import com.optimustechproject2017.RestarentActivity;
 import com.optimustechproject2017.SettingsMy;
@@ -59,8 +65,9 @@ import static android.app.Activity.RESULT_OK;
  * Created by HemanthKandula on 7/8/2017.
  */
 
-public class homefragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener{
+public class homefragment extends Fragment {
     static final boolean GRID_LAYOUT = false;
+
     private static final int PLACE_PICKER_REQUEST = 1 ;
     private static final int ITEM_COUNT = 100;
      RecyclerView recyclerView;
@@ -70,7 +77,7 @@ public class homefragment extends Fragment implements BaseSliderView.OnSliderCli
 
     // private RecyclerView.Adapter mAdapter;
     // private RecyclerView.LayoutManager mLayoutManager;
-    private SliderLayout mDemoSlider;
+    //private SliderLayout mDemoSlider;
     private CardView cardView;
     private ArrayList<FeedProperties> os_versions;
     private AutoCompleteTextView autoComplete;
@@ -80,9 +87,10 @@ public class homefragment extends Fragment implements BaseSliderView.OnSliderCli
 //    private EndlessRecyclerScrollListener endlessRecyclerScrollListener;
     private RecyclerView productsRecycler;
     private GridLayoutManager productsRecyclerLayoutManager;
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
+    private RecyclerView mRecyclerView,mRecyclerView_fav;
+    private RecyclerView.Adapter mAdapter,mAdapter_fav;
     private List<Album> mContentItems = new ArrayList<>();
+    private List<Album> mContentItems_fav = new ArrayList<>();
 
     public static homefragment newInstance() {
         homefragment fragment = new homefragment();
@@ -133,61 +141,63 @@ public class homefragment extends Fragment implements BaseSliderView.OnSliderCli
         initContrls( myFragmentView);
 
         initrecycler(myFragmentView);
-
-        String[] colors = getResources().getStringArray(R.array.colorList);
-
-        stringAdapter = new ArrayAdapter<String>(getActivity(), R.layout.row, colors);
+        initrecycler_fav(myFragmentView);
 
 
+//        String[] colors = getResources().getStringArray(R.array.colorList);
+//
+//        stringAdapter = new ArrayAdapter<String>(getActivity(), R.layout.row, colors);
+//
+//
+//
+//
 
+//
+//        autoComplete = (AutoCompleteTextView)  myFragmentView.findViewById(R.id.autoComplete);
+//
+//        autoComplete.setAdapter(stringAdapter);
+//
+//        autoComplete.setTextColor(Color.BLACK);
+//
+//
 
-
-
-        autoComplete = (AutoCompleteTextView)  myFragmentView.findViewById(R.id.autoComplete);
-
-        autoComplete.setAdapter(stringAdapter);
-
-        autoComplete.setTextColor(Color.BLACK);
-
-
-
-        mDemoSlider = (SliderLayout)myFragmentView.findViewById(R.id.slider);
-
-        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Healthy Food",R.drawable.b1);
-        file_maps.put("21 Tapas",R.drawable.b2);
-        file_maps.put("The Pizza Restarent",R.drawable.b3);
-        file_maps.put("In All Sizes", R.drawable.b4);
-
-
-        for(String name : file_maps.keySet()){
-            TextSliderView textSliderView = new TextSliderView(getActivity());
-            // initialize a SliderLayout
-            textSliderView
-                    .description(name)
-                    .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit)
-                    .setOnSliderClickListener(this);
-
-
-            textSliderView.bundle(new Bundle());
-            // textSliderView.getBundle().putString("extra",name);
-
-            mDemoSlider.addSlider(textSliderView);
-        }
-        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
-        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
-        mDemoSlider.setDuration(4000);
-        mDemoSlider.addOnPageChangeListener(this);
-
-
-mDemoSlider.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        startActivity(new Intent(getActivity(), RestarentActivity.class));
-    }
-});
+//        mDemoSlider = (SliderLayout)myFragmentView.findViewById(R.id.slider);
+//
+//        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
+//        file_maps.put("Healthy Food",R.drawable.b1);
+//        file_maps.put("21 Tapas",R.drawable.b2);
+//        file_maps.put("The Pizza Restarent",R.drawable.b3);
+//        file_maps.put("In All Sizes", R.drawable.b4);
+//
+//
+//        for(String name : file_maps.keySet()){
+//            TextSliderView textSliderView = new TextSliderView(getActivity());
+//            // initialize a SliderLayout
+//            textSliderView
+//                    .description(name)
+//                    .image(file_maps.get(name))
+//                    .setScaleType(BaseSliderView.ScaleType.Fit)
+//                    .setOnSliderClickListener(this);
+//
+//
+//            textSliderView.bundle(new Bundle());
+//            // textSliderView.getBundle().putString("extra",name);
+//
+//            mDemoSlider.addSlider(textSliderView);
+//        }
+//        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
+//        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+//        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
+//        mDemoSlider.setDuration(4000);
+//        mDemoSlider.addOnPageChangeListener(this);
+//
+//
+//mDemoSlider.setOnClickListener(new View.OnClickListener() {
+//    @Override
+//    public void onClick(View v) {
+//        startActivity(new Intent(getActivity(), RestarentActivity.class));
+//    }
+//});
 
 
 
@@ -202,13 +212,28 @@ mDemoSlider.setOnClickListener(new View.OnClickListener() {
     private void initrecycler(View myFragmentView) {
 
         mRecyclerView = (RecyclerView) myFragmentView.findViewById(R.id.category_rest_recycler);
-        RecyclerView.LayoutManager layoutManager;
+//        RecyclerView.LayoutManager layoutManager;
+//
+//        if (GRID_LAYOUT) {
+//            layoutManager = new GridLayoutManager(getActivity(), 2);
+//        } else {
+//            layoutManager = new LinearLayoutManager(getActivity());
+//        }
 
-        if (GRID_LAYOUT) {
-            layoutManager = new GridLayoutManager(getActivity(), 2);
-        } else {
-            layoutManager = new LinearLayoutManager(getActivity());
-        }
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()) {
+            @Override
+            public void smoothScrollToPosition(RecyclerView recyclerView, RecyclerView.State state, int position) {
+                SnappySmoothScroller scroller = new SnappySmoothScroller.Builder()
+                        .setPosition(position)
+                        .setSnapType(SnapType.CENTER)
+                        .setScrollVectorDetector(new LinearLayoutScrollVectorDetector(this))
+                        .build(recyclerView.getContext());
+
+                startSmoothScroll(scroller);
+            }
+        };
+
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
 
@@ -258,6 +283,140 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
 
         prepareAlbums();
 
+    }
+
+    private void initrecycler_fav(View myFragmentView) {
+
+        mRecyclerView_fav = (RecyclerView) myFragmentView.findViewById(R.id.my_recycler_view_fav);
+//        RecyclerView.LayoutManager layoutManager;
+//
+//        if (GRID_LAYOUT) {
+//            layoutManager = new GridLayoutManager(getActivity(), 2);
+//        } else {
+//            layoutManager = new LinearLayoutManager(getActivity());
+//        }
+//
+
+
+
+// Attach layout manager to the RecyclerView:
+       // mRecyclerView_fav.setLayoutManager(layoutManager);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity()) {
+            @Override
+            public void smoothScrollToPosition(RecyclerView recyclerView, RecyclerView.State state, int position) {
+                SnappySmoothScroller scroller = new SnappySmoothScroller.Builder()
+                        .setPosition(position)
+                        .setSnapType(SnapType.CENTER)
+                        .setScrollVectorDetector(new LinearLayoutScrollVectorDetector(this))
+                        .build(recyclerView.getContext());
+
+                startSmoothScroll(scroller);
+            }
+        };
+
+        linearLayoutManager.setOrientation(LinearLayout.HORIZONTAL);
+
+
+        mRecyclerView_fav.setLayoutManager(linearLayoutManager);
+        mRecyclerView_fav.setHasFixedSize(true);
+
+        mAdapter_fav = new AlbumsAdapter(getContext(),mContentItems_fav);
+        //mAdapter = new TestRecyclerViewAdapter(mContentItems);
+        mRecyclerView_fav.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));
+
+        final AlphaInAnimationAdapter alphaAdapter_fav = new AlphaInAnimationAdapter(mAdapter_fav);
+
+        alphaAdapter_fav.setFirstOnly(false);
+        alphaAdapter_fav.setDuration(1000);
+        alphaAdapter_fav.setInterpolator(new OvershootInterpolator(.5f));
+
+
+
+        //mAdapter = new RecyclerViewMaterialAdapter();
+        mRecyclerView_fav.setAdapter(new ScaleInAnimationAdapter(alphaAdapter_fav));
+
+
+        mRecyclerView_fav.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView_fav, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+                startActivity(new Intent(getActivity(), RestarentActivity.class));
+
+
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                //Album album = albumList.get(position);
+
+                // Toast.makeText(getApplicationContext(), album.getName() + " is selected!", Toast.LENGTH_SHORT).show();
+
+            }
+        }));
+
+        prepareAlbums_fav();
+
+    }
+
+    private void prepareAlbums_fav() {
+        int[] covers = new int[]{
+                R.drawable.a1 ,
+                R.drawable.a2,
+                R.drawable.a3,
+                R.drawable.a4,
+                R.drawable.a5,
+                R.drawable.a6,
+                R.drawable.a7,
+                R.drawable.a8,
+                R.drawable.a9,
+                R.drawable.a10,
+                R.drawable.a11
+        };
+
+//        for (int i = 0; i< mContentItems.size();i++) {
+//            System.out.println(mContentItems);
+//
+//            Album k = new Album(i,getContext());
+//            albumList.add(k);
+//
+//        }
+
+
+        Album a = new Album("Chicken", ">Item1 . Item 2 .itme 3  .Item4 ", covers[0],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("BarbequeNation",">Item1 . Item 2 .itme 3  .Item4 ", covers[1],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("BarbequeNation2",">Item1 . Item 2 .itme 3  .Item4 ", covers[2],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("BarbequeNation3",">Item1 . Item 2 .itme 3  .Item4 ", covers[3],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("BindaasRasoi", ">Item1 . Item 2 .itme 3  .Item4 ", covers[4],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("Chilis", ">Item1 . Item 2 .itme 3  .Item4 ", covers[5],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("KobeSizzlers",">Item1 . Item 2 .itme 3  .Item4 ", covers[6],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("LittleItaly",">Item1 . Item 2 .itme 3  .Item4 ", covers[7],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("Mamagoto",">Item1 . Item 2 .itme 3  .Item4 ", covers[8],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        a = new Album("PunjabGrill",">Item1 . Item 2 .itme 3  .Item4 ", covers[9],"25-30 MIN");
+        mContentItems_fav.add(a);
+        a = new Album("SigreeGlobalGrillTheSpringHotel",">Item1 . Item 2 .itme 3  .Item4 ", covers[10],"25-30 MIN");
+        mContentItems_fav.add(a);
+
+        mAdapter_fav.notifyDataSetChanged();
     }
 
 
@@ -389,8 +548,10 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
 
         recyclerView.setHasFixedSize(true);
 
-        // ListView
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+
+//        // ListView
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         //Grid View
         // recyclerView.setLayoutManager(new GridLayoutManager(this,2,1,false));
@@ -405,7 +566,18 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         recyclerView.setAdapter(mAdapter);
 
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity()) {
+            @Override
+            public void smoothScrollToPosition(RecyclerView recyclerView, RecyclerView.State state, int position) {
+                SnappySmoothScroller scroller = new SnappySmoothScroller.Builder()
+                        .setPosition(position)
+                        .setSnapType(SnapType.CENTER)
+                        .setScrollVectorDetector(new LinearLayoutScrollVectorDetector(this))
+                        .build(recyclerView.getContext());
+
+                startSmoothScroll(scroller);
+            }
+        };
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
             linearLayoutManager.setOrientation(LinearLayout.HORIZONTAL);
         } else {
@@ -414,53 +586,64 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-    @Override
-    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+//recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+//    @Override
+//    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+//
+//
+//        startActivity(new Intent(getActivity(), RestarentActivity.class));
+//
+//        return false;
+//    }
+//
+//    @Override
+//    public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+//
+//    }
+//
+//    @Override
+//    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+//
+//    }
+//});
+
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), recyclerView, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+//                if (getActivity() instanceof MainActivity)
+//                    ((MainActivity) getActivity()).onCartSelected();
+//
+
+                //startActivity(new Intent(getActivity(), RestarentActivity.class));
+
+                // TestRecyclerViewAdapter album = mContentItems.get(position);
 
 
-        startActivity(new Intent(getActivity(), RestarentActivity.class));
-
-        return false;
-    }
-
-    @Override
-    public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-
-    }
-
-    @Override
-    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
-    }
-});
+//                Intent Cl = new Intent(getContext(), ProductDetail.class);
+//                Cl.putExtra("name","name");
+//                Cl.putExtra("no",position);
+//
+//                startActivity(Cl);
 
 
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                //Album album = albumList.get(position);
+
+                // Toast.makeText(getApplicationContext(), album.getName() + " is selected!", Toast.LENGTH_SHORT).show();
+
+            }
+        }));
     }
 
     @Override
     public void onStop() {
         // To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
-        mDemoSlider.stopAutoCycle();
+        //mDemoSlider.stopAutoCycle();
         super.onStop();
     }
-    @Override
-    public void onSliderClick(BaseSliderView slider) {
 
-    }
-
-    @Override
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-    }
-
-    @Override
-    public void onPageSelected(int position) {
-
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int state) {
-
-    }
 }

@@ -87,7 +87,7 @@ private boolean appintro = true;
 
 
         Log.d("kkk",SettingsMy.getadd());
-        if (SettingsMy.getadd() != null) {
+        if (SettingsMy.getadd() != null || !SettingsMy.getadd().equals("")  ) {
 
 
             Intent intent = new Intent(this, MainActivity.class);

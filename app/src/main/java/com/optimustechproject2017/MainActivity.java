@@ -3,7 +3,9 @@ package com.optimustechproject2017;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -14,15 +16,21 @@ import android.widget.AutoCompleteTextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.google.firebase.auth.FirebaseAuth;
+import com.optimustechproject2017.Dialogs.LoginDialogFragment;
+import com.optimustechproject2017.Interfaces.LoginDialogInterface;
 import com.optimustechproject2017.adapter.CardViewAdapter;
 import com.optimustechproject2017.adapter.FeedProperties;
 import com.optimustechproject2017.adapter.NavigationBaseAdapter;
 import com.optimustechproject2017.adapter.SliderLayout;
+import com.optimustechproject2017.fragments.CartFragment;
 import com.optimustechproject2017.fragments.Search_fragment;
 import com.optimustechproject2017.fragments.homefragment;
 import com.optimustechproject2017.fragments.ordersfragment;
 
 import java.util.ArrayList;
+
+import timber.log.Timber;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private AutoCompleteTextView autoComplete;
     private CardViewAdapter mAdapter;
     private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
+    private FirebaseAuth auth;
 
     @Override
     public void onBackPressed() {
@@ -69,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        auth = FirebaseAuth.getInstance();
 
 
 
@@ -174,6 +183,47 @@ switch (position){
 
     }
 
+
+
+
+    /**
+     * Check if user is logged in. If so then start defined fragment, otherwise show login dialog.
+     *
+     * @param fragment       fragment to launch.
+     * @param transactionTag text identifying fragment transaction.
+     * @param loginListener  listener on successful login.
+     */
+    private void launchUserSpecificFragment(Fragment fragment, String transactionTag, LoginDialogInterface loginListener) {
+        if (auth.getCurrentUser()!= null) {
+            replaceFragment(fragment, transactionTag);
+        } else {
+            DialogFragment loginDialogFragment = LoginDialogFragment.newInstance(loginListener);
+            loginDialogFragment.show(getSupportFragmentManager(), LoginDialogFragment.class.getSimpleName());
+        }
+    }
+
+
+
+    /**
+     * Method creates fragment transaction and replace current fragment with new one.
+     *
+     * @param newFragment    new fragment used for replacement.
+     * @param transactionTag text identifying fragment transaction.
+     */
+    private void replaceFragment(Fragment newFragment, String transactionTag) {
+        if (newFragment != null) {
+            FragmentManager frgManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = frgManager.beginTransaction();
+            fragmentTransaction.setAllowOptimization(false);
+            fragmentTransaction.addToBackStack(transactionTag);
+            fragmentTransaction.replace(R.id.frame_layout, newFragment).commit();
+            frgManager.executePendingTransactions();
+        } else {
+            Timber.e(new RuntimeException(), "Replace fragments with null newFragment parameter.");
+        }
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -182,10 +232,17 @@ switch (position){
     }
 
 
-
-
-
-
-
+    /**
+     * If user is logged in then {@link CartFragment} is launched . Otherwise is showed a login dialog.
+     */
+//    public void onCartSelected() {
+//        launchUserSpecificFragment(new CartFragment(), CartFragment.class.getSimpleName(), new LoginDialogInterface() {
+//            @Override
+//            public void successfulLoginOrRegistration(User user) {
+//                // If login was successful launch CartFragment.
+//                onCartSelected();
+//            }
+//        });
+//    }
 }
 

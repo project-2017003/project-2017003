@@ -33,6 +33,42 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/small_details"
         android:textColor="@color/year" />
+    <!--<TextView-->
+        <!--android:layout_below="@+id/price"-->
+
+        <!--style="@style/HeaderTextStyle"-->
+        <!--android:text="@string/quantity" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/decre"
+            style="@style/QuantityPickerButtonStyle"
+            android:onClick="decrement"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="0"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/incre"
+            style="@style/QuantityPickerButtonStyle"
+            android:onClick="increment"
+            android:text="+" />
+
+    </LinearLayout>
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"

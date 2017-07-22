@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -69,6 +71,7 @@ public class RestarentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restarent);
+        final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id.restlay);
        CollapsingToolbarLayout collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
 collapsingToolbar.setTitle("Restaurant Name");
        collapsingToolbar.setExpandedTitleColor(getResources().getColor(R.color.transparent)); // transperent color = #00000000
@@ -77,7 +80,11 @@ collapsingToolbar.setTitle("Restaurant Name");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.AppBar);
         setSupportActionBar(toolbar);
-        setupFab();
+
+
+
+
+        //setupFab();
 
         if (getSupportActionBar() != null){
 
@@ -134,43 +141,43 @@ collapsingToolbar.setTitle("Restaurant Name");
 //        return true;
 //    }
 
-    private void setupFab() {
-
-        Fab fab = (Fab) findViewById(R.id.fab);
-        View sheetView = findViewById(R.id.fab_sheet);
-        View overlay = findViewById(R.id.overlay);
-        int sheetColor = getResources().getColor(R.color.white);
-        int fabColor = getResources().getColor(R.color.black_transparent_70percent);
-
-        // Create material sheet FAB
-        MaterialSheetFab<Fab> materialSheetFab = new MaterialSheetFab<>(fab, sheetView, overlay, sheetColor, fabColor);
-
-        // Set material sheet event listener
-        materialSheetFab.setEventListener(new MaterialSheetFabEventListener() {
-            @Override
-            public void onShowSheet() {
-                // Save current status bar color
-                statusBarColor = getStatusBarColor();
-                // Set darker status bar color to match the dim overlay
-                setStatusBarColor(getResources().getColor(R.color.cardview_dark_background));
-            }
-
-            @Override
-            public void onHideSheet() {
-                // Restore status bar color
-                setStatusBarColor(statusBarColor);
-            }
-        });
-
-
-        ListView lv = (ListView) findViewById(R.id.fablist);
-
-        // Set material sheet item click listeners
-//        findViewById(R.id.fab_sheet_item_recording).setOnClickListener(this);
-//        findViewById(R.id.fab_sheet_item_reminder).setOnClickListener(this);
-//        findViewById(R.id.fab_sheet_item_photo).setOnClickListener(this);
-//        findViewById(R.id.fab_sheet_item_note).setOnClickListener(this);
-    }
+//    private void setupFab() {
+//
+//        Fab fab = (Fab) findViewById(R.id.fab);
+//        View sheetView = findViewById(R.id.fab_sheet);
+//        View overlay = findViewById(R.id.overlay);
+//        int sheetColor = getResources().getColor(R.color.white);
+//        int fabColor = getResources().getColor(R.color.black_transparent_70percent);
+//
+//        // Create material sheet FAB
+//        MaterialSheetFab<Fab> materialSheetFab = new MaterialSheetFab<>(fab, sheetView, overlay, sheetColor, fabColor);
+//
+//        // Set material sheet event listener
+//        materialSheetFab.setEventListener(new MaterialSheetFabEventListener() {
+//            @Override
+//            public void onShowSheet() {
+//                // Save current status bar color
+//                statusBarColor = getStatusBarColor();
+//                // Set darker status bar color to match the dim overlay
+//                setStatusBarColor(getResources().getColor(R.color.cardview_dark_background));
+//            }
+//
+//            @Override
+//            public void onHideSheet() {
+//                // Restore status bar color
+//                setStatusBarColor(statusBarColor);
+//            }
+//        });
+//
+//
+//        ListView lv = (ListView) findViewById(R.id.fablist);
+//
+//        // Set material sheet item click listeners
+////        findViewById(R.id.fab_sheet_item_recording).setOnClickListener(this);
+////        findViewById(R.id.fab_sheet_item_reminder).setOnClickListener(this);
+////        findViewById(R.id.fab_sheet_item_photo).setOnClickListener(this);
+////        findViewById(R.id.fab_sheet_item_note).setOnClickListener(this);
+//    }
 
     private int getStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

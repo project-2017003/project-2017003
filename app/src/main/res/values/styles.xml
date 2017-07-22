@@ -52,6 +52,19 @@
     </style>
 
 
+    <style name="dialogFullscreen" parent="MaterialTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorAccent">@color/md_black_1000</item>
+    </style>
+
+
+    <style name="dialogFragmentAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_from_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_to_right</item>
+    </style>
+
+
 
 
     <style name="Widget.MaterialSheetFab.Fab" parent="">
@@ -94,6 +107,22 @@
     </style>
 
 
+
+
+    <style name="emptyLayoutText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="QuantityPickerButtonStyle">
+        <item name="android:layout_width">17sp</item>
+        <item name="android:layout_height">20sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/md_green_500</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
 
 </resources>
