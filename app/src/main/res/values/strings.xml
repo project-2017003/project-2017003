@@ -98,7 +98,7 @@
     <string name="Shopping_cart">Shopping cart</string>
     <string name="Your_cart_is_empty">Your cart is empty</string>
     <string name="START_SHOPPING">START SHOPPING</string>
-    <string name="SHIPPING_AND_PAYMENT">SHIPPING and PAYMENT</string>
+    <string name="SHIPPING_AND_PAYMENT"> PAYMENT</string>
     <string name="Please_select_a_size">Please select a size.</string>
     <string name="added_to_cart">added to cart</string>
     <string name="Go_to_cart">Go to cart</string>

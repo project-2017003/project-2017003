@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user == null) {
                     // user auth state is changed - user is null
-                    // launch login activity
+                    // launch signuppref activity
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
                 }else{

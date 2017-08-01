@@ -1,27 +1,23 @@
 [
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_button_text_color.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_tint.xml"
-    },
-    {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\color\\design_tint_password_toggle.xml"
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
@@ -32,24 +28,24 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_default.xml"
-    },
-    {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
@@ -60,12 +56,112 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
@@ -76,8 +172,8 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\7ca6edc85daf4626a3156be8f0992231c142175a\\output\\res\\color\\com_facebook_send_button_text_color.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\color\\wallet_primary_text_holo_light.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
@@ -92,16 +188,28 @@
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_spinner.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
-        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\d03c731be2d5e8a716031039ee97be176099c08a\\output\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\f0d2a7c5564477d842b91ccf19ce038beb50f4ac\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
@@ -114,5 +222,13 @@
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
         "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\15c407da904da28ec722353898514b0b904330f7\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\HemanthKandula\\.android\\build-cache\\430e2dd1c1ca1542278be7ee8c0e4b6d14ab291c\\output\\res\\color\\abc_tint_switch_thumb.xml"
     }
 ]

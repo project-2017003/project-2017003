@@ -85,7 +85,7 @@
             android:background="@color/semi_light_transparent"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="30dp"
+            android:paddingBottom="40dp"
             android:paddingLeft="@dimen/base_margin_horizontal"
             android:paddingRight="@dimen/base_margin_horizontal"
             android:paddingTop="10dp"
@@ -102,42 +102,15 @@
                 android:background="@color/md_red_300"
                 android:paddingTop="10dp"
 
+
                 android:text="SET DELIVERY LOCATION"
 
                 tools:visibility="visible"/>
-            <LinearLayout
-                android:id="@+id/already_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-
-            <custom_font.MyTextView
-                style="@style/buttonPrimaryStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25sp"
-
-                android:gravity="center"
-                android:text="Already registered?"
-                android:textColor="@color/md_white_1000"/>
-
-                <custom_font.MyTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Login"
-                    android:textColor="@color/md_white_1000"/>
-
-
-        </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/splash_set_address"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
             android:background="@color/black_transparent_70percent"
@@ -194,7 +167,6 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/address"
 
-                    android:maxLines="1"
 
                     android:paddingEnd="@dimen/base_margin_horizontal_half"
                     android:paddingLeft="@dimen/base_margin_horizontal"
@@ -226,12 +198,10 @@
                     android:hint="@string/house_flat_no"
                     android:imeActionId="124"
                     android:imeOptions="actionSend"
-                    android:maxLines="1"
                     android:paddingEnd="@dimen/base_margin_horizontal_half"
                     android:paddingLeft="@dimen/base_margin_horizontal"
                     android:paddingRight="@dimen/base_margin_horizontal_half"
                     android:paddingStart="@dimen/base_margin_horizontal"
-                    android:singleLine="true"
                     android:textColor="@color/whilte"/>
             </android.support.design.widget.TextInputLayout>
             <LinearLayout
@@ -247,7 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif-light"
                 android:padding="16dp"
                 android:text="@string/pick_location_again"
@@ -264,10 +234,10 @@
                 style="@style/buttonPrimaryStyle"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
 
                 android:text="@string/save_and_proceed"/>
         </LinearLayout>

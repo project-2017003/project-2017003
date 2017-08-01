@@ -27,7 +27,7 @@ public class Search_fragment extends android.support.v4.app.Fragment {
         //Change R.layout.tab1 in you classes
         View fv = inflater.inflate(R.layout.activity_search_fragment, container, false);
 
-        Toolbar toolbar = (android.support.v7.widget.Toolbar) fv.findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) fv.findViewById(R.id.toolbar);
 
         return fv;
 

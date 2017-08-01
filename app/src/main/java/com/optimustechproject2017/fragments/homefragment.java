@@ -1,57 +1,57 @@
 package com.optimustechproject2017.fragments;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.util.Pair;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimajia.slider.library.Animations.DescriptionAnimation;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.firebase.auth.FirebaseAuth;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 import com.nshmura.snappysmoothscroller.LinearLayoutScrollVectorDetector;
 import com.nshmura.snappysmoothscroller.SnapType;
-import com.nshmura.snappysmoothscroller.SnappyLinearLayoutManager;
 import com.nshmura.snappysmoothscroller.SnappySmoothScroller;
+import com.optimustechproject2017.Adapters.AdapterFavRest;
 import com.optimustechproject2017.Adapters.Album;
 import com.optimustechproject2017.Adapters.AlbumsAdapter;
 import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
-import com.optimustechproject2017.MainActivity;
 import com.optimustechproject2017.R;
 import com.optimustechproject2017.RestarentActivity;
 import com.optimustechproject2017.SettingsMy;
-import com.optimustechproject2017.adapter.CardViewAdapter;
-import com.optimustechproject2017.adapter.FeedProperties;
-import com.optimustechproject2017.adapter.NavigationBaseAdapter;
-import com.optimustechproject2017.adapter.SliderLayout;
+import com.optimustechproject2017.api.EndPoints;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
@@ -66,20 +66,20 @@ import static android.app.Activity.RESULT_OK;
  */
 
 public class homefragment extends Fragment {
+    public static final int PLACE_PICKER_REQUEST = 1;
     static final boolean GRID_LAYOUT = false;
-
-    private static final int PLACE_PICKER_REQUEST = 1 ;
     private static final int ITEM_COUNT = 100;
      RecyclerView recyclerView;
     android.support.v7.widget.Toolbar toolbar;
-    NavigationBaseAdapter adapter;
-    ArrayAdapter<String> stringAdapter;
 
+    ArrayAdapter<String> stringAdapter;
+    TextView yourfav, under_30, more_rest;
+    ProgressDialog progressDialog;
+    SwipeRefreshLayout mSwipeRefreshLayout;
     // private RecyclerView.Adapter mAdapter;
     // private RecyclerView.LayoutManager mLayoutManager;
     //private SliderLayout mDemoSlider;
     private CardView cardView;
-    private ArrayList<FeedProperties> os_versions;
     private AutoCompleteTextView autoComplete;
     // Content specific
     private TextView emptyContentView;
@@ -91,10 +91,18 @@ public class homefragment extends Fragment {
     private RecyclerView.Adapter mAdapter,mAdapter_fav;
     private List<Album> mContentItems = new ArrayList<>();
     private List<Album> mContentItems_fav = new ArrayList<>();
+    private List<Album> mContentItems_under30 = new ArrayList<>();
 
     public static homefragment newInstance() {
         homefragment fragment = new homefragment();
         return fragment;
+    }
+
+    public static ProgressDialog generateProgressDialog(Context context, boolean cancelable) {
+        ProgressDialog progressDialog = new ProgressDialog(context, R.style.ProgressTheme);
+        progressDialog.setMessage(context.getString(R.string.Loading));
+        progressDialog.setCancelable(cancelable);
+        return progressDialog;
     }
 
     @Override
@@ -105,14 +113,21 @@ public class homefragment extends Fragment {
 
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
 
         View myFragmentView =  inflater.inflate(R.layout.fragment_home, container, false);
-
+        mSwipeRefreshLayout = (SwipeRefreshLayout) myFragmentView.findViewById(R.id.swipeRefreshLayout);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                // Refresh items
+                mSwipeRefreshLayout.setRefreshing(true);
+                getrests();
+            }
+        });
 
 
          toolbar = (android.support.v7.widget.Toolbar) myFragmentView.findViewById(R.id.toolbar);
@@ -135,12 +150,42 @@ public class homefragment extends Fragment {
                 }
             }
         });
+        progressDialog = generateProgressDialog(getActivity(), false);
 
 
         getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+
+        yourfav = (TextView) myFragmentView.findViewById(R.id.fav_rests_textview);
+
+        under_30 = (TextView) myFragmentView.findViewById(R.id.under_30);
+        more_rest = (TextView) myFragmentView.findViewById(R.id.more_rest);
+
+        if (mContentItems.size() == 0 || mContentItems_fav.size() == 0 || mContentItems_under30.size() == 0) {
+            progressDialog = new ProgressDialog(getActivity());
+            yourfav.setVisibility(View.INVISIBLE);
+            more_rest.setVisibility(View.INVISIBLE);
+            under_30.setVisibility(View.INVISIBLE);
+            progressDialog.setCancelable(false);
+            getrests();
+
+        } else {
+
+
+            yourfav.setVisibility(View.VISIBLE);
+            more_rest.setVisibility(View.VISIBLE);
+            under_30.setVisibility(View.VISIBLE);
+
+
+        }
+
+
+
         initContrls( myFragmentView);
 
         initrecycler(myFragmentView);
+
+
         initrecycler_fav(myFragmentView);
 
 
@@ -256,18 +301,23 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-
-                startActivity(new Intent(getActivity(), RestarentActivity.class));
-
-                // TestRecyclerViewAdapter album = mContentItems.get(position);
+                View inflatedView = getActivity().getLayoutInflater().inflate(R.layout.fav_rest_card, null);
 
 
-//                Intent Cl = new Intent(getContext(), ProductDetail.class);
-//                Cl.putExtra("name","name");
-//                Cl.putExtra("no",position);
-//
-//                startActivity(Cl);
+                Intent intent = new Intent(getActivity(), RestarentActivity.class);
+// Pass data object in the bundle and populate details activity.
+                Album a = mContentItems.get(position);
 
+                ImageView image = (ImageView) inflatedView.findViewById(R.id.thumbnail);
+                TextView name = (TextView) inflatedView.findViewById(R.id.title);
+                intent.putExtra("URL", a.getURL());
+                intent.putExtra("NAME", a.getName());
+
+                Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
+                Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), p1, p2);
+                startActivity(intent, options.toBundle());
 
 
             }
@@ -281,7 +331,7 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
             }
         }));
 
-        prepareAlbums();
+//        prepareAlbums();
 
     }
 
@@ -321,7 +371,7 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         mRecyclerView_fav.setLayoutManager(linearLayoutManager);
         mRecyclerView_fav.setHasFixedSize(true);
 
-        mAdapter_fav = new AlbumsAdapter(getContext(),mContentItems_fav);
+        mAdapter_fav = new AdapterFavRest(getContext(), mContentItems_fav);
         //mAdapter = new TestRecyclerViewAdapter(mContentItems);
         mRecyclerView_fav.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));
 
@@ -341,9 +391,23 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
             @Override
             public void onClick(View view, int position) {
 
-                startActivity(new Intent(getActivity(), RestarentActivity.class));
+                View inflatedView = getActivity().getLayoutInflater().inflate(R.layout.fav_rest_card, null);
 
 
+                Intent intent = new Intent(getActivity(), RestarentActivity.class);
+// Pass data object in the bundle and populate details activity.
+                Album a = mContentItems_fav.get(position);
+
+                ImageView image = (ImageView) inflatedView.findViewById(R.id.thumbnail);
+                TextView name = (TextView) inflatedView.findViewById(R.id.title);
+                intent.putExtra("URL", a.getURL());
+                intent.putExtra("NAME", a.getName());
+
+                Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
+                Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), p1, p2);
+                startActivity(intent, options.toBundle());
 
             }
 
@@ -356,128 +420,128 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
             }
         }));
 
-        prepareAlbums_fav();
+        //prepareAlbums_fav();
 
     }
 
-    private void prepareAlbums_fav() {
-        int[] covers = new int[]{
-                R.drawable.a1 ,
-                R.drawable.a2,
-                R.drawable.a3,
-                R.drawable.a4,
-                R.drawable.a5,
-                R.drawable.a6,
-                R.drawable.a7,
-                R.drawable.a8,
-                R.drawable.a9,
-                R.drawable.a10,
-                R.drawable.a11
-        };
-
-//        for (int i = 0; i< mContentItems.size();i++) {
-//            System.out.println(mContentItems);
+//    private void prepareAlbums_fav() {
+//        int[] covers = new int[]{
+//                R.drawable.a1 ,
+//                R.drawable.a2,
+//                R.drawable.a3,
+//                R.drawable.a4,
+//                R.drawable.a5,
+//                R.drawable.a6,
+//                R.drawable.a7,
+//                R.drawable.a8,
+//                R.drawable.a9,
+//                R.drawable.a10,
+//                R.drawable.a11
+//        };
 //
-//            Album k = new Album(i,getContext());
-//            albumList.add(k);
+////        for (int i = 0; i< mContentItems.size();i++) {
+////            System.out.println(mContentItems);
+////
+////            Album k = new Album(i,getContext());
+////            albumList.add(k);
+////
+////        }
 //
-//        }
-
-
-        Album a = new Album("Chicken", ">Item1 . Item 2 .itme 3  .Item4 ", covers[0],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("BarbequeNation",">Item1 . Item 2 .itme 3  .Item4 ", covers[1],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("BarbequeNation2",">Item1 . Item 2 .itme 3  .Item4 ", covers[2],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("BarbequeNation3",">Item1 . Item 2 .itme 3  .Item4 ", covers[3],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("BindaasRasoi", ">Item1 . Item 2 .itme 3  .Item4 ", covers[4],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("Chilis", ">Item1 . Item 2 .itme 3  .Item4 ", covers[5],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("KobeSizzlers",">Item1 . Item 2 .itme 3  .Item4 ", covers[6],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("LittleItaly",">Item1 . Item 2 .itme 3  .Item4 ", covers[7],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("Mamagoto",">Item1 . Item 2 .itme 3  .Item4 ", covers[8],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        a = new Album("PunjabGrill",">Item1 . Item 2 .itme 3  .Item4 ", covers[9],"25-30 MIN");
-        mContentItems_fav.add(a);
-        a = new Album("SigreeGlobalGrillTheSpringHotel",">Item1 . Item 2 .itme 3  .Item4 ", covers[10],"25-30 MIN");
-        mContentItems_fav.add(a);
-
-        mAdapter_fav.notifyDataSetChanged();
-    }
-
-
-    private void prepareAlbums() {
-        int[] covers = new int[]{
-                R.drawable.a1 ,
-                R.drawable.a2,
-                R.drawable.a3,
-                R.drawable.a4,
-                R.drawable.a5,
-                R.drawable.a6,
-                R.drawable.a7,
-                R.drawable.a8,
-                R.drawable.a9,
-                R.drawable.a10,
-                R.drawable.a11
-        };
-
-//        for (int i = 0; i< mContentItems.size();i++) {
-//            System.out.println(mContentItems);
 //
-//            Album k = new Album(i,getContext());
-//            albumList.add(k);
+//        Album a = new Album("Chicken", ">Item1 . Item 2 .itme 3  .Item4 ", covers[0],"25-30 MIN");
+//        mContentItems_fav.add(a);
 //
-//        }
-
-
-        Album a = new Album("Chicken", ">Item1 . Item 2 .itme 3  .Item4 ", covers[0],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("BarbequeNation",">Item1 . Item 2 .itme 3  .Item4 ", covers[1],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("BarbequeNation2",">Item1 . Item 2 .itme 3  .Item4 ", covers[2],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("BarbequeNation3",">Item1 . Item 2 .itme 3  .Item4 ", covers[3],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("BindaasRasoi", ">Item1 . Item 2 .itme 3  .Item4 ", covers[4],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("Chilis", ">Item1 . Item 2 .itme 3  .Item4 ", covers[5],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("KobeSizzlers",">Item1 . Item 2 .itme 3  .Item4 ", covers[6],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("LittleItaly",">Item1 . Item 2 .itme 3  .Item4 ", covers[7],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("Mamagoto",">Item1 . Item 2 .itme 3  .Item4 ", covers[8],"25-30 MIN");
-        mContentItems.add(a);
-
-        a = new Album("PunjabGrill",">Item1 . Item 2 .itme 3  .Item4 ", covers[9],"25-30 MIN");
-        mContentItems.add(a);
-        a = new Album("SigreeGlobalGrillTheSpringHotel",">Item1 . Item 2 .itme 3  .Item4 ", covers[10],"25-30 MIN");
-        mContentItems.add(a);
-
-        mAdapter.notifyDataSetChanged();
-    }
+//        a = new Album("BarbequeNation",">Item1 . Item 2 .itme 3  .Item4 ", covers[1],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("BarbequeNation2",">Item1 . Item 2 .itme 3  .Item4 ", covers[2],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("BarbequeNation3",">Item1 . Item 2 .itme 3  .Item4 ", covers[3],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("BindaasRasoi", ">Item1 . Item 2 .itme 3  .Item4 ", covers[4],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("Chilis", ">Item1 . Item 2 .itme 3  .Item4 ", covers[5],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("KobeSizzlers",">Item1 . Item 2 .itme 3  .Item4 ", covers[6],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("LittleItaly",">Item1 . Item 2 .itme 3  .Item4 ", covers[7],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("Mamagoto",">Item1 . Item 2 .itme 3  .Item4 ", covers[8],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        a = new Album("PunjabGrill",">Item1 . Item 2 .itme 3  .Item4 ", covers[9],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//        a = new Album("SigreeGlobalGrillTheSpringHotel",">Item1 . Item 2 .itme 3  .Item4 ", covers[10],"25-30 MIN");
+//        mContentItems_fav.add(a);
+//
+//        mAdapter_fav.notifyDataSetChanged();
+//    }
+//
+//
+//    private void prepareAlbums() {
+//        int[] covers = new int[]{
+//                R.drawable.a1 ,
+//                R.drawable.a2,
+//                R.drawable.a3,
+//                R.drawable.a4,
+//                R.drawable.a5,
+//                R.drawable.a6,
+//                R.drawable.a7,
+//                R.drawable.a8,
+//                R.drawable.a9,
+//                R.drawable.a10,
+//                R.drawable.a11
+//        };
+//
+////        for (int i = 0; i< mContentItems.size();i++) {
+////            System.out.println(mContentItems);
+////
+////            Album k = new Album(i,getContext());
+////            albumList.add(k);
+////
+////        }
+//
+//
+//        Album a = new Album("Chicken", ">Item1 . Item 2 .itme 3  .Item4 ", covers[0],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("BarbequeNation",">Item1 . Item 2 .itme 3  .Item4 ", covers[1],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("BarbequeNation2",">Item1 . Item 2 .itme 3  .Item4 ", covers[2],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("BarbequeNation3",">Item1 . Item 2 .itme 3  .Item4 ", covers[3],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("BindaasRasoi", ">Item1 . Item 2 .itme 3  .Item4 ", covers[4],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("Chilis", ">Item1 . Item 2 .itme 3  .Item4 ", covers[5],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("KobeSizzlers",">Item1 . Item 2 .itme 3  .Item4 ", covers[6],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("LittleItaly",">Item1 . Item 2 .itme 3  .Item4 ", covers[7],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("Mamagoto",">Item1 . Item 2 .itme 3  .Item4 ", covers[8],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        a = new Album("PunjabGrill",">Item1 . Item 2 .itme 3  .Item4 ", covers[9],"25-30 MIN");
+//        mContentItems.add(a);
+//        a = new Album("SigreeGlobalGrillTheSpringHotel",">Item1 . Item 2 .itme 3  .Item4 ", covers[10],"25-30 MIN");
+//        mContentItems.add(a);
+//
+//        mAdapter.notifyDataSetChanged();
+//    }
 
 
 
@@ -497,12 +561,14 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
                 final CharSequence phone = place.getPhoneNumber();
                 final String placeId = place.getId();
                 String attribution = PlacePicker.getLatLngBounds(data).toString();
-                Toast.makeText(getActivity(), toastMsg, Toast.LENGTH_LONG).show();
-                Log.d("TAG",toastMsg+"   "+name+"    "+ address+ "    "+phone+"    "+placeId+ "    "+attribution);
-
-                SettingsMy.setaddress(address.toString(),"");
+                Toast.makeText(getActivity(), place.getLatLng().toString(), Toast.LENGTH_LONG).show();
+                Log.d("TAG", toastMsg + "   " + name + "    " + address + "    " + phone + "    " + placeId + "    " + place.getLatLng());
                 TextView tv = (TextView) toolbar.findViewById(R.id.addre);
                 tv.setText(SettingsMy.getadd());
+
+                Double latitude = place.getLatLng().latitude;
+                Double longitude = place.getLatLng().longitude;
+                SettingsMy.setaddress(address.toString(), null, placeId, latitude.toString(), longitude.toString());
 
 
             }
@@ -520,50 +586,11 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         }}
 
 
-    private void initContrls(View myFragmentView) {
+    private void initContrls(final View myFragmentView) {
 
-        // toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.toolbar);
-        //  cardView = (CardView) findViewById(R.id.cardList);
+
         recyclerView = (RecyclerView) myFragmentView.findViewById(R.id.my_recycler_view);
 
-//        if (toolbar != null) {
-//            setSupportActionBar(toolbar);
-//            getSupportActionBar().setTitle("");
-//
-//        }
-
-        final String[] versions = {"A1", "A2", "A3", "A4", "A5", "A6"};
-        final int[] icons = {R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a4, R.drawable.a5, R.drawable.a6, R.drawable.a7, R.drawable.a2};
-
-
-        os_versions = new ArrayList<FeedProperties>();
-
-        for (int i = 0; i < versions.length; i++) {
-            FeedProperties feed = new FeedProperties();
-
-            feed.setTitle(versions[i]);
-            feed.setThumbnail(icons[i]);
-            os_versions.add(feed);
-        }
-
-        recyclerView.setHasFixedSize(true);
-
-
-
-//        // ListView
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-        //Grid View
-        // recyclerView.setLayoutManager(new GridLayoutManager(this,2,1,false));
-
-        //StaggeredGridView
-        // recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,1));
-
-        // create an Object for Adapter
-        mAdapter = new CardViewAdapter(os_versions);
-
-        // set the adapter object to the Recyclerview
-        recyclerView.setAdapter(mAdapter);
 
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity()) {
@@ -578,53 +605,48 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
                 startSmoothScroll(scroller);
             }
         };
-        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            linearLayoutManager.setOrientation(LinearLayout.HORIZONTAL);
-        } else {
-            linearLayoutManager.setOrientation(LinearLayout.VERTICAL);
-        }
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-//recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-//    @Override
-//    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-//
-//
-//        startActivity(new Intent(getActivity(), RestarentActivity.class));
-//
-//        return false;
-//    }
-//
-//    @Override
-//    public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-//
-//    }
-//
-//    @Override
-//    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-//
-//    }
-//});
+        linearLayoutManager.setOrientation(LinearLayout.HORIZONTAL);
+
+
+        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setHasFixedSize(true);
+
+        mAdapter_fav = new AdapterFavRest(getContext(), mContentItems_fav);
+        //mAdapter = new TestRecyclerViewAdapter(mContentItems);
+        recyclerView.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));
+
+        final AlphaInAnimationAdapter alphaAdapter_fav = new AlphaInAnimationAdapter(mAdapter_fav);
+
+        alphaAdapter_fav.setFirstOnly(false);
+        alphaAdapter_fav.setDuration(1000);
+        alphaAdapter_fav.setInterpolator(new OvershootInterpolator(.5f));
+
+
+        //mAdapter = new RecyclerViewMaterialAdapter();
+        recyclerView.setAdapter(new ScaleInAnimationAdapter(alphaAdapter_fav));
+
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-//                if (getActivity() instanceof MainActivity)
-//                    ((MainActivity) getActivity()).onCartSelected();
-//
-
-                //startActivity(new Intent(getActivity(), RestarentActivity.class));
-
-                // TestRecyclerViewAdapter album = mContentItems.get(position);
+                View inflatedView = getActivity().getLayoutInflater().inflate(R.layout.fav_rest_card, null);
 
 
-//                Intent Cl = new Intent(getContext(), ProductDetail.class);
-//                Cl.putExtra("name","name");
-//                Cl.putExtra("no",position);
-//
-//                startActivity(Cl);
+                Intent intent = new Intent(getActivity(), RestarentActivity.class);
+// Pass data object in the bundle and populate details activity.
+                Album a = mContentItems_fav.get(position);
 
+                ImageView image = (ImageView) inflatedView.findViewById(R.id.thumbnail);
+                TextView name = (TextView) inflatedView.findViewById(R.id.title);
+                intent.putExtra("URL", a.getURL());
+                intent.putExtra("NAME", a.getName());
+
+                Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
+                Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
+
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), p1, p2);
+                startActivity(intent, options.toBundle());
 
 
             }
@@ -637,6 +659,11 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
 
             }
         }));
+
+        // prepareAlbums_fav();
+
+
+
     }
 
     @Override
@@ -644,6 +671,91 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
         // To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
         //mDemoSlider.stopAutoCycle();
         super.onStop();
+    }
+
+    public void getrests() {
+
+
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+        //progressDialog.show();
+
+        params.put("Longitude", SettingsMy.getLongitude());
+        params.put("Latitude", SettingsMy.getLatitude());
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        if (auth.getCurrentUser() != null) {
+            params.put("Email", auth.getCurrentUser().getEmail());
+
+            params.put("PhoneNo", auth.getCurrentUser().getPhoneNumber());
+        }
+
+        // Log.d("event",Clustername);
+        client.post(EndPoints.GET_RESTAURANTS, params, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(String response) {
+                //progressDialog.hide();
+                System.out.println(response);
+
+                setrest(response);
+                mSwipeRefreshLayout.setRefreshing(false);
+                // System.out.println(response);
+
+            }
+
+            @Override
+            public void onFailure(int statusCode, Throwable error, String content) {
+                mSwipeRefreshLayout.setRefreshing(false);
+
+                // TODO Auto-generated method stub
+                //progressDialog.hide();
+                if (statusCode == 404) {
+                    Toast.makeText(getActivity(), "Requested resource not found", Toast.LENGTH_LONG).show();
+                } else if (statusCode == 500) {
+                    Toast.makeText(getActivity(), "Something went wrong at server end", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getActivity(), " Device might not be connected to Internet]",
+                            Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+    }
+
+    public void setrest(String response) {
+
+        try {
+            JSONArray arr = new JSONArray(response);
+            System.out.println(arr.length());
+            if (arr.length() != 0) {
+                for (int i = 0; i < arr.length(); i++) {
+                    JSONObject obj = (JSONObject) arr.get(i);
+
+
+                    Album a = new Album(obj.get("Name").toString(),
+                            ">Item1 . Item 2 .itme 3  .Item4 ", obj.get("URL").toString(), obj.get("Time").toString());
+                    mContentItems_fav.add(a);
+                    mContentItems.add(a);
+                    mContentItems_under30.add(a);
+
+
+                }
+                titlevisible();
+                mAdapter_fav.notifyDataSetChanged();
+
+//                updateMySQLSyncSts(gson.toJson(Eventsynclist));
+
+            }
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+
+    void titlevisible() {
+        yourfav.setVisibility(View.VISIBLE);
+        more_rest.setVisibility(View.VISIBLE);
+        under_30.setVisibility(View.VISIBLE);
     }
 
 }

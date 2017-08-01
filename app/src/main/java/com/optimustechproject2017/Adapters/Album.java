@@ -13,6 +13,8 @@ import java.io.FileOutputStream;
 
 
 public class Album {
+
+
     String gflag;
     Target target = new Target() {
         @Override
@@ -113,14 +115,22 @@ public class Album {
 
 //        this.URL = ParticipantsList.get(i).get("URL");
 
-    public Album(String name, String items, int thumbnail,String time) {
+    public Album(String name, String items, String url, String time) {
         this.name = name;
         this.items = items;
         this.thumbnail = thumbnail;
         this.time = time;
+        this.URL = url;
 
     }
 
+    public String getURL() {
+        return URL;
+    }
+
+    public void setURL(String URL) {
+        this.URL = URL;
+    }
     public String getTime() {
         return time;
     }

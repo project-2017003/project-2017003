@@ -53,7 +53,7 @@ holder.overflow.setOnFavoriteChangeListener(new MaterialFavoriteButton.OnFavorit
     }
 });
         // loading album cover using Glide library
-        Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
+        Glide.with(mContext).load(album.getURL()).into(holder.thumbnail);
 
 
 

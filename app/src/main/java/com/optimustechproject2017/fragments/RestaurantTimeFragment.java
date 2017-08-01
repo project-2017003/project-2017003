@@ -1,28 +1,20 @@
 package com.optimustechproject2017.fragments;
-import android.content.Intent;
+
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.gordonwong.materialsheetfab.MaterialSheetFab;
 import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
-import com.optimustechproject2017.Dialogs.LoginDialogFragment;
 import com.optimustechproject2017.Fab;
-import com.optimustechproject2017.Interfaces.LoginDialogInterface;
-import com.optimustechproject2017.MainActivity;
+import com.optimustechproject2017.Interfaces.fabonclick;
 import com.optimustechproject2017.R;
-import com.optimustechproject2017.RestarentActivity;
-import com.optimustechproject2017.User;
 import com.optimustechproject2017.adapter.HeaderRecyclerViewSection;
 import com.optimustechproject2017.adapter.ItemObject;
 
@@ -36,11 +28,12 @@ import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapt
  */
 
 //Our class extending fragment
-public class RestaurantTimeFragment extends Fragment {
+public class RestaurantTimeFragment extends Fragment implements fabonclick {
     MaterialSheetFab<Fab> materialSheetFab;
+    LinearLayoutManager linearLayoutManager;
     private RecyclerView sectionHeader;
     private SectionedRecyclerViewAdapter sectionAdapter;
-    private FirebaseAuth auth;
+    private int statusBarColor;
     public RestaurantTimeFragment(){
 
     }
@@ -57,34 +50,18 @@ public class RestaurantTimeFragment extends Fragment {
 
 
 
-        auth = FirebaseAuth.getInstance();
 
         //Returning the layout file after inflating
         View fv= inflater.inflate(R.layout.fragment_restaurent_time, container, false);
-        TextView checkout = (TextView)fv.findViewById(R.id.checkout);
-        checkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onCartSelected();
-                System.out.print("kkk");
-            }
-        });
 
- RelativeLayout relativeLayout = (RelativeLayout) fv.findViewById(R.id.gotocart);
-        relativeLayout.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        onCartSelected();
 
-System.out.print("I came ");
 
-    }
-});
+
 
 
 
         sectionHeader = (RecyclerView)fv.findViewById(R.id.recycler_view_items);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        linearLayoutManager = new LinearLayoutManager(getActivity());
         sectionHeader.setLayoutManager(linearLayoutManager);
         sectionHeader.setHasFixedSize(true);
         HeaderRecyclerViewSection firstSection = new HeaderRecyclerViewSection("Most Popular", getDataSource());
@@ -142,11 +119,32 @@ System.out.print("I came ");
 ////        materialSheetFab = new MaterialSheetFab<>(fab, sheetView, overlay,
 ////                sheetColor, fabColor);
 //
-
+//setupFab(fv);
         return fv;
 
     }
 
+
+    public void Scroll(int pos) {
+        linearLayoutManager = new LinearLayoutManager(getActivity());
+        sectionHeader.setLayoutManager(linearLayoutManager);
+        sectionHeader.setHasFixedSize(true);
+        HeaderRecyclerViewSection firstSection = new HeaderRecyclerViewSection("Most Popular", getDataSource());
+        HeaderRecyclerViewSection secondSection = new HeaderRecyclerViewSection("VEG", getDataSource());
+        HeaderRecyclerViewSection thirdSection = new HeaderRecyclerViewSection("Non-Veg", getDataSource());
+        HeaderRecyclerViewSection fourth = new HeaderRecyclerViewSection("Snacks", getDataSource());
+        sectionAdapter = new SectionedRecyclerViewAdapter();
+        sectionAdapter.addSection(firstSection);
+        sectionAdapter.addSection(secondSection);
+        sectionAdapter.addSection(thirdSection);
+        sectionAdapter.addSection(fourth);
+        sectionHeader.setAdapter(sectionAdapter);
+
+
+        linearLayoutManager.scrollToPosition(getDataSource().size() * pos);
+
+
+    }
 
 
     private List<ItemObject> getDataSource(){
@@ -161,25 +159,17 @@ System.out.print("I came ");
     }
 
 
-    private void launchUserSpecificFragment( LoginDialogInterface loginListener) {
-        if (auth.getCurrentUser()!= null) {
-
-
-        } else {
-            DialogFragment loginDialogFragment = LoginDialogFragment.newInstance(loginListener);
-            loginDialogFragment.show(getFragmentManager(), LoginDialogFragment.class.getSimpleName());
+    private int getStatusBarColor() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            return getActivity().getWindow().getStatusBarColor();
         }
+        return 0;
     }
 
-
-    public void onCartSelected() {
-        launchUserSpecificFragment( new LoginDialogInterface() {
-            @Override
-            public void successfulLoginOrRegistration(User user) {
-                // If login was successful launch CartFragment.
-                onCartSelected();
-            }
-        });
+    private void setStatusBarColor(int color) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getActivity().getWindow().setStatusBarColor(color);
+        }
     }
 
 

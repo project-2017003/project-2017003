@@ -49,9 +49,7 @@ setStatusBarTranslucent(true);
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
         // Do something when users tap on Skip button.
-
-        startActivity(new Intent( App_Intro.this, com.optimustechproject2017.auth.LoginActivity.class ));
-finish();
+        setloc();
     }
 
     @Override
@@ -59,9 +57,8 @@ finish();
         super.onDonePressed(currentFragment);
         // Do something when users tap on Done button.
 
-        startActivity(new Intent( App_Intro.this, com.optimustechproject2017.auth.LoginActivity.class ));
-        finish();
-
+//        finish();
+        setloc();
     }
 
     @Override
@@ -123,9 +120,10 @@ finish();
 //                layoutContentcontinue.setVisibility(View.GONE);
 //
 //                layoutsetAdddress.setVisibility(View.VISIBLE);
+                Double latitude = place.getLatLng().latitude;
+                Double longitude = place.getLatLng().longitude;
 
-
-                SettingsMy.setaddress(address.toString(),null);
+                SettingsMy.setaddress(address.toString(), null, placeId, latitude.toString(), longitude.toString());
 
                 startActivity(new Intent(App_Intro.this,MainActivity.class));
                 finish();

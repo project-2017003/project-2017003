@@ -4,8 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:animateLayoutChanges="true"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
 
     <VideoView android:id="@+id/videoView1"
         android:layout_width="fill_parent"
@@ -64,9 +64,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="30dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
 
             <FrameLayout
@@ -84,8 +84,8 @@
                     android:id="@+id/fb_login"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/fb"
                     android:layout_marginRight="5dp"
+                    android:src="@drawable/fb"
                     />
 
             </FrameLayout>
@@ -115,8 +115,8 @@
                 android:id="@+id/twitter_login"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/twiter"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/twiter" />
 
 
         </LinearLayout>
@@ -265,40 +265,7 @@
         <!--android:imeActionLabel="@string/action_sign_up"-->
         <!--android:imeOptions="actionSend"-->
 
-        <RadioGroup
-            android:id="@+id/login_registration_sex"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/login_registration_sex_man"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
-                android:fontFamily="sans-serif-light"
-                android:paddingBottom="15dp"
-                android:paddingTop="15dp"
-                android:text="@string/Male"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <RadioButton
-                android:id="@+id/login_registration_sex_woman"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:fontFamily="sans-serif-light"
-                android:paddingBottom="15dp"
-                android:paddingTop="15dp"
-                android:text="@string/Female"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-        </RadioGroup>
 
         <Button
             android:id="@+id/login_registration_confirm"

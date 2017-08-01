@@ -100,7 +100,9 @@ dependencies {
     compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.1.2'
     compile 'com.gordonwong:material-sheet-fab:1.2.1'
     compile 'com.nshmura:snappysmoothscroller:1.0.0'
-    compile 'me.himanshusoni.quantityview:quantity-view:1.2.0'
+
+
+    compile 'com.loopj.android:android-async-http:1.4.4'
 
 
 

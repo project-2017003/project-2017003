@@ -1,8 +1,9 @@
 package com.optimustechproject2017;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,19 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.google.firebase.auth.FirebaseAuth;
 import com.optimustechproject2017.Dialogs.LoginDialogFragment;
 import com.optimustechproject2017.Interfaces.LoginDialogInterface;
-import com.optimustechproject2017.adapter.CardViewAdapter;
-import com.optimustechproject2017.adapter.FeedProperties;
-import com.optimustechproject2017.adapter.NavigationBaseAdapter;
-import com.optimustechproject2017.adapter.SliderLayout;
-import com.optimustechproject2017.fragments.CartFragment;
 import com.optimustechproject2017.fragments.Search_fragment;
 import com.optimustechproject2017.fragments.homefragment;
 import com.optimustechproject2017.fragments.ordersfragment;
@@ -34,16 +30,16 @@ import timber.log.Timber;
 
 
 public class MainActivity extends AppCompatActivity {
-    NavigationBaseAdapter adapter;
+
     ArrayAdapter<String> stringAdapter;
-    private SliderLayout mDemoSlider;
+
     private RecyclerView recyclerView;
     private CardView cardView;
-    private ArrayList<FeedProperties> os_versions;
+
    // private RecyclerView.Adapter mAdapter;
     // private RecyclerView.LayoutManager mLayoutManager;
     private AutoCompleteTextView autoComplete;
-    private CardViewAdapter mAdapter;
+
     private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
     private FirebaseAuth auth;
 
@@ -81,117 +77,166 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
 
+        setupbottom();
 
-//        com.roughike.bottombar.BottomBar bottomBar = (com.roughike.bottombar.BottomBar)
-//                findViewById(R.id.bottomBar);
+//
+////        com.roughike.bottombar.BottomBar bottomBar = (com.roughike.bottombar.BottomBar)
+////                findViewById(R.id.bottomBar);
+//
+//        AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
+//
+//        AHBottomNavigationItem item1 = new AHBottomNavigationItem("Home", R.drawable.home, R.color.black_transparent_70percent);
+//        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.search_menu_title, R.drawable.search, R.color.black_transparent_70percent);
+//        AHBottomNavigationItem item3 = new AHBottomNavigationItem("Kart", R.drawable.cart, R.color.black_transparent_70percent);
+//
+//        AHBottomNavigationItem item4 = new AHBottomNavigationItem("Account", R.drawable.account, R.color.black_transparent_70percent);
+//        bottomNavigationItems.add(item1);
+//        bottomNavigationItems.add(item2);
+//        bottomNavigationItems.add(item3);
+//        bottomNavigationItems.add(item4);
+//
+//        bottomNavigation.addItems(bottomNavigationItems);
+//
+//        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#FEFEFE"));
+//
+//        bottomNavigation.setAccentColor(Color.parseColor("#F63D2B"));
+//        bottomNavigation.setInactiveColor(Color.parseColor("#747474"));
+//
+//
+//        bottomNavigation.setForceTint(true);
+//
+//        bottomNavigation.setTranslucentNavigationEnabled(true);
+//        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.SHOW_WHEN_ACTIVE);
+//
+//
+//        bottomNavigation.setColored(true);
+//
+//        bottomNavigation.setCurrentItem(1);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//       //  Set listeners
+//        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+//            @Override
+//            public boolean onTabSelected(int position, boolean wasSelected) {
+//
+//                Fragment selectedFragment = null;
+//
+//                // Do something cool here...
+//switch (position){
+//
+//    case 0:          {           selectedFragment = homefragment.newInstance();break;}
+//
+//    case 1:          {           selectedFragment = Search_fragment.newInstance();break;}
+//
+//    case 2:          {           selectedFragment = ordersfragment.newInstance();break;}
+//
+//    case 3:          {           selectedFragment = homefragment.newInstance();
+//        break;}
+//
+//
+//
+//
+//
+//}
+//
+//
+//
+//
+//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//                transaction.replace(R.id.frame_layout, selectedFragment);
+//                transaction.commit();
+//
+//
+//
+//                return true;
+//            }
+//
+//
+//
+//        });
+//
+//
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.frame_layout, homefragment.newInstance());
+//        transaction.commit();
+//
+//
+//
+//        bottomNavigation.setOnNavigationPositionListener(new AHBottomNavigation.OnNavigationPositionListener() {
+//            @Override public void onPositionChange(int y) {
+//                // Manage the new y position
+//            }
+//        });
 
-        AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
 
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem("Home", R.drawable.home, R.color.black_transparent_70percent);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.search_menu_title, R.drawable.search, R.color.black_transparent_70percent);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem("Kart", R.drawable.cart, R.color.black_transparent_70percent);
-
-        AHBottomNavigationItem item4 = new AHBottomNavigationItem("Account", R.drawable.account, R.color.black_transparent_70percent);
-        bottomNavigationItems.add(item1);
-        bottomNavigationItems.add(item2);
-        bottomNavigationItems.add(item3);
-        bottomNavigationItems.add(item4);
-
-        bottomNavigation.addItems(bottomNavigationItems);
-
-        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#FEFEFE"));
-
-        bottomNavigation.setAccentColor(Color.parseColor("#F63D2B"));
-        bottomNavigation.setInactiveColor(Color.parseColor("#747474"));
-
-
-        bottomNavigation.setForceTint(true);
-
-        bottomNavigation.setTranslucentNavigationEnabled(true);
-        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.SHOW_WHEN_ACTIVE);
-
-
-        bottomNavigation.setColored(true);
-
-        bottomNavigation.setCurrentItem(1);
-
-
-
-
-
-
-
-
-
-       //  Set listeners
-        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
-            @Override
-            public boolean onTabSelected(int position, boolean wasSelected) {
-
-                Fragment selectedFragment = null;
-
-                // Do something cool here...
-switch (position){
-
-    case 0:          {           selectedFragment = homefragment.newInstance();break;}
-
-    case 1:          {           selectedFragment = Search_fragment.newInstance();break;}
-
-    case 2:          {           selectedFragment = ordersfragment.newInstance();break;}
-
-    case 3:          {           selectedFragment = homefragment.newInstance();
-        break;}
-
-
-
-
-
-}
-
-
-
-
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_layout, selectedFragment);
-                transaction.commit();
-
-
-
-                return true;
-            }
-
-
-
-        });
-
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, homefragment.newInstance());
-        transaction.commit();
-
-
-
-        bottomNavigation.setOnNavigationPositionListener(new AHBottomNavigation.OnNavigationPositionListener() {
-            @Override public void onPositionChange(int y) {
-                // Manage the new y position
-            }
-        });
-
-
-
+        getrestdetails();
 
 
     }
 
+    private void getrestdetails() {
 
+
+    }
+
+    private void setupbottom() {
+
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView)
+                findViewById(R.id.navigation);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener
+                (new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        Fragment current = null;
+                        Fragment selectedFragment = null;
+                        switch (item.getItemId()) {
+                            case R.id.tab_home:
+                                selectedFragment = homefragment.newInstance();
+                                break;
+                            case R.id.tab_search:
+                                selectedFragment = Search_fragment.newInstance();
+                                break;
+                            case R.id.tab_orders:
+                                selectedFragment = ordersfragment.newInstance();
+                                break;
+                            case R.id.tab_Account:
+                                selectedFragment = ordersfragment.newInstance();
+                                break;
+                        }
+                        if (current == selectedFragment)
+                            return true;
+
+                        current = selectedFragment;
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.frame_layout, selectedFragment);
+                        transaction.commit();
+                        return true;
+                    }
+                });
+
+        //Manually displaying the first fragment - one time only
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, homefragment.newInstance());
+        transaction.commit();
+
+    }
 
 
     /**
-     * Check if user is logged in. If so then start defined fragment, otherwise show login dialog.
+     * Check if user is logged in. If so then start defined fragment, otherwise show signuppref dialog.
      *
      * @param fragment       fragment to launch.
      * @param transactionTag text identifying fragment transaction.
-     * @param loginListener  listener on successful login.
+     * @param loginListener  listener on successful signuppref.
      */
     private void launchUserSpecificFragment(Fragment fragment, String transactionTag, LoginDialogInterface loginListener) {
         if (auth.getCurrentUser()!= null) {
@@ -233,13 +278,13 @@ switch (position){
 
 
     /**
-     * If user is logged in then {@link CartFragment} is launched . Otherwise is showed a login dialog.
+     * If user is logged in then {@link CartActivity} is launched . Otherwise is showed a signuppref dialog.
      */
 //    public void onCartSelected() {
-//        launchUserSpecificFragment(new CartFragment(), CartFragment.class.getSimpleName(), new LoginDialogInterface() {
+//        launchUserSpecificFragment(new CartActivity(), CartActivity.class.getSimpleName(), new LoginDialogInterface() {
 //            @Override
 //            public void successfulLoginOrRegistration(User user) {
-//                // If login was successful launch CartFragment.
+//                // If signuppref was successful launch CartActivity.
 //                onCartSelected();
 //            }
 //        });

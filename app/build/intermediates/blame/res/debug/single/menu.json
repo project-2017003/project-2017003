@@ -1,7 +1,15 @@
 [
     {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_album.xml",
+        "source": "D:\\intern\\Optimus_Tech_Project2017\\app\\src\\main\\res\\menu\\menu_album.xml"
+    },
+    {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_album.xml",
         "source": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\src\\main\\res\\menu\\menu_album.xml"
+    },
+    {
+        "merged": "D:\\intern\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\intern\\Optimus_Tech_Project2017\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "D:\\Android\\AndroidStudioProjects\\Optimus_Tech_Project2017\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",

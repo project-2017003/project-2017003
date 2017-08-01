@@ -170,9 +170,10 @@ CallbackManager callbackManager;
                 //signOutButton.setVisibility(View.VISIBLE);
                 if (user != null) {
                     // User is signed in
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid() + user.getEmail() + user.getDisplayName());
 
-getdetails();
+
+                    getdetails();
 
 //                    if(user.getDisplayName() != null)
 //                        nameTextView.setText("HI " + user.getDisplayName().toString());
@@ -223,7 +224,6 @@ getdetails();
             public void onClick(View v) {
 
 
-                startActivity(new Intent(LoginActivity.this, com.optimustechproject2017.auth.LoginActivity.class));
             }
         });
 

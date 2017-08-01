@@ -1,18 +1,13 @@
 package com.optimustechproject2017.adapter;
 
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.optimustechproject2017.R;
 
 import java.util.List;
 
 import io.github.luizgrp.sectionedrecyclerviewadapter.StatelessSection;
-import me.himanshusoni.quantityview.QuantityView;
 
 
 /**

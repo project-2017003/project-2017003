@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-88:12
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-88:12
 	package
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:3:5-41
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:20:5-66
@@ -29,30 +29,30 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKand
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:5-71
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:22-68
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:8:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:5-71
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:22-68
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:9:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:5-72
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:5-72
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:22-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:10:22-69
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:5-68
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:5-68
 MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\3b01933aa35631c22a2d4362247042bac50a15af\output\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\4c8a15c61684c349b11e027d40a89124a7a821cd\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:22-65
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:5-79
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:20:5-78
 MERGED from [com.google.android.gms:play-services-analytics:11.0.1] C:\Users\HemanthKandula\.android\build-cache\b33a5c704cceb912c84ca148d3f6c1cb41b9b4c4\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-nearby:11.0.1] C:\Users\HemanthKandula\.android\build-cache\69aba58150a4ee98baf8021963ab69e4ecc55a91\output\AndroidManifest.xml:4:5-78
@@ -63,13 +63,13 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.1] C:\Users\HemanthKand
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] C:\Users\HemanthKandula\.android\build-cache\42358a87f3f0de842a4be6c3c0ba5ff7b182bae6\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.1] C:\Users\HemanthKandula\.android\build-cache\7fb5f92e73a193dc557b32900bd58c0303545151\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:22-76
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:15:5-86:19
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:15:5-86:19
 MERGED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:26:5-31:19
 MERGED from [com.github.apl-devs:appintro:v4.2.0] C:\Users\HemanthKandula\.android\build-cache\4c59dc3758bbd0df637f9c23a75325d48cdb3f58\output\AndroidManifest.xml:11:5-47
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\HemanthKandula\.android\build-cache\74191ace9cef83938aa476c3b4110e0bfb6a3c56\output\AndroidManifest.xml:9:5-20
@@ -140,107 +140,107 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\HemanthKandula
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\HemanthKandula\.android\build-cache\63db1d59e7f4d52963d8dc68b6fcba3b2114fdbc\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\HemanthKandula\.android\build-cache\2bfaaa0d1f78af52b80413efa3dd526b63f13a71\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:19:9-41
 	android:supportsRtl
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:20:9-35
 	android:allowBackup
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:18:9-42
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:18:9-42
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:21:9-40
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:16:9-38
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:16:9-38
 activity#com.optimustechproject2017.MainActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:22:9-25:59
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:22:9-25:59
 	android:label
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:24:13-45
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:24:13-45
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:25:13-56
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:25:13-56
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:23:13-41
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:23:13-41
 activity#com.optimustechproject2017.SplashActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:26:9-40:20
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:26:9-40:20
 	android:screenOrientation
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:28:13-49
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:29:13-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:27:13-43
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:27:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:33:27-74
 intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.VIEW
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:17-76
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:17-76
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:27-73
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:38:27-73
 activity#com.optimustechproject2017.auth.LoginActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:41:9-43:72
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:41:9-43:72
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:43:13-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:43:13-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:42:13-47
 activity#com.optimustechproject2017.App_Intro
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:44:9-46:72
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:44:9-46:72
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:46:13-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:46:13-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:45:13-38
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:45:13-38
 activity#com.optimustechproject2017.auth.MainActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:47:9-49:72
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:47:9-49:72
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:49:13-69
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:49:13-69
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:48:13-46
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:48:13-46
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:51:9-53:55
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:51:9-53:55
 	android:value
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:53:13-52
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:53:13-52
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:52:13-58
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:52:13-58
 activity#com.facebook.FacebookActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:55:9-59:75
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:55:9-59:75
 	android:label
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:58:13-45
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:58:13-45
 	android:configChanges
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:57:13-96
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:57:13-96
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:59:13-72
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:59:13-72
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:56:13-57
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:56:13-57
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:61:9-63:71
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:61:9-63:71
 	android:value
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:63:13-68
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:63:13-68
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:62:13-58
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:62:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:64:9-66:71
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:64:9-66:71
 	android:value
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:66:13-68
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:66:13-68
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:65:13-62
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:65:13-62
 activity#com.optimustechproject2017.RestarentActivity
-ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:68:9-70:59
+ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:68:9-70:59
 	android:theme
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:70:13-56
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:70:13-56
 	android:name
-		ADDED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:69:13-46
+		ADDED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:69:13-46
 uses-sdk
-INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mikepenz:materialdrawer:5.9.1] C:\Users\HemanthKandula\.android\build-cache\6dffcb10b97dfbcf993d13e6982cb56e7b3c566e\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.mikepenz:materialize:1.0.1] C:\Users\HemanthKandula\.android\build-cache\42ea9d737123bbee75e963e3e5a7eb6b040f9e26\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.mikepenz:iconics-core:2.8.4] C:\Users\HemanthKandula\.android\build-cache\d0e1429a532648a83073cf2df2f1f7facd48a671\output\AndroidManifest.xml:8:5-10:41
@@ -333,11 +333,11 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\HemanthKandula\
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\HemanthKandula\.android\build-cache\d03c731be2d5e8a716031039ee97be176099c08a\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
+		INJECTED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml
 activity#com.karumi.dexter.DexterActivity
 ADDED from [com.karumi:dexter:4.1.0] C:\Users\HemanthKandula\.android\build-cache\3c436b8d126ee524e2bb7bea456f3829d140d95a\output\AndroidManifest.xml:27:9-30:56
 	android:launchMode
@@ -351,7 +351,7 @@ ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\
 	android:name
 		ADDED from [com.daimajia.slider:library:1.1.5] C:\Users\HemanthKandula\.android\build-cache\6ea8e1456890ee751ea388cfd99bea0b6ad3de3e\output\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Android\AndroidStudioProjects\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-88:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\intern\Optimus_Tech_Project2017\app\src\main\AndroidManifest.xml:2:1-88:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] C:\Users\HemanthKandula\.android\build-cache\c24c57d1d749c6a6b1f709a521e85edd7f71a817\output\AndroidManifest.xml:25:9-232
 	android:configChanges

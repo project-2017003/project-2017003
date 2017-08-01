@@ -16,6 +16,7 @@ import android.support.annotation.NonNull;
 import android.support.design.BuildConfig;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.DialogFragment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -31,20 +32,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.google.android.gms.auth.api.Auth;
@@ -63,31 +58,32 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.optimustechproject2017.Interfaces.LoginDialogInterface;
 import com.optimustechproject2017.MainActivity;
-import com.optimustechproject2017.MyApplication;
 import com.optimustechproject2017.R;
 import com.optimustechproject2017.SettingsMy;
 import com.optimustechproject2017.User;
-import com.optimustechproject2017.auth.LoginActivity;
 import com.optimustechproject2017.listeners.OnSingleClickListener;
 import com.optimustechproject2017.listeners.OnTouchPasswordListener;
-import com.optimustechproject2017.utils.JsonUtils;
 import com.optimustechproject2017.utils.MsgUtils;
 import com.optimustechproject2017.utils.Utils;
 
 import java.util.Arrays;
 
-
 import timber.log.Timber;
 
+import static com.facebook.FacebookSdk.getApplicationContext;
 import static com.facebook.login.widget.ProfilePictureView.TAG;
 
 
 /**
- * Dialog handles user login, registration and forgotten password function.
+ * Dialog handles user signuppref, registration and forgotten password function.
  */
 public class LoginDialogFragment extends DialogFragment  {
 
     public static final String MSG_RESPONSE = "response: %s";
+    public static final int PLACE_PICKER_REQUEST = 1;
+    private static final int RC_SIGN_IN = 0;
+    private static FirebaseAuth auth;
+    public ImageView fb_login, googele_login, twittte_login;
     private CallbackManager callbackManager;
     private LoginDialogInterface loginDialogInterface;
     private ProgressDialog progressDialog;
@@ -96,21 +92,11 @@ public class LoginDialogFragment extends DialogFragment  {
     private LinearLayout loginRegistrationForm;
     private LinearLayout loginEmailForm;
     private LinearLayout loginEmailForgottenForm;
-
     private TextInputLayout loginRegistrationEmailWrapper;
     private TextInputLayout loginRegistrationPasswordWrapper;
-    private RadioButton loginRegistrationGenderWoman;
     private TextInputLayout loginEmailEmailWrapper;
     private TextInputLayout loginEmailPasswordWrapper;
     private TextInputLayout loginEmailForgottenEmailWrapper;
-
-
-
-    private static FirebaseAuth auth;
-
-    private static final int RC_SIGN_IN = 0 ;
-    public ImageView fb_login ,googele_login, twittte_login;
-
     private FirebaseAuth.AuthStateListener mAuthListener;
     private GoogleApiClient mGoogleApiClient;
 
@@ -123,12 +109,7 @@ public class LoginDialogFragment extends DialogFragment  {
 
 
 
-    /**
-     * Creates dialog which handles user login, registration and forgotten password function.
-     *
-     * @param loginDialogInterface listener receiving login/registration results.
-     * @return new instance of dialog.
-     */
+
     public static LoginDialogFragment newInstance(LoginDialogInterface loginDialogInterface) {
         LoginDialogFragment frag = new LoginDialogFragment();
         frag.loginDialogInterface = loginDialogInterface;
@@ -144,11 +125,41 @@ public class LoginDialogFragment extends DialogFragment  {
         super.onCreate(savedInstanceState);
         setStyle(DialogFragment.STYLE_NO_TITLE, R.style.dialogFullscreen);
         progressDialog = Utils.generateProgressDialog(getActivity(), false);
+
+
     }
 
     @Override
     public void onStart() {
         super.onStart();
+        auth = FirebaseAuth.getInstance();
+
+        auth.addAuthStateListener(mAuthListener);
+
+        //get current user
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch signuppref activity
+
+                } else {
+
+                    Log.d("TAG", "onAuthStateChanged:signed_in:" + user.getUid());
+                    if (user.getDisplayName() != null)
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                    dismiss();
+
+                }
+
+
+            }
+        };
 
         Dialog d = getDialog();
         if (d != null) {
@@ -238,7 +249,6 @@ public class LoginDialogFragment extends DialogFragment  {
         // Registration form
         loginRegistrationEmailWrapper = (TextInputLayout) view.findViewById(R.id.login_registration_email_wrapper);
         loginRegistrationPasswordWrapper = (TextInputLayout) view.findViewById(R.id.login_registration_password_wrapper);
-        loginRegistrationGenderWoman = (RadioButton) view.findViewById(R.id.login_registration_sex_woman);
         EditText registrationPassword = loginRegistrationPasswordWrapper.getEditText();
         if (registrationPassword != null) {
             registrationPassword.setOnTouchListener(new OnTouchPasswordListener(registrationPassword));
@@ -424,6 +434,8 @@ public class LoginDialogFragment extends DialogFragment  {
 
         // Registration
         TextView loginFormRegistrationButton = (TextView) view.findViewById(R.id.login_form_registration_btn);
+
+        //if(!SettingsMy.hidesignup()){ loginFormEmailButton.setVisibility(View.INVISIBLE);}
         loginFormRegistrationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -517,41 +529,48 @@ public class LoginDialogFragment extends DialogFragment  {
         }
     }
 
-    private void registerNewUser(EditText editTextEmail, EditText editTextPassword) {
-//        SettingsMy.setUserEmailHint(editTextEmail.getText().toString());
-//        String url = String.format(EndPoints.USER_REGISTER, SettingsMy.getActualNonNullShop(getActivity()).getId());
-//        progressDialog.show();
-//
-//        // get selected radio button from radioGroup
-//        JSONObject jo = new JSONObject();
-//        try {
-//            jo.put(JsonUtils.TAG_EMAIL, editTextEmail.getText().toString().trim());
-//            jo.put(JsonUtils.TAG_PASSWORD, editTextPassword.getText().toString().trim());
-//            jo.put(JsonUtils.TAG_GENDER, loginRegistrationGenderWoman.isChecked() ? "female" : "male");
-//        } catch (JSONException e) {
-//            Timber.e(e, "Parse new user registration exception");
-//            MsgUtils.showToast(getActivity(), MsgUtils.TOAST_TYPE_INTERNAL_ERROR, null, MsgUtils.ToastLength.SHORT);
-//            return;
-//        }
-//        if (BuildConfig.DEBUG) Timber.d("Register new user: %s", jo.toString());
-//
-//        GsonRequest<User> registerNewUser = new GsonRequest<>(Request.Method.POST, url, jo.toString(), User.class,
-//                new Response.Listener<User>() {
-//                    @Override
-//                    public void onResponse(@NonNull User response) {
-//                        Timber.d(MSG_RESPONSE, response.toString());
-//                        handleUserLogin(response);
-//                    }
-//                }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                if (progressDialog != null) progressDialog.cancel();
-//                MsgUtils.logAndShowErrorMessage(getActivity(), error);
-//            }
-//        });
-//        registerNewUser.setRetryPolicy(MyApplication.getDefaultRetryPolice());
-//        registerNewUser.setShouldCache(false);
-//        MyApplication.getInstance().addToRequestQueue(registerNewUser, CONST.LOGIN_DIALOG_REQUESTS_TAG);
+    private void registerNewUser(EditText inputEmail, EditText inputPassword) {
+
+
+        String email = inputEmail.getText().toString().trim();
+        String password = inputPassword.getText().toString().trim();
+
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (password.length() < 6) {
+            Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        //create user
+        auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Toast.makeText(getActivity(), "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                        progressDialog.hide();
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            Toast.makeText(getActivity(), "Authentication failed." + task.getException(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+
+                        }
+                    }
+                });
+
+
+
     }
 
     private void invokeLoginWithEmail() {
@@ -561,8 +580,45 @@ public class LoginDialogFragment extends DialogFragment  {
         }
     }
 
-    private void logInWithEmail(EditText editTextEmail, EditText editTextPassword) {
+    private void logInWithEmail(EditText inputEmail, final EditText inputPassword) {
 
+
+        String email = inputEmail.getText().toString();
+        final String password = inputPassword.getText().toString();
+
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        progressDialog.show();
+
+        //authenticate user
+        auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        progressDialog.hide();
+                        if (!task.isSuccessful()) {
+                            // there was an error
+                            if (password.length() < 6) {
+                                inputPassword.setError(getString(R.string.minimum_password));
+                            } else {
+                                Toast.makeText(getActivity(), getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+                            }
+                        } else {
+                            dismiss();
+                        }
+                    }
+                });
 
 
 
@@ -631,39 +687,28 @@ public class LoginDialogFragment extends DialogFragment  {
         }
     }
 
-    private void resetPassword(EditText emailOfForgottenPassword) {
+    private void resetPassword(EditText oldEmail) {
 //        String url = String.format(EndPoints.USER_RESET_PASSWORD, SettingsMy.getActualNonNullShop(getActivity()).getId());
         progressDialog.show();
-
-//        JSONObject jo = new JSONObject();
-//        try {
-//            jo.put(JsonUtils.TAG_EMAIL, emailOfForgottenPassword.getText().toString().trim());
-//        } catch (JSONException e) {
-//            Timber.e(e, "Parse resetPassword exception");
-//            MsgUtils.showToast(getActivity(), MsgUtils.TOAST_TYPE_INTERNAL_ERROR, null, MsgUtils.ToastLength.SHORT);
-//            return;
-//        }
-//        if (BuildConfig.DEBUG) Timber.d("Reset password email: %s", jo.toString());
+        if (!oldEmail.getText().toString().trim().equals("")) {
+            auth.sendPasswordResetEmail(oldEmail.getText().toString().trim())
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getActivity(), "Reset password email is sent!", Toast.LENGTH_SHORT).show();
+                                progressDialog.hide();
+                            } else {
+                                Toast.makeText(getActivity(), "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                progressDialog.hide();
+                            }
+                        }
+                    });
+        } else {
+            oldEmail.setError("Enter email");
+            progressDialog.hide();
+        }
 //
-//        JsonRequest req = new JsonRequest(Request.Method.POST, url,
-//                jo, new Response.Listener<JSONObject>() {
-//            @Override
-//            public void onResponse(JSONObject response) {
-//                Timber.d("Reset password on url success. Response: %s", response.toString());
-//                progressDialog.cancel();
-//                MsgUtils.showToast(getActivity(), MsgUtils.TOAST_TYPE_MESSAGE, getString(R.string.Check_your_email_we_sent_you_an_confirmation_email), MsgUtils.ToastLength.LONG);
-//                setVisibilityOfEmailForgottenForm(false);
-//            }
-//        }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                if (progressDialog != null) progressDialog.cancel();
-//                MsgUtils.logAndShowErrorMessage(getActivity(), error);
-//            }
-//        });
-//        req.setRetryPolicy(MyApplication.getDefaultRetryPolice());
-//        req.setShouldCache(false);
-//        MyApplication.getInstance().addToRequestQueue(req, CONST.LOGIN_DIALOG_REQUESTS_TAG);
     }
 
     private void hideSoftKeyboard() {
@@ -759,10 +804,7 @@ public class LoginDialogFragment extends DialogFragment  {
         }
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
+
 
     @Override
     public void onDetach() {
@@ -770,9 +812,7 @@ public class LoginDialogFragment extends DialogFragment  {
         super.onDetach();
     }
 
- 
 
-   
     /**
      * Handle errors, when user have identity at least.
      * Show error message to user.
@@ -784,14 +824,6 @@ public class LoginDialogFragment extends DialogFragment  {
         if (getActivity() != null)
             MsgUtils.showToast(getActivity(), MsgUtils.TOAST_TYPE_MESSAGE, message, MsgUtils.ToastLength.LONG);
     }
-
-    private enum FormState {
-        BASE, REGISTRATION, EMAIL, FORGOTTEN_PASSWORD
-    }
-
-
-
-
 
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d(TAG, "handleFacebookAccessToken:" + token);
@@ -805,6 +837,12 @@ public class LoginDialogFragment extends DialogFragment  {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = auth.getCurrentUser();
+
+                            if (user != null) {
+
+
+                            }
+
                             //gotomainact();
                             //updateUI(user);
                         } else {
@@ -820,8 +858,6 @@ public class LoginDialogFragment extends DialogFragment  {
                 });
     }
 
-
-
     public void signIn( ) {
 
 
@@ -829,16 +865,19 @@ public class LoginDialogFragment extends DialogFragment  {
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
-
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        Log.d("requestCode1", String.valueOf(requestCode));
+        Log.d("resultCode1", String.valueOf(resultCode));
+        Log.d("data1", String.valueOf(data));
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
 
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            Log.d("resultgoogle", result.isSuccess() + "");
+
             if (result.isSuccess()) {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
@@ -847,6 +886,8 @@ public class LoginDialogFragment extends DialogFragment  {
             } else {
                 // Google Sign In failed, update UI appropriately
                 // ...
+
+
             }
 
 
@@ -857,9 +898,6 @@ public class LoginDialogFragment extends DialogFragment  {
         callbackManager.onActivityResult(requestCode, resultCode, data);
 
     }
-
-
-
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
@@ -877,14 +915,115 @@ public class LoginDialogFragment extends DialogFragment  {
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithCredential", task.getException());
 //                            Toast.makeText(Ta, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                        } else {
+
+
                         }
-
-
 
 
                     }
                 });
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mGoogleApiClient.stopAutoManage(getActivity());
+        mGoogleApiClient.disconnect();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            auth.removeAuthStateListener(mAuthListener);
+        }
+    }
+
+
+//    public void getplaceid(String Email) {
+//        AsyncHttpClient client = new AsyncHttpClient();
+//        RequestParams params = new RequestParams();
+//progressDialog.show();
+//        params.put("Email",Email);
+//        // Log.d("event",Clustername);
+//        client.post(getplaceid , params, new AsyncHttpResponseHandler() {
+//            @Override
+//            public void onSuccess(String response) {
+//                progressDialog.hide();
+//                System.out.println(response);
+//if(response!=null)
+//{                final String placeId = response;
+//
+//
+//        Places.GeoDataApi.getPlaceById(mGoogleApiClient1, placeId)
+//                        .setResultCallback(new ResultCallback<PlaceBuffer>() {
+//                            @Override
+//                            public void onResult(PlaceBuffer places) {
+//                                if (places.getStatus().isSuccess() && places.getCount() > 0) {
+//                                    final Place myPlace = places.get(0);
+//
+//                                    SettingsMy.setaddress(myPlace.getAddress().toString(),null,placeId);
+//                                    SettingsMy.sethidesignup(true);
+//                                    progressDialog.hide();
+//dismiss();
+//
+//
+//                                    Log.i(TAG, "Place found: " + myPlace.getName() +"  "+ myPlace.getAddress());
+//                                } else {
+//                                    sedelivery();
+//                                    Log.e(TAG, "Place not found");
+//                                }
+//                                places.release();
+//                            }
+//                        });
+//
+//
+//
+//                System.out.println(response);
+//               }
+//            }
+//            @Override
+//            public void onFailure(int statusCode, Throwable error, String content) {
+//
+//
+//                // TODO Auto-generated method stub
+//                progressDialog.hide();
+//                if (statusCode == 404) {
+//                    Toast.makeText(getActivity(), "Requested resource not found", Toast.LENGTH_LONG).show();
+//                } else if (statusCode == 500) {
+//                    Toast.makeText(getActivity(), "Something went wrong at server end", Toast.LENGTH_LONG).show();
+//                } else {
+//                    Toast.makeText(getActivity(), "Device might not be connected to Internet]",
+//                            Toast.LENGTH_LONG).show();
+//                }
+//
+//
+//                sedelivery();
+//            }
+//        });
+//    }
+
+//    private void sedelivery() {
+//
+//
+//        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
+//
+//        try {
+//            startActivityForResult(builder.build(getActivity()), PLACE_PICKER_REQUEST);
+//
+//
+//        } catch (GooglePlayServicesRepairableException e) {
+//            e.printStackTrace();
+//        } catch (GooglePlayServicesNotAvailableException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+
+
+    private enum FormState {
+        BASE, REGISTRATION, EMAIL, FORGOTTEN_PASSWORD
+    }
 
 }

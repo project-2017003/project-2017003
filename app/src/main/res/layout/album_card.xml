@@ -23,7 +23,10 @@
                 android:layout_height="@dimen/album_cover_height"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/app_icon"
+
+                android:transitionName="fragment_image_trans" />
 
 
             <TextView

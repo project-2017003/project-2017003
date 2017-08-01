@@ -12,7 +12,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,26 +26,32 @@ import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.firebase.auth.FirebaseAuth;
-import com.optimustechproject2017.auth.LoginActivity;
+import com.optimustechproject2017.Dialogs.LoginDialogFragment;
+import com.optimustechproject2017.Interfaces.LoginDialogInterface;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 import timber.log.Timber;
 
-public class SplashActivity extends AppCompatActivity   {
+public class SplashActivity extends AppCompatActivity implements
+        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     public static final String REFERRER = "referrer";
     private static final String TAG = SplashActivity.class.getSimpleName();
+    private static final int GOOGLE_API_CLIENT_ID = 0;
     int PLACE_PICKER_REQUEST = 1;
     TextInputLayout addresslayout,houselayout;
+    Place place;
+    String placeId;
     private VideoView mVV;
     private FirebaseAuth auth;
     private Activity activity;
@@ -85,21 +94,32 @@ private boolean appintro = true;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        mGoogleApiClient = new GoogleApiClient.Builder(SplashActivity.this)
+//                .addApi(Places.GEO_DATA_API)
+//                .enableAutoManage(this, GOOGLE_API_CLIENT_ID, this)
+//                .addConnectionCallbacks(this)
+//                .build();
 
-        Log.d("kkk",SettingsMy.getadd());
-        if (SettingsMy.getadd() != null || !SettingsMy.getadd().equals("")  ) {
+
+        Log.d("kkk", SettingsMy.haveaddress() + "");
+        if (SettingsMy.haveaddress()) {
+
+            Log.d("kkk", SettingsMy.getadd());
+            if (SettingsMy.getadd() != null || !SettingsMy.getadd().equals("")) {
 
 
-            Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
 //            intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY); // <= Don't save in back stack
 
 
-            this.startActivity (intent);
-            this.finishActivity (0);
+                this.startActivity(intent);
+                this.finishActivity(0);
 
 //            startActivity(new Intent(this,MainActivity.class));
-           finish();
-        }else{
+                finish();
+            }
+
+        } else {
 
         Timber.tag(TAG);
         activity = this;
@@ -167,14 +187,7 @@ startMainActivity(null);
             layoutContentNoConnection = findViewById(R.id.splash_content_no_connection);
             layoutContentcontinue= findViewById(R.id.splash_content_continue);
             layoutsetAdddress =findViewById(R.id.splash_set_address);
-            LinearLayout alreadylogin = (LinearLayout) findViewById(R.id.already_login);
-            alreadylogin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-                    finish();
-                }
-            });
+
 
             final Button Save_proceed =(Button)findViewById(R.id.save_and_proceed) ;
 
@@ -217,7 +230,9 @@ startMainActivity(null);
 
                     addres= addresslayout.getEditText().getText().toString();
                     hou = houselayout.getEditText().getText().toString();
-                    SettingsMy.setaddress(addres,hou);
+                        Double latitude = place.getLatLng().latitude;
+                        Double longitude = place.getLatLng().longitude;
+                        SettingsMy.setaddress(addres, hou, placeId, latitude.toString(), longitude.toString());
 
                         startActivity(new Intent(SplashActivity.this,MainActivity.class));
                         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
@@ -285,28 +300,10 @@ layoutsetAdddress.setVisibility(View.GONE);
 
 
 
-                        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
-
-                        try {
-                            startActivityForResult(builder.build(SplashActivity.this), PLACE_PICKER_REQUEST);
-
-
-                        } catch (GooglePlayServicesRepairableException e) {
-                            e.printStackTrace();
-                        } catch (GooglePlayServicesNotAvailableException e) {
-                            e.printStackTrace();
-                        }
                     }
 
 
-
-
-
-
-
-
-
-
+                    setdel();
                 }
             });
             mVV = (VideoView)findViewById(R.id.videoView1);
@@ -355,25 +352,64 @@ layoutsetAdddress.setVisibility(View.GONE);
         }
     }
 
+    private void setdel() {
+
+
+        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
+
+        try {
+            startActivityForResult(builder.build(SplashActivity.this), PLACE_PICKER_REQUEST);
+
+
+        } catch (GooglePlayServicesRepairableException e) {
+            e.printStackTrace();
+        } catch (GooglePlayServicesNotAvailableException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 
+        Log.d("requestCode", String.valueOf(requestCode));
+        Log.d("resultCode", String.valueOf(resultCode));
+        Log.d("data", String.valueOf(data));
 
 
         if (requestCode == PLACE_PICKER_REQUEST) {
             if (resultCode == RESULT_OK) {
-                Place place = PlacePicker.getPlace(this,data);
+                System.out.println(data.getAction() + "");
+                System.out.println(data + "");
+                System.out.println("yooo");
+
+
+                place = PlacePicker.getPlace(this, data);
                 //Place place = PlacePicker.getPlace(data, this);
                 String toastMsg = String.format("Place: %s", place.getName());
                 final CharSequence name = place.getName();
                 final CharSequence address = place.getAddress();
                 final CharSequence phone = place.getPhoneNumber();
-                final String placeId = place.getId();
+                placeId = place.getId();
                 String attribution = PlacePicker.getLatLngBounds(data).toString();
+                System.out.println("yooo");
+                System.out.print(place.getLatLng());
+                System.out.print(attribution);
+                Log.d(TAG, placeId);
+                Double latitude = place.getLatLng().latitude;
+                Double longitude = place.getLatLng().longitude;
+                SettingsMy.setaddress(address.toString(), null, placeId, latitude.toString(), longitude.toString());
+
+
+
+
+
+
+
+
                 Toast.makeText(this, toastMsg, Toast.LENGTH_LONG).show();
-                Log.d(TAG,toastMsg+"   "+name+"    "+ address+ "    "+phone+"    "+placeId+ "    "+attribution);
-addresslayout.getEditText().setText(address);
+                //Log.d(TAG,toastMsg+"   "+name+"    "+ address+ "    "+phone+"    "+placeId+ "    "+attribution);
+                addresslayout.getEditText().setText(address);
                 layoutContentcontinue.setVisibility(View.GONE);
 
                 layoutsetAdddress.setVisibility(View.VISIBLE);
@@ -394,7 +430,10 @@ addresslayout.getEditText().setText(address);
 
             }
 
-    }}
+        }
+
+
+    }
 
     private void startMainActivity(Bundle bundle) {
         if (appintro) {
@@ -419,21 +458,6 @@ addresslayout.getEditText().setText(address);
             startActivity(mainIntent);
             finish();
         }
-    }
-
-
-    public void splashScreen (final int x)
-    {
-        new Thread(new Runnable() {
-            public void run() {
-                try {
-                    Thread.sleep(x);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }).run();
     }
 
 
@@ -539,7 +563,42 @@ addresslayout.getEditText().setText(address);
     }
 
 
+    private void launchUserSpecificFragment(LoginDialogInterface loginListener) {
+        auth = FirebaseAuth.getInstance();
+
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), CartActivity.class));
+
+        } else {
+            DialogFragment loginDialogFragment = LoginDialogFragment.newInstance(loginListener);
+            loginDialogFragment.show(getSupportFragmentManager(), LoginDialogFragment.class.getSimpleName());
+        }
+    }
 
 
+    public void onLoginSelected() {
+        launchUserSpecificFragment(new LoginDialogInterface() {
+            @Override
+            public void successfulLoginOrRegistration(User user) {
+                // If signuppref was successful launch CartActivity.
+                onLoginSelected();
+            }
+        });
+    }
+
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
 
     }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
+}

@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import com.optimustechproject2017.R;
 
-import me.himanshusoni.quantityview.QuantityView;
 
 /**
  * Created by HemanthKandula on 7/18/2017.

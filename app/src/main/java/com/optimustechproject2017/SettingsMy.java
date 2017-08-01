@@ -14,10 +14,13 @@ public class SettingsMy {
     public static final String PREF_ACTUAL_SHOP = "pref_actual_shop";
     public static final String PREF_ACTIVE_USER = "pref_active_user";
     public static final String PREF_USER_EMAIL = "pref_user_email";
+    public static final String signuppref = "hide_signup";
     public static final String APPINTRO="Pref_app_Intro";
-
     public static final String address="ADDRESS";
     public static final String houseNo="HOUSE";
+    public static final String placeID = "PlaceID";
+    public static final String Latitude = "latitude";
+    public static final String Longitude = "longitude";
 
 
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
@@ -38,7 +41,7 @@ public class SettingsMy {
      */
 
     /**
-     * Get user email. Used for login purpose.
+     * Get user email. Used for signuppref purpose.
      *
      * @return email of last logged user.
      */
@@ -51,7 +54,7 @@ public class SettingsMy {
 
     /**
      * Set user email to preferences.
-     * Used for login purpose.
+     * Used for signuppref purpose.
      *
      * @param userEmail email of last logged user.
      */
@@ -86,6 +89,7 @@ public class SettingsMy {
 
 
     }
+
 
     public static boolean getappintro(){
         SharedPreferences prefs = getSettings();
@@ -123,12 +127,31 @@ public class SettingsMy {
         return editor.commit();
     }
 
-    public static void setaddress(String addres, String hou) {
+    public static void setaddress(String addres, String hou, String placeid, String latitude, String longitude) {
 
         putParam(houseNo,hou);
         putParam(address,addres);
 
+        putParam(placeID, placeid);
+        putParam(Latitude, latitude);
+        putParam(Longitude, longitude);
 
+
+
+
+    }
+
+    public static boolean hidesignup() {
+
+        SharedPreferences prefs = getSettings();
+        return prefs.getBoolean(signuppref, false);
+
+
+    }
+
+
+    public static void sethidesignup(boolean signup) {
+        putParam(signuppref, signup);
 
 
     }
@@ -141,5 +164,34 @@ public class SettingsMy {
         return prefs.getString(address,"");
 
 
+    }
+
+
+    public static String getPlaceID() {
+
+        SharedPreferences prefs = getSettings();
+        return prefs.getString(placeID, "");
+
+
+    }
+
+    public static String getLatitude() {
+
+        SharedPreferences prefs = getSettings();
+        return prefs.getString(Latitude, "");
+
+    }
+
+    public static String getLongitude() {
+
+        SharedPreferences prefs = getSettings();
+        return prefs.getString(Longitude, "");
+
+
+    }
+
+    public static boolean haveaddress() {
+        SharedPreferences prefs = getSettings();
+        return prefs.contains(address);
     }
 }

@@ -1,6 +1,5 @@
 package com.optimustechproject2017.adapter;
 
-import me.himanshusoni.quantityview.QuantityView;
 
 /**
  * Created by HemanthKandula on 7/18/2017.
@@ -8,7 +7,6 @@ import me.himanshusoni.quantityview.QuantityView;
 
 public class ItemObject {
     private String contents,smalldetails,price;
-    private QuantityView quantityView;
     private int imaage;
     private String quant;
 
@@ -42,8 +40,5 @@ public class ItemObject {
 
     public String getQuant(){
         return quant;
-    }
-    public QuantityView getQuantityView(){
-     return quantityView;
     }
 }

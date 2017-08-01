@@ -1,37 +1,42 @@
-package com.optimustechproject2017.fragments;
+package com.optimustechproject2017;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.android.volley.VolleyError;
-import com.google.firebase.auth.FirebaseAuth;
-import com.optimustechproject2017.MainActivity;
-import com.optimustechproject2017.R;
-import com.optimustechproject2017.utils.MsgUtils;
+import com.optimustechproject2017.Adapters.ClickListener;
+import com.optimustechproject2017.Adapters.RecyclerTouchListener;
+import com.optimustechproject2017.adapter.HeaderRecyclerViewSection;
+import com.optimustechproject2017.adapter.ItemObject;
 import com.optimustechproject2017.utils.Utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter;
 import timber.log.Timber;
 
 /**
  * Created by HemanthKandula on 7/21/2017.
  */
 
-public class CartFragment extends AppCompatActivity {
+public class CartActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
     private View emptyCart;
     private View cartFooter;
+
+
+    private RecyclerView sectionHeader;
+    private SectionedRecyclerViewAdapter sectionAdapter;
+
 
     private RecyclerView cartRecycler;
 //    private CartRecyclerAdapter cartRecyclerAdapter;
@@ -77,6 +82,44 @@ public class CartFragment extends AppCompatActivity {
 
         progressDialog = Utils.generateProgressDialog(getApplicationContext(), false);
 
+
+        sectionHeader = (RecyclerView) findViewById(R.id.cart_recycler);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        sectionHeader.setLayoutManager(linearLayoutManager);
+        sectionHeader.setHasFixedSize(true);
+        HeaderRecyclerViewSection firstSection = new HeaderRecyclerViewSection("Cart", getDataSource());
+
+        sectionAdapter = new SectionedRecyclerViewAdapter();
+        sectionAdapter.addSection(firstSection);
+
+        sectionHeader.setAdapter(sectionAdapter);
+
+
+        sectionHeader.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), sectionHeader, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+
+                // TestRecyclerViewAdapter album = mContentItems.get(position);
+
+
+//                Intent Cl = new Intent(getContext(), ProductDetail.class);
+//                Cl.putExtra("name","name");
+//                Cl.putExtra("no",position);
+//
+//                startActivity(Cl);
+
+            }
+
+
+            @Override
+            public void onLongClick(View view, int position) {
+                //Album album = albumList.get(position);
+
+                // Toast.makeText(getApplicationContext(), album.getName() + " is selected!", Toast.LENGTH_SHORT).show();
+
+            }
+        }));
 
 
 
@@ -135,6 +178,17 @@ public class CartFragment extends AppCompatActivity {
 
     }
 
+
+    private List<ItemObject> getDataSource() {
+        List<ItemObject> data = new ArrayList<ItemObject>();
+
+        data.add(new ItemObject("RestaurantName", "details aboit it ", "Rs 100"));
+        data.add(new ItemObject("RestaurantName", "details aboit it ", "Rs 150"));
+
+//        data.add(new ItemObject("This is the item content in the first position"));
+//        data.add(new ItemObject("This is the item content in the second position"));
+        return data;
+    }
 
 
 

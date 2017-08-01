@@ -7615,8 +7615,14 @@ containing a value of this type.
         public static final int CustomCastTheme=0x7f0b0102;
         public static final int Material_DrawerArrowStyle=0x7f0b0103;
         public static final int Material_Light_DrawerArrowStyle=0x7f0b0104;
+        /**  Material specific values 
+         */
         public static final int MaterialBaseBaseTheme=0x7f0b0105;
+        /**  Material specific values 
+         */
         public static final int MaterialBaseBaseTheme_Light=0x7f0b0106;
+        /**  Material specific values 
+         */
         public static final int MaterialBaseBaseTheme_Light_DarkToolbar=0x7f0b0107;
         /** 
         <item name="android:dialogTheme">@style/MaterialBaseTheme.Dialog</item>
