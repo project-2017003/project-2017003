@@ -6,15 +6,20 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
-import com.optimustechproject2017.adapter.HeaderRecyclerViewSection;
+import com.optimustechproject2017.adapter.HeaderRecyclerViewSectioncart;
 import com.optimustechproject2017.adapter.ItemObject;
 import com.optimustechproject2017.utils.Utils;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,12 +87,16 @@ public class CartActivity extends AppCompatActivity {
 
         progressDialog = Utils.generateProgressDialog(getApplicationContext(), false);
 
+        Intent intent = getIntent();
+        String response = intent.getStringExtra("response");
 
+
+        Log.d("cartresp2", response);
         sectionHeader = (RecyclerView) findViewById(R.id.cart_recycler);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         sectionHeader.setLayoutManager(linearLayoutManager);
         sectionHeader.setHasFixedSize(true);
-        HeaderRecyclerViewSection firstSection = new HeaderRecyclerViewSection("Cart", getDataSource());
+        HeaderRecyclerViewSectioncart firstSection = new HeaderRecyclerViewSectioncart("Cart", getcat(response), CartActivity.this);
 
         sectionAdapter = new SectionedRecyclerViewAdapter();
         sectionAdapter.addSection(firstSection);
@@ -182,13 +191,60 @@ public class CartActivity extends AppCompatActivity {
     private List<ItemObject> getDataSource() {
         List<ItemObject> data = new ArrayList<ItemObject>();
 
-        data.add(new ItemObject("RestaurantName", "details aboit it ", "Rs 100"));
-        data.add(new ItemObject("RestaurantName", "details aboit it ", "Rs 150"));
+        data.add(new ItemObject("1", "RestaurantName", "details aboit it ", "Rs 100"));
+        data.add(new ItemObject("2", "RestaurantName", "details aboit it ", "Rs 150"));
 
 //        data.add(new ItemObject("This is the item content in the first position"));
 //        data.add(new ItemObject("This is the item content in the second position"));
         return data;
     }
+
+
+    private List<ItemObject> getcat(String response) {
+        List<ItemObject> data = new ArrayList<ItemObject>();
+
+        try {
+
+
+            JSONArray arr = new JSONArray(response);
+
+
+            System.out.println(arr.length());
+            if (arr.length() != 0) {
+                for (int i = 0; i < arr.length(); i++) {
+                    JSONObject obj = (JSONObject) arr.get(i);
+
+
+                    data.add(new ItemObject(obj.get("ItemID").toString(), obj.get("ItemName").toString(), obj.get("itemdetails").toString(), obj.get("Price").toString(), obj.get("Quant").toString()));
+
+
+                }
+
+
+//                updateMySQLSyncSts(gson.toJson(Eventsynclist));
+
+            }
+
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+
+//
+//
+//        data.add(new ItemObject("RestaurantName","details aboit it ","Rs 100"));
+//        data.add(new ItemObject("RestaurantName","details aboit it ","Rs 150"));
+
+//        data.add(new ItemObject("This is the item content in the first position"));
+//        data.add(new ItemObject("This is the item content in the second position"));
+        return data;
+    }
+
+
+
+
 
 
 

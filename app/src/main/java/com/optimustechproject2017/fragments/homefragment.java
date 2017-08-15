@@ -282,7 +282,7 @@ public class homefragment extends Fragment {
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
 
-mAdapter = new AlbumsAdapter(getContext(),mContentItems);
+        mAdapter = new AlbumsAdapter(getContext(), mContentItems);
         //mAdapter = new TestRecyclerViewAdapter(mContentItems);
         mRecyclerView.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));
 
@@ -395,7 +395,7 @@ mAdapter = new AlbumsAdapter(getContext(),mContentItems);
 
 
                 Intent intent = new Intent(getActivity(), RestarentActivity.class);
-// Pass data object in the bundle and populate details activity.
+                // Pass data object in the bundle and populate details activity.
                 Album a = mContentItems_fav.get(position);
 
                 ImageView image = (ImageView) inflatedView.findViewById(R.id.thumbnail);

@@ -21,13 +21,14 @@ public class SettingsMy {
     public static final String placeID = "PlaceID";
     public static final String Latitude = "latitude";
     public static final String Longitude = "longitude";
-
-
+    public static final String cart = "cart";
+    public static final String ItemID = "ItemID";
+    public static final String Quant = "Quant";
+    public static final String Restarentdet = "All_Restarent_details";
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
     public static final String REGISTRATION_COMPLETE = "registrationComplete";
-
     private static final String TAG = SettingsMy.class.getSimpleName();
-
+    public static String EmailPhone;
     private static SharedPreferences sharedPref;
 
     private SettingsMy() {}
@@ -91,12 +92,52 @@ public class SettingsMy {
     }
 
 
+//    public static void setCart(String  itemID, String quant){
+//
+//
+//
+//        FirebaseAuth auth;
+//        auth =FirebaseAuth.getInstance();
+//        JSONObject jo = new JSONObject();
+//        try {
+//            jo.put(ItemID,itemID);
+//            jo.put(Quant,quant);
+//
+//            jo.put(EmailPhone,auth.getCurrentUser().getEmail());
+//
+//
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//
+//
+//
+//
+//        putParam(cart,);
+//
+//    }
+
+    public static String getRestarentdet() {
+        SharedPreferences prefs = getSettings();
+        return prefs.getString(Restarentdet, "");
+
+
+    }
+
+    public static void setRestarentdet(String responce) {
+        putParam(Restarentdet, responce);
+
+
+    }
+
     public static boolean getappintro(){
         SharedPreferences prefs = getSettings();
        return prefs.getBoolean(APPINTRO,true);
 
 
     }
+
 
     /**
      * Obtain preferences instance.
@@ -194,4 +235,6 @@ public class SettingsMy {
         SharedPreferences prefs = getSettings();
         return prefs.contains(address);
     }
+
+
 }

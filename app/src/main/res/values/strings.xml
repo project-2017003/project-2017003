@@ -19,6 +19,7 @@
     <string name="The_entries_must_match">The entries must match</string>
     <string name="Content_is_empty">Content is empty.</string>
 
+
     <!-- Login related strings-->
     <string name="Log_in">Log in</string>
     <string name="Log_out">Log out</string>

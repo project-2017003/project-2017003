@@ -16,4 +16,88 @@
         android:scrollbars="vertical" />
 
 
+    <!-- Your FAB implementation -->
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:id="@+id/revealLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center">
+
+            <!-- TODO: Put your sheet items here -->
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <ListView
+                    android:id="@+id/listviews"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </ListView>
+
+                <!--&lt;!&ndash; Recording &ndash;&gt;-->
+                <!--<TextView-->
+                <!--android:id="@+id/fab_sheet_item_recording"-->
+                <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
+                <!--android:text="Most Popular" />-->
+
+                <!--&lt;!&ndash; Reminder &ndash;&gt;-->
+                <!--<TextView-->
+                <!--android:id="@+id/fab_sheet_item_reminder"-->
+                <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
+
+                <!--android:text="VEG" />-->
+
+                <!--&lt;!&ndash; Photo &ndash;&gt;-->
+                <!--<TextView-->
+                <!--android:id="@+id/fab_sheet_item_photo"-->
+                <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
+
+                <!--android:text="Snacks" />-->
+
+                <!--&lt;!&ndash; Note &ndash;&gt;-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <com.optimustechproject2017.Fab
+            android:id="@+id/fab"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="40sp"
+            android:src="@drawable/menu" />
+    </io.codetail.widget.RevealLinearLayout>
+
+
 </RelativeLayout>

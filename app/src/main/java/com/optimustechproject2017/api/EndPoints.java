@@ -20,6 +20,13 @@ public class EndPoints {
     public static final String SHOPS_SINGLE = API_URL.concat(CONST.ORGANIZATION_ID + "/shops/%d");
     public static final String getplaceid = API_URL.concat("getplaceid.php");
     public static final String GET_RESTAURANTS = API_URL.concat("rests.php");
+    public static final String GET_RESTAURANTITEMS = API_URL.concat("restitems.php");
+    public static final String UpdateCart = API_URL.concat("cartedit.php");
+
+
+
+
+
     public static final String BANNERS = API_URL.concat("%d/banners");
     public static final String PAGES_SINGLE = API_URL.concat("%d/pages/%d");
     public static final String PAGES_TERMS_AND_COND = API_URL.concat("%d/pages/terms");

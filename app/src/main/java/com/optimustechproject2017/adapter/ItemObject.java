@@ -8,8 +8,7 @@ package com.optimustechproject2017.adapter;
 public class ItemObject {
     private String contents,smalldetails,price;
     private int imaage;
-    private String quant;
-
+    private String quant, ID;
 
 
 //    public ItemObject(String contents) {
@@ -20,10 +19,22 @@ public class ItemObject {
         this.quant =quant;
     }
 
-    public ItemObject(String title, String smalldetails, String price) {
+    public ItemObject(String id, String title, String smalldetails, String price) {
         this.contents = title;
         this.smalldetails = smalldetails;
         this.price = price;
+        this.ID = id;
+    }
+
+    public ItemObject(String id, String itemName, String itemdetails, String price, String quant) {
+
+
+        this.contents = itemName;
+        this.smalldetails = itemdetails;
+        this.price = price;
+        this.ID = id;
+
+        this.quant = quant;
     }
 
     public String getContents() {
@@ -37,6 +48,12 @@ public class ItemObject {
     public String getPrice() {
         return price;
     }
+
+    public String getID() {
+        return ID;
+    }
+
+
 
     public String getQuant(){
         return quant;

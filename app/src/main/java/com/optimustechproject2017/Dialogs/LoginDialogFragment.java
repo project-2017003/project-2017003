@@ -108,9 +108,9 @@ public class LoginDialogFragment extends DialogFragment  {
     }
 
 
+    public static LoginDialogFragment newInstance(
 
-
-    public static LoginDialogFragment newInstance(LoginDialogInterface loginDialogInterface) {
+            LoginDialogInterface loginDialogInterface) {
         LoginDialogFragment frag = new LoginDialogFragment();
         frag.loginDialogInterface = loginDialogInterface;
         return frag;
@@ -839,7 +839,7 @@ public class LoginDialogFragment extends DialogFragment  {
                             FirebaseUser user = auth.getCurrentUser();
 
                             if (user != null) {
-
+                                dismiss();
 
                             }
 
@@ -914,6 +914,7 @@ public class LoginDialogFragment extends DialogFragment  {
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithCredential", task.getException());
+                            dismiss();
 //                            Toast.makeText(Ta, "Authentication failed.", Toast.LENGTH_SHORT).show();
                         } else {
 

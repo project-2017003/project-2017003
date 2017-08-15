@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <android.support.design.widget.CoordinatorLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
@@ -11,7 +12,8 @@
 
 	<!-- Scrollable view here -->
 
-    <android.support.v4.view.ViewPager
+
+        <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -128,7 +130,7 @@
         app:layout_collapseParallaxMultiplier="0.7" />
 
 
-            <android.support.design.widget.TabLayout
+        <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -164,75 +166,75 @@
             </android.support.design.widget.AppBarLayout>
 
 
-        <!-- Your FAB implementation -->
+        <!--&lt;!&ndash; Your FAB implementation &ndash;&gt;-->
 
-        <!-- Overlay that dims the screen -->
-        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
-            android:id="@+id/overlay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <!--&lt;!&ndash; Overlay that dims the screen &ndash;&gt;-->
+        <!--<com.gordonwong.materialsheetfab.DimOverlayFrameLayout-->
+        <!--android:id="@+id/overlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
 
-        <!-- Circular reveal container for the sheet -->
-        <io.codetail.widget.RevealLinearLayout
-            android:id="@+id/revealLinearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:gravity="end|bottom"
-            android:orientation="vertical">
+        <!--&lt;!&ndash; Circular reveal container for the sheet &ndash;&gt;-->
+        <!--<io.codetail.widget.RevealLinearLayout-->
+        <!--android:id="@+id/revealLinearLayout2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:gravity="end|bottom"-->
+        <!--android:orientation="vertical">-->
 
-            <!-- Sheet that contains your items -->
-            <android.support.v7.widget.CardView
-                android:id="@+id/fab_sheet"
-                android:layout_width="250dp"
-                android:layout_height="300dp"
-                android:layout_gravity="center_horizontal">
+        <!--&lt;!&ndash; Sheet that contains your items &ndash;&gt;-->
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/fab_sheet"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal">-->
 
-                <!-- TODO: Put your sheet items here -->
-                <!-- Sheet items -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <!--&lt;!&ndash; TODO: Put your sheet items here &ndash;&gt;-->
+        <!--&lt;!&ndash; Sheet items &ndash;&gt;-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
 
-                    <!-- Recording -->
-                    <TextView
-                        android:id="@+id/fab_sheet_item_recording"
-                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
-                        android:text="Most Popular" />
+        <!--&lt;!&ndash; Recording &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/fab_sheet_item_recording"-->
+        <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
+        <!--android:text="Most Popular" />-->
 
-                    <!-- Reminder -->
-                    <TextView
-                        android:id="@+id/fab_sheet_item_reminder"
-                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+        <!--&lt;!&ndash; Reminder &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/fab_sheet_item_reminder"-->
+        <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
 
-                        android:text="VEG" />
+        <!--android:text="VEG" />-->
 
-                    <!-- Photo -->
-                    <TextView
-                        android:id="@+id/fab_sheet_item_photo"
-                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+        <!--&lt;!&ndash; Photo &ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/fab_sheet_item_photo"-->
+        <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
 
-                        android:text="Snacks" />
+        <!--android:text="Snacks" />-->
 
-                    <!-- Note -->
+        <!--&lt;!&ndash; Note &ndash;&gt;-->
 
-                </LinearLayout>
+        <!--</LinearLayout>-->
 
-            </android.support.v7.widget.CardView>
+        <!--</android.support.v7.widget.CardView>-->
 
-            <com.optimustechproject2017.Fab
-                android:id="@+id/fab"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="40sp"
-                android:layout_toEndOf="@+id/revealLinearLayout2"
-                android:layout_toRightOf="@+id/revealLinearLayout2"
-                android:src="@drawable/menu" />
-        </io.codetail.widget.RevealLinearLayout>
+        <!--<com.optimustechproject2017.Fab-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="40sp"-->
+        <!--android:layout_toEndOf="@+id/revealLinearLayout2"-->
+        <!--android:layout_toRightOf="@+id/revealLinearLayout2"-->
+        <!--android:src="@drawable/menu" />-->
+        <!--</io.codetail.widget.RevealLinearLayout>-->
 
 
     </android.support.design.widget.CoordinatorLayout>
@@ -257,10 +259,11 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="30sp"
-            android:text="@string/Rs"
+
+            android:text="Rs"
 
             android:textColor="@color/white"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/checkout"
@@ -280,7 +283,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:paddingRight="30sp"
+            android:paddingRight="10sp"
             android:text="2"
             android:textAllCaps="true"
             android:textColor="@color/white"

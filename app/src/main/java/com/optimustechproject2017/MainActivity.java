@@ -16,15 +16,12 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.google.firebase.auth.FirebaseAuth;
 import com.optimustechproject2017.Dialogs.LoginDialogFragment;
 import com.optimustechproject2017.Interfaces.LoginDialogInterface;
 import com.optimustechproject2017.fragments.Search_fragment;
 import com.optimustechproject2017.fragments.homefragment;
 import com.optimustechproject2017.fragments.ordersfragment;
-
-import java.util.ArrayList;
 
 import timber.log.Timber;
 
@@ -40,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     // private RecyclerView.LayoutManager mLayoutManager;
     private AutoCompleteTextView autoComplete;
 
-    private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
     private FirebaseAuth auth;
 
     @Override
