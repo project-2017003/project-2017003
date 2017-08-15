@@ -26,8 +26,10 @@ to Find data and wifi is  connected  or not
      Horizantal recycler Card views for Most popular and User Fav restarant. followed by Vertical Recycler view for remaining restarents.
      
 #### SearchFragment.java
+      (TODO)
      Searchs the items or restaurents in the user location and displayed in recycler grid view
 #### OrdersFragment.java
+       (TODO)
      Having the Pageviewr of two tabs. 
      UPCOMING-- upcomming orders 
      COMPLETED -- Completed orders
