@@ -34,17 +34,17 @@
         android:layout_below="@+id/small_details"
         android:textColor="@color/year" />
     <!--<TextView-->
-        <!--android:layout_below="@+id/price"-->
+    <!--android:layout_below="@+id/price"-->
 
-        <!--style="@style/HeaderTextStyle"-->
-        <!--android:text="@string/quantity" />-->
+    <!--style="@style/HeaderTextStyle"-->
+    <!--android:text="@string/quantity" />-->
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/decre"
@@ -57,8 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:text="0"
             android:paddingRight="8dp"
+            android:text="0"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 

@@ -211,10 +211,7 @@ public class MainActivity extends AppCompatActivity {
                         if (current == selectedFragment)
                             return true;
 
-                        current = selectedFragment;
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frame_layout, selectedFragment);
-                        transaction.commit();
+                        replaceFragment(selectedFragment);
                         return true;
                     }
                 });
@@ -224,6 +221,21 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_layout, homefragment.newInstance());
         transaction.commit();
 
+    }
+
+
+    private void replaceFragment(Fragment fragment) {
+        String backStateName = fragment.getClass().getName();
+
+        FragmentManager manager = getSupportFragmentManager();
+        boolean fragmentPopped = manager.popBackStackImmediate(backStateName, 0);
+
+        if (!fragmentPopped) { //fragment not in back stack, create it.
+            FragmentTransaction ft = manager.beginTransaction();
+            ft.replace(R.id.frame_layout, fragment);
+            ft.addToBackStack(backStateName);
+            ft.commit();
+        }
     }
 
 
@@ -270,6 +282,13 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        return super.onOptionsItemSelected(item);
     }
 
 

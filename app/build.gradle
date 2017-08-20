@@ -104,6 +104,7 @@ dependencies {
 
     compile 'com.loopj.android:android-async-http:1.4.4'
 
+    compile 'com.wang.avi:library:2.1.3'
 
 
 }

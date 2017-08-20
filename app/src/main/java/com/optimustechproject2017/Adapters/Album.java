@@ -53,6 +53,8 @@ public class Album {
         @Override
         public void onPrepareLoad(Drawable placeHolderDrawable) {}
     };
+
+
     private String name;
     private String items;
     private int thumbnail;

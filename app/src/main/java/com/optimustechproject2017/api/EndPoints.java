@@ -24,6 +24,9 @@ public class EndPoints {
     public static final String UpdateCart = API_URL.concat("cartedit.php");
 
 
+    public static final String Category = API_URL.concat("cat.php");
+
+
 
 
 
