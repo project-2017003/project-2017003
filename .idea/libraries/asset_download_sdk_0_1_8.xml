@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="asset-download-sdk-0.1.8">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/922c1052d2d778481c7cfeaee5d882406b08c7f9/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/922c1052d2d778481c7cfeaee5d882406b08c7f9/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.citruspay.assetssdk/asset-download-sdk/0.1.8/bf5737892026566bfb8a08b5e9d1b43d553d7593/asset-download-sdk-0.1.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

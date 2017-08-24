@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:mContext="com.citrus.sample.UserManagementFragment">
+
+        <EditText
+            android:id="@+id/edit_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:hint="@string/enter_email_text"
+            android:inputType="textEmailAddress" /><!--android:text="@string/dummy_email_hint"-->
+
+        <EditText
+            android:id="@+id/edit_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_email_id"
+            android:layout_margin="@dimen/button_margin"
+            android:hint="@string/enter_mobile_text"
+            android:inputType="number" /><!--android:text="@string/dummy_mobile_hint"-->
+
+
+        <LinearLayout
+            android:id="@+id/scopeCheckboxLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_mobile_no"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/fullScopeCheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:text="Full Scope" />
+
+            <CheckBox
+                android:id="@+id/limitedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:text="Limited Scope" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scopeCheckboxLayoutID"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/btn_login_text" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:text="@string/dummy_password"
+            android:visibility="gone" />
+        <!--android:text="Citrus@123"-->
+
+        <TextView
+            android:id="@+id/oRTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_password"
+            android:layout_centerHorizontal="true"
+            android:text="OR"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_otp_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:visibility="gone" />
+
+        <!-- If the merchant is already a Citrus Member, show him signIn button else show him set password Button -->
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_otp_id"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/sign_in_btn_text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin"
+            android:layout_margin="@dimen/button_margin"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/resend_btn_text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/signup_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_user_mgmt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_resend"
+            android:layout_margin="@dimen/user_management_msg_margin"
+            android:text=""
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_mgmt_message"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/reset_pass_text"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -26,6 +26,8 @@ public class EndPoints {
 
     public static final String Category = API_URL.concat("cat.php");
 
+    public static final String CATRESTS = API_URL.concat("catrests.php");
+
 
 
 

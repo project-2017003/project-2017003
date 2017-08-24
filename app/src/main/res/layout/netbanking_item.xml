@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/iconbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_bank" />
+
+    <TextView
+        android:id="@+id/txtbankname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="TEST BANK"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+</RelativeLayout>
+
+    <!--android:text="Test Bank"--><!--android:src="@drawable/amex"-->
+
+    <!--      android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/iconbank"
+           android:layout_toEndOf="@+id/iconbank"-->

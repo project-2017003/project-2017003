@@ -6,11 +6,7 @@
     android:background="?android:attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true"
-    android:orientation="vertical"
-    android:paddingBottom="15sp"
-    android:paddingLeft="15sp"
-    android:paddingRight="15sp"
-    android:paddingTop="15sp">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/item_name"
@@ -27,10 +23,8 @@
         android:id="@+id/catImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
         android:adjustViewBounds="true"
-        android:alpha="0.5"
-        android:scaleType="centerCrop"
-        android:src="@drawable/a10" />
+        android:alpha="0.4"
+        android:scaleType="centerCrop" />
 
 </RelativeLayout>

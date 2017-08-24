@@ -15,6 +15,7 @@ import com.optimustechproject2017.Adapters.ClickListener;
 import com.optimustechproject2017.Adapters.RecyclerTouchListener;
 import com.optimustechproject2017.adapter.HeaderRecyclerViewSectioncart;
 import com.optimustechproject2017.adapter.ItemObject;
+import com.optimustechproject2017.payment.UIActivity;
 import com.optimustechproject2017.utils.Utils;
 
 import org.json.JSONArray;
@@ -149,6 +150,8 @@ public class CartActivity extends AppCompatActivity {
         cartFooter =findViewById(R.id.cart_footer);
         cartItemCountTv = (TextView) findViewById(R.id.cart_footer_quantity);
         cartTotalPriceTv = (TextView) findViewById(R.id.cart_footer_price);
+
+
 //        view.findViewById(R.id.cart_footer_action).setOnClickListener(new OnSingleClickListener() {
 //            @Override
 //            public void onSingleClick(View view) {
@@ -174,9 +177,9 @@ public class CartActivity extends AppCompatActivity {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (getApplicationContext() instanceof MainActivity) {
-//                    ((MainActivity) getActivity()).onOrderCreateSelected();
-                }
+
+
+                startActivity(new Intent(getApplicationContext(), UIActivity.class));
             }
         });
 
@@ -188,16 +191,6 @@ public class CartActivity extends AppCompatActivity {
     }
 
 
-    private List<ItemObject> getDataSource() {
-        List<ItemObject> data = new ArrayList<ItemObject>();
-
-        data.add(new ItemObject("1", "RestaurantName", "details aboit it ", "Rs 100"));
-        data.add(new ItemObject("2", "RestaurantName", "details aboit it ", "Rs 150"));
-
-//        data.add(new ItemObject("This is the item content in the first position"));
-//        data.add(new ItemObject("This is the item content in the second position"));
-        return data;
-    }
 
 
     private List<ItemObject> getcat(String response) {

@@ -295,7 +295,10 @@ public class RestaurantTimeFragment extends Fragment {
                     JSONObject obj = (JSONObject) arr.get(i);
 
                     if (obj.get("Cat").toString().equals(catname)) {
-                        data.add(new ItemObject(obj.get("ID").toString(), obj.get("ItemName").toString(), obj.get("itemdetails").toString(), obj.get("Price").toString()));
+                        data.add(new ItemObject(obj.get("ID").toString(), obj.get("ItemName").toString(), obj.get("itemdetails").toString(),
+                                obj.get("Price").toString()
+
+                                , obj.get("URL").toString(), null));
 
 
                     }

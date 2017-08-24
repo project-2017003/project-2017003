@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="flash-sdk-0.24">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/1181ec1978c1afe90bc002b20cdf423a973fa254/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1181ec1978c1afe90bc002b20cdf423a973fa254/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.citruspay.flash/flash-sdk/0.24/65b0ebe55b8f3073b031187a45a9ed0685e0e6f8/flash-sdk-0.24-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

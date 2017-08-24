@@ -109,6 +109,7 @@ public class RestarentActivity extends AppCompatActivity {
         String Name = intent.getStringExtra("NAME");
 
         final String RestID = intent.getStringExtra("RestID");
+        Log.d("RestId", RestID);
         final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id.restlay);
        CollapsingToolbarLayout collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
         collapsingToolbar.setTitle(Name);

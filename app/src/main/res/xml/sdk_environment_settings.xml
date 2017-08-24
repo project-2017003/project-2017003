@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/pref_sdk_environment_titles"
+        android:entryValues="@array/pref_sdk_environment_values"
+        android:key="@string/prefs_environment_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sdk_environment" />
+
+    <EditTextPreference
+        android:inputType="text"
+        android:key="base_url"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_base_url" />
+    <EditTextPreference
+        android:inputType="text"
+        android:key="citrus_base_url"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_base_citrus_url" />
+    <EditTextPreference
+        android:inputType="text"
+        android:key="dynamic_pricing_url"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_dynamic_pricing_url" />
+    <EditTextPreference
+        android:inputType="text"
+        android:key="dynamic_pricing_path"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_dynamic_pricing_path" />
+
+</PreferenceScreen>

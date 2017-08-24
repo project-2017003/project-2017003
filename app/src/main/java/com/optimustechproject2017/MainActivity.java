@@ -19,6 +19,7 @@ import android.widget.AutoCompleteTextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.optimustechproject2017.Dialogs.LoginDialogFragment;
 import com.optimustechproject2017.Interfaces.LoginDialogInterface;
+import com.optimustechproject2017.fragments.AccountsFragment;
 import com.optimustechproject2017.fragments.Search_fragment;
 import com.optimustechproject2017.fragments.homefragment;
 import com.optimustechproject2017.fragments.ordersfragment;
@@ -28,23 +29,30 @@ import timber.log.Timber;
 
 public class MainActivity extends AppCompatActivity {
 
+    protected OnBackPressedListener onBackPressedListener;
     ArrayAdapter<String> stringAdapter;
-
     private RecyclerView recyclerView;
     private CardView cardView;
-
    // private RecyclerView.Adapter mAdapter;
     // private RecyclerView.LayoutManager mLayoutManager;
     private AutoCompleteTextView autoComplete;
-
     private FirebaseAuth auth;
+
+    public void setOnBackPressedListener(OnBackPressedListener onBackPressedListener) {
+        this.onBackPressedListener = onBackPressedListener;
+    }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransitionExit();
-    }
 
+
+        if (onBackPressedListener != null)
+            onBackPressedListener.doBack();
+        else {
+        super.onBackPressed();
+            overridePendingTransitionExit();
+        }
+    }
 
     @Override
     public void finish() {
@@ -188,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.navigation);
 
+
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -205,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragment = ordersfragment.newInstance();
                                 break;
                             case R.id.tab_Account:
-                                selectedFragment = ordersfragment.newInstance();
+                                selectedFragment = AccountsFragment.newInstance();
                                 break;
                         }
                         if (current == selectedFragment)
@@ -223,11 +232,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     private void replaceFragment(Fragment fragment) {
         String backStateName = fragment.getClass().getName();
 
         FragmentManager manager = getSupportFragmentManager();
+
+
         boolean fragmentPopped = manager.popBackStackImmediate(backStateName, 0);
 
         if (!fragmentPopped) { //fragment not in back stack, create it.
@@ -237,7 +247,6 @@ public class MainActivity extends AppCompatActivity {
             ft.commit();
         }
     }
-
 
     /**
      * Check if user is logged in. If so then start defined fragment, otherwise show signuppref dialog.
@@ -254,8 +263,6 @@ public class MainActivity extends AppCompatActivity {
             loginDialogFragment.show(getSupportFragmentManager(), LoginDialogFragment.class.getSimpleName());
         }
     }
-
-
 
     /**
      * Method creates fragment transaction and replace current fragment with new one.
@@ -276,7 +283,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -284,11 +290,15 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public interface OnBackPressedListener {
+        void doBack();
     }
 
 
@@ -304,5 +314,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
+
+
 }
 

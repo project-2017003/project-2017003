@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lazypay-sdk-1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/667f41167f25e4652e26589002b800743dc3b2fd/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/667f41167f25e4652e26589002b800743dc3b2fd/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.citruspay.lazypay/lazypay-sdk/1.2/e07db4146da7ccb5003de88c794ed57e9b3d4c4c/lazypay-sdk-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

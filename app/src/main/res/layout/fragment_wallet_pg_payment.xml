@@ -1,0 +1,178 @@
+<!--
+  ~ /*
+  ~    Copyright 2014 Citrus Payment Solutions Pvt. Ltd.
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~ */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/citrusWalletCheckBoxId"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Citrus Wallet" />-->
+
+            <TextView
+                android:id="@+id/citrusWalletTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Citrus Wallet"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp">
+
+            <CheckBox
+                android:id="@+id/mvcCheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="MVC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp">
+
+            <CheckBox
+                android:id="@+id/citrusCashCheckBoxId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Citrus Cash" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/paymentMsgTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black" />
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/paymentOptionsCheckBoxId"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/paymentMsgTextViewId"-->
+    <!--android:text="Other Payment Options" />-->
+
+    <TextView
+        android:id="@+id/paymentOptionsTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentMsgTextViewId"
+        android:text="Other Payment Options"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioPaymentOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentOptionsTextId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:checkedButton="@+id/radioMale"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radioDebitCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit Card" />
+
+        <RadioButton
+            android:id="@+id/radioNetBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NetBanking" />
+
+        <RadioButton
+            android:id="@+id/radioSavedAccounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Accounts" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/payWalletPgId"
+        style="@style/FooterStyle"
+        android:layout_alignParentBottom="true"
+        android:text="Pay" />
+
+    <TextView
+        android:id="@+id/txtrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtremainingamount"
+        android:layout_centerHorizontal="true"
+        android:text=": ₹ "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtremainingamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/paymentOptionsTextId"
+        android:layout_toEndOf="@+id/txtrs"
+        android:layout_toRightOf="@+id/txtrs"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

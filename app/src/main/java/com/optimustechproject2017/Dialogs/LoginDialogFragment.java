@@ -613,6 +613,7 @@ public class LoginDialogFragment extends DialogFragment  {
                                 inputPassword.setError(getString(R.string.minimum_password));
                             } else {
                                 Toast.makeText(getActivity(), getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+
                             }
                         } else {
                             dismiss();
@@ -851,6 +852,7 @@ public class LoginDialogFragment extends DialogFragment  {
                             Toast.makeText(getActivity(), "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
+                            dismiss();
                         }
 
                         // ...
@@ -917,6 +919,9 @@ public class LoginDialogFragment extends DialogFragment  {
                             dismiss();
 //                            Toast.makeText(Ta, "Authentication failed.", Toast.LENGTH_SHORT).show();
                         } else {
+
+                            Toast.makeText(getActivity(), "Retry login ", Toast.LENGTH_LONG).show();
+                            dismiss();
 
 
                         }

@@ -60,6 +60,7 @@ public class Album {
     private int thumbnail;
     private String time;
     private String URL;
+    private String RestID;
 
     public Album() {
     }
@@ -117,12 +118,13 @@ public class Album {
 
 //        this.URL = ParticipantsList.get(i).get("URL");
 
-    public Album(String name, String items, String url, String time) {
+    public Album(String name, String items, String url, String time, String RestID) {
         this.name = name;
         this.items = items;
         this.thumbnail = thumbnail;
         this.time = time;
         this.URL = url;
+        this.RestID = RestID;
 
     }
 
@@ -141,12 +143,17 @@ public class Album {
         this.time = time;
     }
 
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRestID() {
+        return RestID;
     }
 
     public String getItems() {

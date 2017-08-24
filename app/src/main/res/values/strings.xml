@@ -181,4 +181,139 @@
     <string name="Rs">\u20B9</string>
 
 
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="card_number_hint">Enter card number</string>
+    <string name="credit_card_number_hint">Enter Credit Card number</string>
+    <string name="card_name_hint">Enter card holder name</string>
+    <string name="card_nick_name_hint">Enter nick name</string>
+
+
+    <string name="sign_in_btn_text">Sign In</string>
+    <string name="resend_btn_text">Resend</string>
+    <string name="reset_pass_text">Reset Password</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="password_hint">Password</string>
+    <string name="btn_login_text">Login</string>
+    <string name="enter_mobile_text">Enter Mobile No</string>
+    <string name="dummy_mobile_hint"></string>
+    <string name="dummy_email_hint"></string>
+    <string name="dummy_password"></string>
+    <string name="enter_email_text">Enter Email Id</string>
+    <string name="login_credentials_text">Login Credentials</string>
+    <string name="dp_request_prompt">Select the DP Request Type</string>
+    <string-array name="dp_request_types_values">
+        <item>Search And Apply Rule (Depending Upon Selected Payment Option)</item>
+        <item>Apply Coupon Or Rule</item>
+        <item>Validate Rule (With Coupon Code and Altered Amount)</item>
+
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!-- SDK Environment -->
+    <string name="pref_title_base_url">Base Url (Citrus Admin)</string>
+    <string name="pref_title_base_citrus_url">Base Citrus Url (PG Url)</string>
+    <string name="pref_title_dynamic_pricing_url">Dynamic Pricing Url</string>
+    <string name="pref_title_dynamic_pricing_path">Dynamic Pricing Path (default: dynamic-pricing)</string>
+
+
+    <!-- Merchant Settings -->
+    <string name="pref_title_signup_id">SignUp Id</string>
+    <string name="pref_title_signup_secret">SignUp Secret</string>
+    <string name="pref_title_signin_id">SignIn Id</string>
+    <string name="pref_title_signin_secret">SignIn Secret</string>
+    <string name="pref_title_vanity">Vanity</string>
+    <string name="pref_title_bill_url">Bill Url</string>
+    <string name="pref_title_load_money_return_url">Load Money Return Url</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sdk_environment">SDK Environment</string>
+    <string-array name="pref_sdk_environment_titles">
+        <item>Production</item>
+        <item>Sandbox</item>
+        <!--<item>Custom</item>-->
+    </string-array>
+    <string-array name="pref_sdk_environment_values">
+        <item>Production</item>
+        <item>Sandbox</item>
+        <!--<item>Custom</item>-->
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <string name="sdk_environment_settings">SDK Environment Settings</string>
+    <string name="merchant_settings">Merchant Settings</string>
+
+    <string name="pref_title_use_default_signatures">Use Default Signatures</string>
+    <string name="pref_title_use_default_url">Use Default Url</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="prefs_bill_url_default_value">https://salty-plateau-1529.herokuapp.com/billGenerator.sandbox.php</string>
+
+    // Sandbox Wallet PG
+    <string name="prefs_vanity_default_value">nativeSDK</string>
+    <string name="prefs_signup_secret_default_value">3be4d7bf59c109e76a3619a33c1da9a8</string>
+    <string name="prefs_signup_id_default_value">9hh5re3r5q-signup</string>
+    <string name="prefs_signin_id_default_value">9hh5re3r5q-signin</string>
+    <string name="prefs_signin_secret_default_value">ffcfaaf6e6e78c2f654791d9d6cb7f09</string>
+
+    <string name="environment_preference_default_value">Sandbox</string>
+    <string name="choose_environment_prefs_text">Choose Environment</string>
+    <string name="settings_screen_title_text">Settings</string>
+    <string name="prefs_environment_key">pref_environment</string>
+    <string name="signatures_preference_text">Signatures</string>
+    <string name="prefs_signup_secret_key">prefs_signup_secret</string>
+    <string name="signup_secret_prefs_text">Sign Up Secret</string>
+    <string name="signup_id_prefs_text">Sign Up ID</string>
+    <string name="prefs_signup_id_key">prefs_signup_id</string>
+    <string name="sign_id_prefs_text">Sign In ID</string>
+    <string name="prefs_signin_id_key">prefs_signin_id</string>
+    <string name="signin_secret_prefs_text">Sign In Secret</string>
+    <string name="prefs_signin_secret_key">prefs_signin_secret</string>
+    <string name="vanity_prefs_text">Vanity</string>
+    <string name="prefs_vanity_key">prefs_vanity</string>
+    <string name="bill_url_prefs_text">Bill URL</string>
+    <string name="prefs_load_money_return_url_key">prefs_load_money_return_url</string>
+    <string name="load_money_return_url_prefs_text">Load Money Return URL</string>
+    <string name="pref_bill_url_key">prefs_bill_url_key</string>
+    <string name="pref_enable_logs_key">enable_logs</string>
+    <string name="pref_enable_logs_text">Enable Logs</string>
+    <string name="urls_preference_text">URLs</string>
+    <string name="pref_email_id_text">Email ID</string>
+    <string name="pref_mobile_num_text">Mobile Number</string>
+    <string name="pref_mobile_num_key">pref_mobile_num_key</string>
+    <string name="pref_email_id_key">pref_email_id_key</string>
+    <string name="pref_show_citrus_login_screen">pref_show_citrus_login_screen</string>
+
+    <string name="auto_load_message">You can choose Auto Load to save time and hassle.Basically we will credit your account with chosen amount(currently with 500rs) when the balance
+        in your wallet falls below 500rs.
+    </string>
+    <string name="pref_key_use_default_signatures">use_default_signatures</string>
+    <string name="action_clear_cache">Clear Cache</string>
+
+    <string name="masterpassdetails">You will be directed to masterpass site to complete the transaction.</string>
+
 </resources>

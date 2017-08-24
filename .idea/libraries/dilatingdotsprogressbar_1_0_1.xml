@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dilatingdotsprogressbar-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/e6f656f23c6640ccc9d5536ab120dab63a0f4c42/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e6f656f23c6640ccc9d5536ab120dab63a0f4c42/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.justzak/dilatingdotsprogressbar/1.0.1/3ceecd24c6f6ea325413bac92425651a10028d18/dilatingdotsprogressbar-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

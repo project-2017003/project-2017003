@@ -23,8 +23,21 @@ public class SqliteDB extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase database) {
         String query, query2;
         query = "CREATE TABLE Cart ( ID TEXT ,Name TEXT,ItemName TEXT ,price Text, URL TEXT ,Quant text)";
+
+
         database.execSQL(query);
 
+
+        query = "CREATE TABLE Restaurants ( ID TEXT ,Name TEXT,CAT TEXT ,price Text, URL TEXT )";
+
+
+        database.execSQL(query);
+
+
+        query = "CREATE TABLE CAT ( ID TEXT ,CAT TEXT , URL TEXT )";
+
+
+        database.execSQL(query);
 
 //		query2 = "CREATE TABLE ClusterEvents ( EVENTNO INTEGER PRIMARY KEY, EVENTNAME TEXT, udpateStatus TEXT,Gflag Text)";
 //		database.execSQL(query2);

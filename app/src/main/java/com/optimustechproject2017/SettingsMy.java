@@ -23,6 +23,8 @@ public class SettingsMy {
     public static final String Longitude = "longitude";
     public static final String cart = "cart";
     public static final String ItemID = "ItemID";
+
+    public static final String Totalpay = "Totalpay";
     public static final String Quant = "Quant";
     public static final String Restarentdet = "All_Restarent_details";
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
@@ -131,6 +133,12 @@ public class SettingsMy {
 
     }
 
+    public static void setTotalpay(String totalpay) {
+        putParam(Restarentdet, totalpay);
+
+
+    }
+
     public static boolean getappintro(){
         SharedPreferences prefs = getSettings();
        return prefs.getBoolean(APPINTRO,true);
@@ -151,6 +159,17 @@ public class SettingsMy {
         return sharedPref;
     }
 
+
+//    settings.edit().clear().commit();
+
+
+    public static void removeprefs() {
+
+        SharedPreferences.Editor editor = getSettings().edit();
+        editor.clear().apply();
+
+
+    }
     private static boolean putParam(String key, String value) {
         SharedPreferences.Editor editor = getSettings().edit();
         editor.putString(key, value);

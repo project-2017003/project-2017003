@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="payment-sdk-4.1.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/e6da23fd2539ac00c96e0664c5366a58218b431f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e6da23fd2539ac00c96e0664c5366a58218b431f/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.citruspay.sdk/payment-sdk/4.1.6/ee2dc435629a0c744a0755c03201c8667cc57d7c/payment-sdk-4.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-   >
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/zoologo"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:src="@drawable/app_icon"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:src="@drawable/app_icon_l" />
 
 
 
@@ -26,26 +24,26 @@
         android:id="@+id/Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:layout_below="@+id/zoologo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="Optimus Tech"
         android:textColor="#2C3646"
-        android:gravity="center"
-        android:layout_below="@+id/zoologo"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
         />
 
     <custom_font.MyTextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
         android:text="Sign in"
         android:textColor="#00051f"
         android:textSize="17dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/Title"
-        android:layout_marginTop="20dp"
         />
 <LinearLayout
     android:id="@+id/main"
@@ -62,19 +60,19 @@
         android:id="@+id/login_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00000000"
         android:hint="USERNAME"
         android:inputType="text"
+        android:paddingLeft="8dp"
         android:textColorHint="#a9b0c3"
         android:textSize="13dp"
-        android:background="#00000000"
-        android:paddingLeft="8dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="#a9b0c3"
         android:layout_marginTop="10dp"
+        android:background="#a9b0c3"
 
         >
     </LinearLayout>
@@ -83,20 +81,20 @@
         android:id="@+id/login_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
         android:hint="PASSWORD"
         android:inputType="textPassword"
-        android:textColorHint="#a9b0c3"
-        android:layout_marginTop="50dp"
-        android:textSize="13dp"
-        android:background="#00000000"
         android:paddingLeft="8dp"
+        android:textColorHint="#a9b0c3"
+        android:textSize="13dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="#a9b0c3"
         android:layout_marginTop="10dp"
+        android:background="#a9b0c3"
         >
     </LinearLayout>
 
@@ -105,28 +103,28 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textStyle="bold"
+        android:layout_marginTop="50dp"
         android:background="@drawable/round"
-        android:textColor="#CBD1DC"
         android:gravity="center"
         android:padding="14dp"
-        android:layout_marginTop="50dp"/>
+        android:text="Login"
+        android:textColor="#CBD1DC"
+        android:textStyle="bold" />
 
     <custom_font.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="or sign in with:"
-        android:gravity="center"
         android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="or sign in with:"
         android:textColor="#2C3646"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@+id/main"
         android:layout_marginTop="30dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
 
         <FrameLayout
@@ -144,8 +142,8 @@
             android:id="@+id/fb_login"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/fb"
             android:layout_marginRight="5dp"
+            android:src="@drawable/fb"
             />
 
         </FrameLayout>
@@ -175,8 +173,8 @@
             android:id="@+id/twitter_login"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/twiter"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/twiter" />
 
 
     </LinearLayout>
@@ -186,29 +184,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:orientation="horizontal"
         >
 
         <custom_font.MyTextView
             android:id="@+id/create"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Don't Have An Account ?"
-            android:textSize="13dp"
             android:textColor="#2C3646"
+            android:textSize="13dp"
             />
         <custom_font.MyTextView
             android:id="@+id/forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot Password"
-            android:textSize="13dp"
             android:textColor="#2C3646"
+            android:textSize="13dp"
 
             />
     </LinearLayout>

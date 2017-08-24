@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/md_grey_100</color>
-    <color name="colorPrimaryDark">@color/md_grey_300</color>
-    <color name="colorAccent">@color/md_grey_50</color>
+    <!--<color name="colorPrimary">@color/white</color>-->
+    <!--<color name="colorPrimaryDark">@color/purple_progress</color>-->
+    <!--<color name="colorAccent">@color/md_black_1000</color>-->
 
 
     <color name="white_trans">#99FFFFFF</color>
@@ -35,7 +35,6 @@
 
 
     <color name="iron">#CCCCCC</color>
-    <color name="white">#FFFFFF</color>
     <color name="year">#999999</color>
     <color name="title">#222222</color>
     <color name="prima">#ff9902</color>
@@ -53,5 +52,36 @@
     <color name="transperent">#00000000</color>
     <color name="item_grey">#eeeeee</color>
     <color name="textIconColorPrimary">#fff</color>
+
+
+    <color name="appbg">#F7941E</color>
+    <color name="hintcolor">#929191</color>
+    <color name="homerequest">#58B2C8</color>
+    <color name="homesend">#299699</color>
+    <color name="homesplit">#538CCD</color>
+    <color name="homelend">#149972</color>
+    <color name="pressed_color">#e5e5e5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="firstSignInUp">#2FA5A9</color>
+    <color name="secondSignInUp">#68BFD2</color>
+    <color name="thirdSignInUp">#649FD7</color>
+    <color name="fourthSignInUp">#01A785</color>
+    <color name="toggleColor">#33B5E5</color>
+    <color name="profile_selected">#FFB340</color>
+
+
+    <!--
+   Define a standard holo blue color. Useful as we can refer to it from various other
+   resource files or even code and it only needs to be updated in one place if we wanted
+   to change it.
+-->
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="lendimagebg">#dddddd</color>
+
+
+    <color name="colorPrimary">#FE7D2E</color>
+    <color name="colorPrimaryDark">#CC6626</color>
+    <color name="colorAccent">#fb832a</color>
 
 </resources>

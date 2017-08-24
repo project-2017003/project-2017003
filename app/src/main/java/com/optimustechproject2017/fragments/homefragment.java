@@ -313,6 +313,10 @@ public class homefragment extends Fragment {
                 intent.putExtra("URL", a.getURL());
                 intent.putExtra("NAME", a.getName());
 
+
+                intent.putExtra("RestID", a.getRestID());
+                Log.d("hmm", a.getRestID());
+
                 Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
                 Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
 
@@ -402,6 +406,11 @@ public class homefragment extends Fragment {
                 TextView name = (TextView) inflatedView.findViewById(R.id.title);
                 intent.putExtra("URL", a.getURL());
                 intent.putExtra("NAME", a.getName());
+
+
+                intent.putExtra("RestID", a.getRestID());
+                Log.d("hmm", a.getRestID());
+
 
                 Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
                 Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
@@ -641,6 +650,8 @@ public class homefragment extends Fragment {
                 TextView name = (TextView) inflatedView.findViewById(R.id.title);
                 intent.putExtra("URL", a.getURL());
                 intent.putExtra("NAME", a.getName());
+                intent.putExtra("RestID", a.getRestID());
+                Log.d("hmm", a.getRestID());
 
                 Pair<View, String> p1 = Pair.create((View) image, "fragment_image_trans");
                 Pair<View, String> p2 = Pair.create((View) name, "fragment_text_trans");
@@ -732,7 +743,7 @@ public class homefragment extends Fragment {
 
 
                     Album a = new Album(obj.get("Name").toString(),
-                            ">Item1 . Item 2 .itme 3  .Item4 ", obj.get("URL").toString(), obj.get("Time").toString());
+                            ">Item1 . Item 2 .itme 3  .Item4 ", obj.get("URL").toString(), obj.get("Time").toString(), obj.get("RestID").toString());
                     mContentItems_fav.add(a);
                     mContentItems.add(a);
                     mContentItems_under30.add(a);

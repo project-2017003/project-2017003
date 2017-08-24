@@ -22,7 +22,8 @@
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
 
 
-
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="user_management_msg_margin">12dp</dimen>
 
 
 

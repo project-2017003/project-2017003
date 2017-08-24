@@ -1,0 +1,74 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_use_default_signatures"
+        android:title="@string/pref_title_use_default_signatures" />
+
+    <EditTextPreference
+        android:defaultValue="@string/prefs_signup_id_default_value"
+        android:inputType="text"
+        android:key="signup_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_signup_id" />
+    <EditTextPreference
+        android:defaultValue="@string/prefs_signup_secret_default_value"
+        android:inputType="text"
+        android:key="signup_secret"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_signup_secret" />
+    <EditTextPreference
+        android:defaultValue="@string/prefs_signin_id_default_value"
+        android:inputType="text"
+        android:key="signin_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_signin_id" />
+    <EditTextPreference
+        android:defaultValue="@string/prefs_signin_secret_default_value"
+        android:inputType="text"
+        android:key="signin_secret"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_signin_secret" />
+    <EditTextPreference
+        android:defaultValue="@string/prefs_vanity_default_value"
+        android:inputType="text"
+        android:key="vanity"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_vanity" />
+
+    <PreferenceCategory android:title="@string/urls_preference_text">
+
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="use_default_urls"
+            android:title="@string/pref_title_use_default_url" />
+
+        <EditTextPreference
+            android:defaultValue="@string/prefs_bill_url_default_value"
+            android:inputType="text"
+            android:key="bill_url"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_bill_url" />
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enable_logs"
+            android:title="@string/pref_enable_logs_text" />
+    </PreferenceCategory>
+</PreferenceScreen>

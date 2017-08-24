@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
-            android:background="@color/white"
+            android:background="@color/appbg"
             app:itemIconTint="@color/nav_item_state_list"
             app:itemTextColor="@color/md_black_1000"
             app:menu="@menu/bottombar_tabs" />

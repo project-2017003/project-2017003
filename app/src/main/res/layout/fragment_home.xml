@@ -20,7 +20,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="2sp"
-        android:background="@color/whilte"
+        android:background="@color/appbg"
         android:fitsSystemWindows="true"
         android:paddingLeft="@dimen/base_margin_horizontal"
         android:paddingRight="@dimen/base_margin_horizontal"
@@ -44,15 +44,16 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:gravity="center"
                 android:text="Sort Restarants"
-                android:textColor="@color/md_grey_400"
-                android:textSize="12sp">
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold">
 
             </TextView>
 
             <ImageView
                 android:id="@+id/category_filter_button"
                 android:layout_width="wrap_content"
-                android:layout_height="28sp"
+                android:layout_height="30sp"
                 android:layout_alignParentTop="true"
 
                 android:layout_marginEnd="89dp"
@@ -164,6 +165,7 @@
                     android:id="@+id/category_rest_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
                     app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 

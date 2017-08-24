@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.optimustechproject2017.Databases.SqliteDB;
 import com.optimustechproject2017.Dialogs.LoginDialogFragment;
@@ -58,6 +59,7 @@ public class HeaderRecyclerViewSection extends StatelessSection {
         iHolder.itemContent.setText(list.get(position).getContents());
         iHolder.Smalldetails.setText(list.get(position).getSmalldetails());
         iHolder.Price.setText("₹" + list.get(position).getPrice());
+        Glide.with(context).load(list.get(position).getURL()).into(iHolder.ItemImage);
 
 //        iHolder.quant.setText(list.get(position).getQuant());
 

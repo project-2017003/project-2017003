@@ -5,18 +5,28 @@ package com.optimustechproject2017.adapter;
  */
 
 public class Movie {
-    private String title, URL;
+    private String title, URL, ID;
 
     public Movie() {
     }
 
-    public Movie(String title, String url) {
+    public Movie(String title, String url, String ID) {
         this.title = title;
 
         this.URL = url;
+        this.ID = ID;
+
 
     }
 
+
+    public Movie(String title, String ID) {
+        this.title = title;
+
+
+        this.ID = ID;
+
+    }
     public String getURL() {
         return URL;
     }
@@ -25,8 +35,14 @@ public class Movie {
         this.URL = URL;
     }
 
+    public String getID() {
+        return ID;
+    }
 
 
+    public void setID() {
+        this.ID = ID;
+    }
 
 
     public String getTitle() {
