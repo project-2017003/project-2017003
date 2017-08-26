@@ -5,8 +5,8 @@ $longi = $_POST["Longitude"];
 $Email= $_POST["Email"];
 
 $PhoneNO= $_POST["PhoneNo"];
-//$lat = 10.730328;
-//$longi= 79.009439;
+$lat = 10.730328;
+$longi= 79.009439; // remove these for location wise functionality
 
     include_once 'db_functions.php';
     $db = new DB_Functions();
